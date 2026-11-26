@@ -1,44 +1,44 @@
-# プログラム・テクニカル（パラメーター・デバッグモード・管理）
+# Programming and tech (parameters, debug modes, management)
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 022 ファイル名は合理的に【プログラム・テクニカル】
-- 技のファイル名／ラベル名は「分類（attack, special）＋方向／数値」の順にし、並べたときに自然に整理されるようにする（例：attack1,2,3、attackS4、attackAirS）。方向を先にするとバラバラに並ぶ。強度は数値で表す。
-- 短くしすぎず、初見でも意味が分かる程度の長さに。
-- 日本人開発者はローマ字のファイル名を避ける。海外スタッフが後で読めなくなる。作った人だけが分かればよいわけではない。
+## 022 Name Files Logically [Programming & Tech]
+- Put the action category first and the direction or number second so filenames and move labels sort together. Examples include attack1, attack2, attack3, attackS4, and attackAirS. Use numbers for strength levels.
+- Keep names long enough to recognize at a glance.
+- Avoid romanizing Japanese words in filenames. Choose names colleagues, including staff overseas, can understand.
 
-## 046 調整をしやすくする仕組み【プログラム・テクニカル】
-- 調整したい数値（攻撃力など）はプログラムに直書きせず、パラメータとして外に出してExcelなどにまとめ、企画が調整する。プログラムが骨格、パラメータが筋肉。
-- 使用頻度の低いパラメータは隠せるようにして、ヒューマンエラーを防ぎ要点を見やすくする。Excelなら計算式も使え「この技は別の技の1/2威力」のような相対指定ができる。
-- 数値を実機に反映する「コンバート」はボタン1つで起動中の開発機に流し込めるようにする（昔は10分かかり、そのたびゲーム再起動）。試行錯誤の回数が調整の深さを決めるので、反映の速さを合理化する。
+## 046 Making Your Game Easy to Tune [Programming & Tech]
+- Put tunable values such as attack power outside the program. A spreadsheet lets the designer adjust them. Sakurai likens the program to the skeleton and the parameters to the muscles.
+- Hide seldom-used fields so important values stand out and mistakes are less likely. Formulas let you define one move with half the power of another.
+- Make one button convert and apply values to a running development build. The older workflow took ten minutes and required a restart. Faster iteration lets you tune more thoroughly.
 
-## 094 チケットでタスク管理【プログラム・テクニカル】
-- 大規模制作の仕事は全てチケット（サーバー上のタスク）化し、持っている人が作業する形にする。漏れ・忘れが防げる。
-- 例：キャラ1体でも、企画・仕様書・モデル・モーション・プログラム・エフェクト・効果音・調整の各工程がチケット化されて受け渡される。
-- 状態は進行中・完了・保留・破棄など。期限を設定しリーダーが見れば遅れやトラブルの早期発見になる。上流待ちの工程は見切りで進めることもあるが、直列にしすぎない。
-- バグ報告も同じ仕組み（セクションリーダーが振り分け、担当者が修正、返却）。
+## 094 Using Tickets to Manage Tasks [Programming & Tech]
+- Track production tasks in a shared ticket system and give each ticket an owner so work does not get missed.
+- A single character can have separate tickets for planning, specifications, modeling, animation, programming, effects, audio, and tuning.
+- Use statuses such as in progress, done, pending, and dropped. Set deadlines and have leads review them. Where possible, let downstream work start with a provisional version.
+- Use the same process for bugs. Leads triage them, then the assignee fixes them and returns them for review.
 
-## 117 ファミリーベーシック【プログラム・テクニカル】
-- 昔のゲームパソコンの紹介と思い出話。（知見少なめ）
-- 簡単なスプライト制御で慣性などが手触りにどう効くかを学べ、最初のカービィの開発に役立った。「まずゲームを作ってみること」が大事。
-- ファミコンはパレット指定が16×16の単位で、同じブロックだと色が変わる（アトリビュート制約）。色を揃えたいなら配置を1つずらすなど、ハードの制約に合わせて置く。
+## 117 Family BASIC [Programming & Tech]
+- The episode introduces early home computers for making and playing games. (Few takeaways)
+- Simple sprite controls taught Sakurai how inertia affects game feel, which helped him make the first Kirby. Making a small game is a way to learn those effects firsthand.
+- The Famicom assigns background palette attributes to 16 × 16 pixel areas. Adjust placement, sometimes by a single tile, to make the desired colors fit the hardware limits.
 
-## 143 『スマブラ』のふっとばし【プログラム・テクニカル】
-- 攻撃は体力を減らすのでなく、「攻撃力が高いほど、相手の蓄積ダメージが多いほど大きく飛ぶ」仕組み。
-- 攻撃ごとに設定できるパラメータ: ベクトル（全方位の吹っ飛ばし方向。空中コンボではすっぽ抜けを減らす補正がある）、リアクション影響値（倍率）、リアクション加算値（低ダメージでも最低限の吹っ飛びを保証）、リアクション固定値（蓄積に関係なく固定。連続ヒット技の途中段に使い、最後だけ通常の吹っ飛ばしにする）。
-- 異質なルールを楽しいゲームにするには、こうした細かい制御パラメータが必要。
+## 143 Knockback in Super Smash Bros. [Programming & Tech]
+- Smash Bros. attacks build damage. A more powerful hit launches a target with higher accumulated damage farther.
+- Each attack can define a launch angle, a knockback multiplier, an additive minimum knockback, or fixed knockback independent of accumulated damage. Combo hits can use fixed knockback and an air-combo correction to keep targets from drifting out before the normal final launch.
+- These parameters make it possible to fine-tune knockback for the game’s rules.
 
-## 170 多くの人がファイルをいじる方法【プログラム・テクニカル】
-- 大規模開発では、全ファイルをサーバー上のバージョン管理ツールで管理する。編集時にロックし、編集後にアップロードして解除する。
-- ロックだと大きなファイルを1人しか触れず非効率。重複編集した時はツールが自動マージを試み、矛盾は手動で直す。
-- 編集内容が消えて前に戻る「先祖返り」が頻発する。編集ごとのバックアップから戻せる。
+## 170 How Multiple People Work on One File [Programming & Tech]
+- Use version control to manage shared project files. Files that cannot be merged can be locked during editing and released after upload.
+- Locking a large file serializes work. With concurrent editing, let the version control tool merge compatible changes and resolve conflicts manually.
+- Edits can be accidentally overwritten by an older version. Use history and backups to recover individual changes.
 
-## 193 デバッグモード【プログラム・テクニカル】
-- 開発中に確認・分析するためのデバッグ（開発）モードを用意する。例：体力を任意の値にする、画面静止、キャラ入れ替え、カメラ自由移動、ステータス変更。無いと技の威力を極端に設定して試すなどの手間がかかる。
-- 便利機能を製品側に取り込んだ例：トレーニングモードの吹っ飛び軌跡表示は元はデバッグ機能。
-- 操作は専用の別コントローラーではなく、普段の1つのコントローラーで完結できる形が望ましい。
-- 製品版では機能ごと外すのが一般的だが、毎日使うので便利さは開発効率に直結する。項目が肥大しがちなので整理と手入れをする。
+## 193 Debug Mode [Programming & Tech]
+- Use a debug mode to set health, freeze the game, swap characters, move the camera freely, or change states. Make extreme parameter values easy to test.
+- Useful debug views can become public features, such as the launch trajectory in training mode.
+- Let developers use the normal controller for debugging.
+- Debug features are often stripped from shipping builds. Keep the menus organized because the team uses them daily.
 
-## 215 透過機能【プログラム・テクニカル】
-- 開発モードに、モデルの一部または全身を半透明／非表示にする機能を付けると、モーション確認がしやすい（例：マントでポーズが見えない）。
-- 要素ごとの表示オンオフ切替も開発用として不可欠で、頻繁に使う。スクショ撮影にも役立つ。
+## 215 Transparency Features [Programming & Tech]
+- Let developers hide or fade an entire model or part of one. Hiding a cloak can help check a pose.
+- Individual visibility toggles are useful for development and screenshots.

@@ -1,145 +1,145 @@
-# 雑談・その他（知見少なめを含む）
+# Grab Bag and miscellaneous episodes
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 001 このチャンネルについて
-（知見少なめ）チャンネル紹介。目的は「世界中のゲームの面白さを少しだけ底上げする」。1話2〜5分、初歩的な内容を、技術よりも考え方中心で扱う方針。
+## 001 About This Channel
+(Few takeaways) The channel aims to make games around the world a little more fun. Each two- to five-minute episode focuses on accessible ideas.
 
-## 008 遅延を撲滅してほしい【雑談】
-- 画面の表示遅延が大きいと、反応の良いゲームも台無しになる。作り手でも遅延には気づきにくい（展示機が遅延環境だった例）。
-- 対策：テレビのゲームモード／低遅延モードを使う、画質向上の後処理を切る、音はアナログ接続などで機器の遅延を省く。
-- 目安：1フレーム＝約16.67ms（60fps）。
+## 008 Down with Lag! [Grab Bag]
+- Display lag can undermine a responsive game. Sakurai recounts a demonstration set up with a laggy display.
+- Try a TV’s Game Mode or low-latency settings and turn off image-enhancing processing. An analog audio connection can avoid some device delays.
+- At 60 fps, one frame is about 16.67 ms.
 
-## 013 ゲームに与える賞【雑談】
-- （知見少なめ）賞は優劣を競うものではなく、作り手とファンを喜ばせるためのもの。得票制は認知度に偏るため、独創性など別軸の賞にも意味がある、という話。
+## 013 Game Awards [Grab Bag]
+- (Few takeaways) Awards can celebrate the creators and fans. Voting can favor name recognition, which makes awards for qualities like originality valuable.
 
-## 024 ゲームしながら運動のすすめ【雑談】
-（知見少なめ）ゲームと運動を重ねて続ける、という個人的な習慣の話。
+## 024 Exercise While You Game! [Grab Bag]
+(Few takeaways) Sakurai describes his habit of exercising while playing games.
 
-## 031 ゲームソフトの価値【雑談】
-- ゲームは高くない、という見解（数十時間遊べて大作でも1万円未満）。規模は何十倍にもなったのに価格はあまり上がっていない。
-- サブスクで過去作と競う時代。遊ばれないゲームは無料でも遊ばれない。（知見少なめ）
+## 031 The Price of Games [Grab Bag]
+- Sakurai argues that games are good value. A major game offering dozens of hours may sell for under ¥10,000, and prices have risen little compared with production scale.
+- A new title competes with older games in subscription catalogs. Even a free game needs a reason for people to play. (Few takeaways)
 
-## 039 愛猫ふくらし【雑談】
-（知見少なめ）
+## 039 My Feline Friend, Fukurashi [Grab Bag]
+(Few takeaways)
 
-## 045 昔は昔 いまはいま【雑談】
-- ゲームの面白さは相対的で、時代・環境・技術で変わる。総合的には洗練された現代作が上で、昔のゲームは設計上の発見が多い面がある。
-- 昔基準にこだわらず今を楽しみ、新しいものを試す。（知見少なめ）
+## 045 That Was Then, This Is Now [Grab Bag]
+- What feels fun changes with the era, environment, and technology. Modern games tend to be more polished, while older games offer many discoveries about design.
+- Enjoy the present and try new things. (Few takeaways)
 
-## 053 有限会社ソラ【雑談】
-（知見少なめ）
-
-
-## 058 ダウンロード派？ パッケージ派？【雑談】
-（知見少なめ）
-
-## 066 ソラの在宅支援策【雑談】
-- テレワークの問題（椅子・机がない、基準となるモニターがない、回線が遅い、対面テストプレイができない、人との交流）は、機材で解決できるものが多い。
-- 対応: スタッフに必要な物を自由に選ばせ、会社側が注文して送る。返却不要。社内の購入承認を待つより速い。
-- 開発ペースはディレクター感覚で3割ほど落ちたが、柔軟に進められる体制を作る。
-
-## 068 パラメーターを【】でくくる【プログラム・テクニカル】
-- プログラムは処理手順、パラメーターは肉付けの数値。パラメーターはバランス調整のため最後まで触るので、プログラムの外に出してプランナーが直接いじれるようにする。
-- 仕様書では、パラメーター化する箇所を明確に指定する必要がある。
-- 3つの決まり。1) 仕様書でパラメーター名を日本語で書く。2) パラメーター名を隅付き括弧【】でくくる。3) 数値化したい所は「○」で書く。
-- 例: 「【技開始時のX速度】は○で移動を開始、【技中のX減速】は○で減速」。括弧で書いた名前がそのままパラメーターファイルの名前になり、数値だけを調整する。
-- 「X速度」のような記号名より、何をいじるか明確になる。個別仕様に有効で、攻撃力など汎用パラメーターには不向き。
-- 日本語の説明が曖昧だと調整も進まないので、仕様書の文章力が前提。
-
-## 072 過去との競争【雑談】
-- サブスクで新作が過去の名作と同列に競争する。ゲームは技術進歩と規模の違いがあり、まだ競争が緩い方。
-- 頭一つ抜けるには、斬新で、その作品にしかないものを作る。過去との競争を意識して視野を広げる。
-
-## 081 ゲームと目の疲れ【雑談】
-（知見少なめ）画面から離れて大きいモニターを使う、周囲と明るさを合わせる等、目の負担軽減の話のみ。
-
-## 087 マスターアップ【雑談】
-（知見少なめ）完成しても取りこぼしの修正や、捨てた要素への思いで必ずしもすっきりしない。
-
-## 096 ファミリーコンピュータ【雑談】
-（知見少なめ）ファミコンの歴史と思い出話が中心。容量が小さくてもカスタムチップ等で進化したという点のみ。
-
-## 100 初代『星のカービィ』開発秘話【雑談】
-- 容量が極小（約512キロビット設計）だったため、使い回しで魅力的に動かす工夫をした：ワドルディとワドルドゥの背面共用で1.5匹分、ゴルドーの上下左右反転、ボスのミスピーウッズは上下反転3つ並べ。常駐領域とステージ専用領域を分けて管理。
-- ボスを大きくしたい時は、狙いが多少ずれても当たる形にして初心者向けにする（デザインに必然性を持たせる）。
-- 敵は地形判定をせず、動きを作って背景に合わせて配置し処理を軽くした。ゲームボーイでは軽さが映像の滑らかさに直結した。
-- 企画書の時点で「画面外に飛ぶとミス」「ダメージで吹っ飛びが変わる」などスマブラの原型があった。企画書を残すと後で原点を確認できる。
-- 不思議な世界観は理屈より「感じろ」で押し切る（ワープスター、自分が巨大化して城ごと運ぶオチ）。
-- 作品ごとに役割や時代に合わせてデザインを見直す（メタナイトのマスクは3種）。
-- 初期段階から可能な限り完成イメージを具体化して、スタッフが迷わず進めるようにする。専用ツールで仮の絵と動きを作り、企画を検証した。
-
-## 110 開発中止【雑談】
-- 中止は主に「今後かかる費用」と「見込める利益」のバランスで決まる。開発は終盤（デバッグ・広報・人員）が最も費用がかかるため、損切りの判断はそこで起きやすい。
-- 開発者も中止リスクを意識し、自分の担当だけでなく完成に向け何が必要かを俯瞰して動く。
-
-## 115 PRESS START【雑談】
-- 10年続けたゲーム音楽コンサートの話。（知見少なめ）
-- 選曲は担当が音源を集め会議で聞いて絞り、映像は演奏に集中できるよう出し過ぎない。本業の繁忙期と重なって継続が負担になった。最初に「10年続ける」と目標を置いたため完遂できた。
-
-## 123 こどものころのゲームの話【雑談】
-- （知見少なめ）子供の頃の体験（ダイヤルで画面の物が直接動く感動）が、のちの発想に大きく影響するという話。
-
-## 131 『スマブラX』の組閣【雑談】
-- （知見少なめ）発売元が手掛けないシリーズ作を、フリーのディレクターを中心にスタッフを集めて作った経緯。
-- 作品の核を担う人に属人性があるため、シリーズ存続のための属人性の排除が課題になる。
+## 053 Sora Ltd. [Grab Bag]
+(Few takeaways)
 
 
-## 137 ガイドライン【雑談】
-- ガイドラインは統一のために必要。テトリスは回転や色割り当てなどが世界共通になり、遊びやすくなった。
-- 一方で、レーティング、プラットフォームの規約、自社基準などが重なると、やりたい表現が出せず矛盾も生じる。プレイヤーにはその事情が伝わらず印象が悪くなることもある。
+## 058 Team Digital or Team Physical? [Grab Bag]
+(Few takeaways)
 
-## 138 桜井政博のゲーム作るには 紹介映像
-（知見少なめ）
+## 066 Sora's Work-From-Home Strategies [Grab Bag]
+- Remote work can expose gaps in desks, chairs, reference displays, internet access, and ways to playtest or interact in person. Equipment can address many of these.
+- Sora let staff request equipment and sent it directly, without asking them to return it. This was faster than a standard purchase approval process.
+- Sakurai estimates that remote work slowed development from the director’s perspective by about 30%. The team found ways to continue flexibly.
 
-## 147 レアものご紹介【雑談】
-（知見少なめ）
+## 068 Put Parameters in Brackets [Programming & Tech]
+- Code defines the process. Parameters supply the numerical details. Move tunable values outside the program so designers can revise them through the end of production.
+- Mark where each tunable parameter belongs in the specification.
+- In Sakurai’s Japanese workflow, give the parameter a descriptive Japanese name, enclose it in 【】, and write ○ in place of its tunable value.
+- For example, “Start at 【Move startup X velocity】 of ○, then slow by 【Move X deceleration】 of ○.” The bracketed name is used in the parameter data, and tuning changes the value.
+- A specific label clarifies what you are editing. The technique is most useful for specifications unique to an action. A standard parameter such as attack power may already be clear.
+- The description has to be precise enough for designers to understand and adjust the value.
 
-## 153 ゲームセンターCXコラボ #1【スペシャル】
-（知見少なめ）
+## 072 Competing with the Past [Grab Bag]
+- Subscriptions put new releases alongside older classics. Technology and larger production scope can still give new games an advantage.
+- Give players something distinctive they cannot find in the back catalog.
 
-## 154 ゲームセンターCXコラボ #2【スペシャル】
-（知見少なめ）
+## 081 Games and Eye Strain [Grab Bag]
+(Few takeaways) The episode discusses moving farther from the screen, using a larger display, and matching brightness to the surroundings to reduce eye strain.
 
-## 155 ゲームセンターCXコラボ #3【スペシャル】
-（知見少なめ）
+## 087 Mastering Up [Grab Bag]
+(Few takeaways) Finishing a game can feel unresolved when you still think about deferred fixes and cut features.
 
-## 166 ゲーム&ウオッチのスクリーン【雑談】
-（知見少なめ）
+## 096 The Family Computer (and the NES) [Grab Bag]
+(Few takeaways) Sakurai recalls the Famicom’s history. Custom chips helped games evolve despite limited capacity.
 
-## 174 制作者も変わっていく【雑談】
-（知見少なめ）
+## 100 Development Secrets of the Original Kirby [Grab Bag]
+- With roughly 512 kilobits, the team reused assets to get expressive movement. Waddle Dee and Waddle Doo shared back sprites, saving half a character’s artwork. Gordo used horizontal and vertical flips, and Whispy Woods used three vertically flipped shapes. Shared and stage-specific assets occupied separate areas.
+- Give a large beginner-friendly boss a shape players can hit even if their aim is a little off.
+- Enemy movement was authored to fit terrain instead of checking collision with the background. Saving processing work helped the Game Boy keep visuals smooth.
+- The proposal already contained ideas that anticipated Smash Bros., such as losing when launched off-screen and damage affecting knockback. Saving proposals preserves evidence of where an idea began.
+- Warp Stars and the ending’s giant Kirby carrying the castle work through the feeling of a fanciful world.
+- Revisit design details as a character’s role changes. Meta Knight’s mask has taken three forms.
+- Make the intended result concrete early. The team used specialized tools to prototype art and movement so staff could see what to build.
 
-## 181 大昔、数字でドット絵を描いていた【雑談】
-（知見少なめ）
+## 110 Canceled Games [Grab Bag]
+- Cancellation often comes down to remaining costs and expected proceeds. Late testing, publicity, and staffing costs can prompt a decision about whether to continue.
+- Keep the project’s path to completion in view alongside your own responsibilities.
 
-## 188 プレゼントを遊びに【雑談】
-- 余ったグッズ等をスタッフに配る際、抽選自体をゲーム化（開発中ゲームで勝負、反応速度の競争など。ルールは直前まで伏せる）して余興にすると、スタッフ間の潤滑になる。
+## 115 ♪ PRESS START [Grab Bag]
+- Sakurai recounts the PRESS START game music concert series, which ran for ten years. (Few takeaways)
+- The team collected and auditioned tracks, narrowed the program together, and kept visuals from distracting from the musicians. It overlapped with busy periods in Sakurai’s main work. Committing to ten years helped him continue.
 
-## 197 誰の足跡も無い世界【雑談】
-（知見少なめ）
+## 123 Games During My Childhood [Grab Bag]
+- (Few takeaways) Childhood experiences, including the excitement of moving something on-screen directly with a dial, influenced Sakurai’s later ideas.
 
-## 207 伝説の1986年【雑談】
-（知見少なめ）
+## 131 The Team Behind Super Smash Bros. Brawl [Grab Bag]
+- (Few takeaways) A freelance director and recruited staff assembled a team to make a new installment outside the publisher’s usual development structure.
+- When one person is the center of a project, succession depends on finding ways for the series to continue without relying entirely on that person.
 
 
-## 214 収納のしかた【雑談】
-（知見少なめ）
+## 137 Guidelines [Grab Bag]
+- Shared guidelines can make games easier to pick up. Tetris standardized rules such as rotation and piece colors.
+- Ratings, platform requirements, and company rules can conflict or limit a design. Players often see the result without knowing which constraints shaped it.
 
-## 225 生演奏でゲームプレイ【雑談】
-（知見少なめ）
+## 138 Masahiro Sakurai on Creating Games Introduction Video
+(Few takeaways)
 
-## 239 なんでも対戦ゲーム【雑談】
-- （知見少なめ）同じゲームを2台で同時に始めて進捗やスコアを競う遊びの紹介。ゴールを決めれば一人用ゲームも対戦になる。
+## 147 Show and Tell: Some Rare Belongings [Grab Bag]
+(Few takeaways)
 
-## 250 ブラウン管【雑談】
-- （知見少なめ）ブラウン管の特性の紹介。応答が速い、光線銃が使える。当時の画面は端が見えない領域（安全フレーム）があり、重要な表示は端に置かない配慮があった。
+## 153 Special Crossover! #1 [Special]
+(Few takeaways)
 
-## 257 岩田さんのこと【雑談】
-- （知見少なめ）岩田聡氏の思い出話。トラブルのあるチームに自ら入って問題を直す、人との対話を重視する、といった姿勢が語られる。
+## 154 Special Crossover! #2 [Special]
+(Few takeaways)
 
-## 259 最終回スペシャル（チャンネルの作り方）
-- 長期の動画企画は、最初に全話の見出し（1行）を数百本並べ、カテゴリー分けし、原稿を一気に書き上げ、公開順も決め打ちして表計算を進捗表にした。途中でぶれにくく、並行作業が可能になる。原稿は速度重視で割り切る（防衛線を張りすぎると要点が短くまとまらない）。
-- 素材は連番やカテゴリーのフォルダで管理。試作（パイロット版）で成立を確認してから本制作に入り、関係者の許可も先に取る。外注には自分の判断を出す締切（当日20時まで等）を決め、その日のうちに監修を返す。
-- 費用・効果の見えにくい活動でも、伝えたい知見を残すことを目的に割り切る。
+## 155 Special Crossover! #3 [Special]
+(Few takeaways)
+
+## 166 Game & Watch Designs [Grab Bag]
+(Few takeaways)
+
+## 174 Creators Change, Too [Grab Bag]
+(Few takeaways)
+
+## 181 Long Ago, Numbers Were Used to Draw Pixel Art [Grab Bag]
+(Few takeaways)
+
+## 188 Turning Gift-Giving Into a Game [Grab Bag]
+- Turn distributing leftover merchandise into a staff game by using a lottery, an in-development game, or a reaction challenge. Keeping the rules a surprise can make it an event.
+
+## 197 A World Without Footprints [Grab Bag]
+(Few takeaways)
+
+## 207 1986: The Year of Legend [Grab Bag]
+(Few takeaways)
+
+
+## 214 Storage Tips [Grab Bag]
+(Few takeaways)
+
+## 225 Gameplay as Part of a Live Performance [Grab Bag]
+(Few takeaways)
+
+## 239 Turning Anything Into a Competitive Game [Grab Bag]
+- (Few takeaways) Start the same single-player game on two devices and set a goal for progress or score. The shared goal turns it into a competition.
+
+## 250 CRT Displays [Grab Bag]
+- (Few takeaways) CRTs respond quickly and support light guns. Overscan could cut off the picture edges, so games placed important indicators inside a safe area.
+
+## 257 Mr. Iwata [Grab Bag]
+- (Few takeaways) Sakurai remembers Satoru Iwata joining teams in difficulty, fixing problems directly, and valuing conversations with people.
+
+## 259 Masahiro Sakurai on Creating Games: Finale Special
+- For the series, Sakurai drafted hundreds of one-line topics, sorted them into categories, wrote the scripts in a batch, fixed the order, and tracked progress in a spreadsheet. Planning the full run kept it consistent and enabled parallel work. Draft quickly and keep qualifications from burying the point.
+- Organize assets in numbered or categorized folders. Use a pilot to validate the format and get permissions before full production. For outside work, set a deadline for decisions and return feedback the same day, for instance by 8 p.m.
+- Even when costs and impact are difficult to measure, a project can be worth doing to preserve knowledge you want to pass on.
 

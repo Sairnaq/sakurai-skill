@@ -1,109 +1,109 @@
-# 仕事の姿勢（企画書・プレゼン・コンセプトを貫く）
+# Work ethic (proposals, presentations, staying true to the concept)
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 007 遊びの仕事は遊びじゃない【仕事の姿勢】
-- ゲーム作りは「遊びを作る仕事」であって遊びではない。お金が絡む以上、好き嫌いに関係なく仕事として器用にこなす。
-- 自分の好みで企画しない。与えられた題材を課題として、目的に合うものを作る（苦手ジャンルでも「なぜ面白いか」を理解すれば作れる）。
-- 最終目的は常にプレイヤーを楽しませること。迷ったらそこへ戻る。
+## 007 Game Development Isn't a Game [Work Ethic]
+- Making games is professional work that produces something fun to play. Paid work calls for skill even when the assignment is outside your tastes.
+- Design for the purpose of the assignment. You can make a game in an unfamiliar genre if you understand what makes the genre enjoyable.
+- Return to the goal of entertaining the player when you are unsure what to do.
 
-## 012 プレゼンはスピード【仕事の姿勢】
-- プレゼンは無駄を削ぎ、必要なことだけをシンプルに伝える。短ければいいのではなく、テンポよく濃密に進めることが要点。
+## 012 Presentations Are All About Speed! [Work Ethic]
+- Keep presentations brisk and dense with relevant information. A presentation can take time if it keeps moving.
 
-## 021 お客さんに説明できるの？【仕事の姿勢】
-- 仕様が開発者の都合優先で、遊び手に不親切になることが多い。判断基準は「それをプレイヤー一人ひとりに事情説明して回るつもりか」。
-- 遊び手は作り手の事情を知らない。常に遊び手の視点を持ち、不親切なら別の手がないか企画・プログラマーと相談して、理想と技術のバランスを取る。
+## 021 Try Telling That to the Player [Work Ethic]
+- When a specification favors development convenience, ask whether you would explain the tradeoff to each individual player.
+- The player does not see the team’s constraints. Discuss alternatives with designers and programmers when a feature is hard to use and find a workable solution.
 
-## 029 仕様を変えること【仕事の姿勢】
-- 仕様変更は無駄とモチベ低下のコストがあるので極力避けるが、作って初めて分かることがあるので柔軟さも要る。面白くならないから変える、を避けるため企画段階で面白さを見据える。
-- 制作物は仕様・デザイン・モデル・モーション・効果音などの連鎖で、上流が遅れると下流が止まる。
-- 問題に気づいたスタッフは後出しせず、即座に誰かへ伝える。プレイヤーと違い開発者は変えられる。
-- 選択肢を出せるだけ並べ、短期と長期の両面から最適解を選ぶ。課題は即決し、判断に必要な情報は洗いざらい早く集める（相談が遅いと損失が増える）。
+## 029 Spec Changes [Work Ethic]
+- Spec changes cost effort and morale. Think through the core appeal early and leave room to adapt when building reveals a real problem.
+- Specifications, designs, models, animations, and effects depend on one another. Delay upstream can stop everything downstream.
+- Report problems promptly while the team can still act.
+- Consider the available options and their short- and long-term costs. Gather decision material quickly and resolve issues before a delay adds more work.
 
-## 038 企画書の書き方【仕事の姿勢】
-- 1ページ＝1項目、写真か図1枚＋文章2行程度。ページ数は多くてよい（200枚超でも漫画のコマのようにテンポよく読める）。
-- 大・小カテゴリーを付け、全体のどこを説明中か分かるようにする。企画書が薄い方が良いとは限らず、分かりやすさ・面白さ・妥当性・密度が重要。
-- プレゼンで画面の長文をただ読み上げるのは避ける。パッと見で分かる作りにする。
+## 038 Writing Game Proposals [Work Ethic]
+- Use one topic, one image or diagram, and two lines of text per page. Even 200 pages can move quickly if each is as easy to take in as a comic panel.
+- Use sections and subsections to orient the reader. Make information clear, relevant, and dense enough to be worth reading.
+- Design slides people can understand at a glance so the presentation can add something beyond reading the text.
 
-## 052 企画は強火でザッと仕上げる【仕事の姿勢】
-- 企画書は、作りたい気持ちが高いうちに大筋をまとめ、勢いのまま書き上げる（遅いと鮮度が落ちる）。事前に大項目・小項目の仕分けをしっかり行う。
-- 文章は長くしすぎず、図や写真でイメージを補強する。企画意図の羅列、グラフ・リサーチ、プランBは不要。面白いかどうかがすべてで、1ページごとの情報量が適切かが大事。
-- 企画書では本当の面白さ（磨き込み）は伝わりにくい（モンハンも企画だけなら新規性は薄い）。通らなかった時は、魅力を伝える責任は提案者側にあると考える。
+## 052 Prep Your Proposals Hot and Fast [Work Ethic]
+- Organize the sections and subsections, then write the proposal in one push while the idea is fresh.
+- Keep text concise and use diagrams or photos to make the idea concrete. Present one plan and spend the page explaining what makes it appealing.
+- Refined play can be hard to communicate in a document. Monster Hunter may sound ordinary as a pitch alone. The proposer is responsible for conveying the appeal.
 
-## 067 苦労は忘れる､作品は残る【仕事の姿勢】
-- 遊ぶ人が多いほど苦労は報われる。1000人が遊ぶなら効果は1000倍。
-- 楽をするための妥協は後で必ず後悔する。苦労は忘れるが、作品のミスは忘れられない（例: 夢の泉のエンディングで、画面振動ではなく画面フラッシュを入れるべきだった）。
-- 無駄な苦労をしろという話ではない。最大限効率化した上で、遊ぶ人に報いる意識で仕事をし、悔いのないようにする。
+## 067 You'll Forget the Hardship, But the Game Will Endure! [Work Ethic]
+- The more people play, the more the work pays off. If 1,000 people enjoy the result, a small improvement can matter a thousand times.
+- The work fades from memory and problems in the shipped game can stay with you. Sakurai would have used a flash in the Kirby’s Adventure ending instead of shaking the screen.
+- Work efficiently and put the effort saved toward something the player will appreciate.
 
-## 070 ディレクターは”個”【仕事の姿勢】
-- 有能なディレクターに共通するのは、人と違う感覚が敏感で、人が見逃すささやかなものを拾えること。映像、ゲーム性、動き、物語、人の感じ方すべてに及ぶ。
-- 自分が感じたことを作品の個性として出力する太さが必要。ただしバランス感覚も要る。
-- ディレクターの仕事は個性が問われる。少し変わり者であることは良い。
+## 070 Directors Need to Be Unique [Work Ethic]
+- Strong directors notice details others overlook in visuals, play, animation, story, and emotional response.
+- Turn those observations into a distinct identity for the work while keeping an overall sense of balance.
+- An individual point of view is part of directing. A little eccentricity can help.
 
-## 083 とにかくやれ!!【仕事の姿勢】
-- 取りかかれない時は考えずに今すぐ手を動かす。やる気は後からついてくる。
-- 成長や成功は手数（アウトプット量）で決まる。意味づけやタスクの見える化は動いた後でよい。
+## 083 Just Do It Already! [Work Ethic]
+- If you are stuck getting started, take a first action. Motivation can follow progress.
+- Repeated outputs build skill. You can reflect on their meaning and organize the work after making a start.
 
-## 098 なぜコラムを続けられたのか【仕事の姿勢】
-- 長く続けるコツは3つ：アウトプット自体を苦にしない、手をかけすぎない（1回1時間前後）、気負わず使命感を持たない。
-- どんな仕事も、特に定期的なものは義務にせず楽に楽しめる形にする。縁やきっかけはどこから生まれるか分からない。
+## 098 How I Stuck With My Column [Work Ethic]
+- For a long-running commitment, keep expectations manageable, spend roughly an hour at a time, and avoid turning it into a solemn duty.
+- Make recurring work enjoyable enough to continue. The connections and opportunities it brings can be unpredictable.
 
-## 109 プランBに頼るな【仕事の姿勢】
-- 企画書・仕様書に「Aという手もBという手もある」と両案を書かない。最も良いと確信した案を一つ出す。
-- 問題が出たらチームで解決策を検討し、結果的に別案に戻ってもよい。企画者は最初から責任を持って考え抜いた一手を出し続ける（経験にもなる）。
-- 企画は骨組みなので、あちこち曲げず筋を通す。
+## 109 Don't Rely on a "Plan B" [Work Ethic]
+- Choose one approach you believe in when writing the proposal or specification.
+- If a real problem comes up, the team can consider fixes or revisit the decision. Making a thoughtful choice early builds the planner’s judgment.
+- Treat the plan as a framework the rest of the team can rely on.
 
-## 112 価値観の幹と枝先【仕事の姿勢】
-- 人は成長するほど価値観が枝分かれして市場が細くなる。枝分かれ前の「幹」（若年層）の市場は太く、そこに届く王道・普遍的なもの・シリーズ作はヒットしやすい。
-- 狙う層は自分の好き嫌いでなく俯瞰して意識的に決める。枝先のニッチ市場を狙うのも、熱狂的に刺さる可能性があり有効。
+## 112 Branching Tastes [Work Ethic]
+- Tastes diverge as people grow older. Broadly shared tastes have a larger audience, which can favor enduring, accessible titles and established series.
+- Choose the audience deliberately. A narrow group with strong interest can also make an effective target.
 
-## 125 インプットを太く､アウトプットも太く【仕事の姿勢】
-- 良い仕事のために、外から刺激を受けるインプットと自分から出すアウトプットを習慣にする。特にディレクターは必須。
-- インプット：多くのタイトルに触れる（1本を延々とより広く。クリアまで見ることは目指す）。今のゲームの規模感を把握する。形は人それぞれで、同じものから多くを感じ取って反芻するだけでも違う。流して終わらせない。
-- アウトプット：連載、日報、スクリーンショット公開、配信など、日常的に発信する。
+## 125 Broad Input, Broad Output [Work Ethic]
+- Make a habit of taking in outside work and putting your own work out into the world. Both matter for directors.
+- Sample many games and try to see them through when you can. Learn what scope current games cover. Reflect on what you experienced to get more from it.
+- Practice publishing regularly through a column, daily reports, screenshots, or streams.
 
-## 142 内圧をカンカンに高める【仕事の姿勢】
-- ゼロから作る企画は、書き上げるまで人に話さない。人に話すと満足して、企画の熱量（内圧）が抜けてしまう。
-- 相談は企画書にまとめてからでよい。進捗をSNSで発散するのも避ける。
-- 発表時にお客さんがどう反応し、どこで感動するかを想像しながら作ると頑張れる。
+## 142 Keep Your Internal Pressure High [Work Ethic]
+- Sakurai keeps a new idea to himself until the proposal is written. Talking about it too soon can satisfy the urge to develop it.
+- Seek feedback after the draft comes together. Consider saving public updates until the work is ready to discuss.
+- Imagine how the audience will react when you announce it and which parts will matter to them.
 
-## 156 無意味な多数決【仕事の姿勢】
-- 企画・仕様の対立を多数決で決めない。多数決で残るのは無難＝平凡なもの。全体像をイメージできる核の人（ディレクター）が責任を持って決める方が良い。
-- 例: MGS3の「怪我を治す」は社内の賛成が4人だけだったが、完成すると面白さが伝わった。
-- 決定者には正しい情報が必要。スタッフは問題点・解決策候補を隠さず出す。決定者のバランス感覚が悪いと独裁は悪化する。
-- 余興としての多数決は可（デザイン案の意見集めなど）。最終はディレクター判断。
+## 156 The Majority Shouldn't Always Rule [Work Ethic]
+- Give someone who understands the whole game responsibility for decisions when specifications conflict. A majority vote tends to favor the safest option.
+- Only four people inside the company backed treating injuries in Metal Gear Solid 3, but people found it interesting once it was built.
+- Staff should raise problems and potential solutions openly. The approach depends on the decision-maker having good judgment and accurate information.
+- Voting can be useful for gathering preferences on design proposals. The director still owns the result.
 
-## 169 暗示の力【仕事の姿勢】
-- 目標に向かうより、迫ってくる何かから逃げる暗示の方が力が出る。例: 後ろから重機が追ってくると想像して走る。
-- 仕事では「いつ終えてもよい」ではなく「あと〇時間で終わらせなければならない」と考える。締め切りが迫ってくるイメージを持つ。効果は人や状況による。
+## 169 The Power of Suggestion [Work Ethic]
+- An approaching deadline or threat can be a stronger spur than a distant goal. Sakurai imagines heavy machinery in pursuit when running.
+- Give yourself a concrete time limit when it helps. The effect varies with the person and situation.
 
-## 185 コンセプトは貫くもの【仕事の姿勢】
-- コンセプト＝ゲームの魅力を方向付ける核（相手を吹き飛ばす楽しさ、一本道を突き抜ける爽快感など）。長期開発で面白さが見えなくなっても途中で曲げない（灯台のように）。
-- 一度迷うと迷走する。スクラップ＆ビルドは数か月分の素材と士気を捨てることになるので避ける。
-- 少なくともディレクターが「灯台」を明確に見据えるまではプロジェクトを進めない。
-- 新規作は作ってみないとスタッフにも魅力が伝わらず、企画書に面白さは出にくい。だからこそディレクターが迷わず方向を示し、スタッフのリソースを生かし切る。
+## 185 Staying True to Your Concept [Work Ethic]
+- Define the core feeling, such as launching an opponent or racing down a straight. Keep that goal in view if the appeal becomes harder to see during a long project.
+- A wholesale restart can cost months of assets and damage morale. Resolve confusion about the direction early.
+- At minimum, the director needs a clear vision of the direction before the project can move forward.
+- A new idea can be hard for staff to picture until some of it exists. A director can give them a clear direction so they can put their skills to work.
 
-## 196 競争と豊穣【仕事の姿勢】
-- ゲームを作りたい人は世界中に非常に多く、やめたい人が抜けても代わりは山ほどいる。商業で出す以上、同時代の新作だけでなく過去作（特にサブスク環境）とも時間の奪い合いになると意識する。
-- 一方で、作り手は他人のゲームに感動した経験から始まっており、苦労して作られた物が別の誰かを喜ばせる循環で支え合っている。競争と感謝の両方を持つ。
+## 196 Competition and Abundance [Work Ethic]
+- Many people want to make games, and a commercial release competes for time with classics as well as contemporaries, especially in subscriptions.
+- Creators often start because somebody else’s work moved them. Take competition seriously and stay grateful for the games and people that sustain it.
 
-## 210 言ったことはそうなっていく【仕事の姿勢】
-- 口にした言葉や考えは自分の姿勢を作る。ネガティブな不満でも「どう改善するか」という具体的な方向に向ければ燃料になる。
-- 打ち込む時は「まだやれる」と言い聞かせて、とにかく動く。動いた者が勝ち。
+## 210 Say It, and It Might Come True [Work Ethic]
+- Words can shape attitudes. Turn dissatisfaction into specific ideas for improvement.
+- Sakurai tells himself he can keep going when he is deep in a task. Continuing to act keeps the work moving.
 
-## 226 エコーチェンバー【仕事の姿勢】
-- SNSでは同意する人ばかりが見え、自分は正しいと自己強化されやすい。ゲームの企画・評価でも起こり、客観視できないとバランスの悪い物になる。
-- 他人の意見を聞いて柔軟に対応しつつ、最終的にバランスを取る。ただし、思い切って偏った個性を打ち出すのは、他にない力になりうる。
+## 226 Echo Chambers [Work Ethic]
+- Social feeds can make agreement look universal. The same can happen in development and review when teams hear only familiar views.
+- Listen to outside opinions and adjust with judgment. A deliberately distinctive choice can still be a source of strength.
 
-## 235 アイデアが出ないとき【仕事の姿勢】
-- まず「問題のテーマ」を簡単に定義する（例：廃墟で火を消す方法）。何もない所から考えると取っかかりを失う。
-- 思いつくままに案を出し、却下理由の中にある細い糸口（「土ならいけるか」「大きなバケツなら」）を拾って掘り下げる。連想を止めず、実現性は後回しで数を出す。消すのは後。
-- 頭の中でも独り言でもよいので、数を多く、網を広くかけると、頭を抱える状態から抜けられる。
+## 235 When Ideas Won't Come [Work Ethic]
+- Define a concrete design problem first, such as how a player could extinguish a fire in a ruin.
+- Generate possibilities and follow any lead in an idea you reject. Could soil work? What about a larger bucket? Check feasibility after you have enough ideas.
+- Think silently or out loud. Generating a wide range of possibilities can get you unstuck.
 
-## 247 絶対にケンカするな【仕事の姿勢】
-- 業界は狭く、今のチームメンバーは将来別の現場で再会する。ケンカ、悪口、後始末をしない離脱は自分に返ってくる。
-- 空気が合わない場所から離れるのも、建設的な意見をストレートに言うのも可。ただ人を悪者にしない。職場の空気は自分も作っている。チームは一つの目標のための協力体制。
+## 247 Never Get Into Fights [Work Ethic]
+- Game development is a small industry. Present teammates can be future teammates elsewhere, so take care of relationships and handoffs.
+- Leave an unhealthy situation if needed and offer constructive feedback directly. Treat the team as people cooperating on a shared goal.
 
-## 258 上は下なり、下は上なり【仕事の姿勢】
-- ディレクターやリーダーは偉いわけではなく、人にお願いして完成まで持っていく立場。指示は上から下でも、実際はスタッフに協力してもらう「下から上」。お客さんとメーカーの関係と同じ。
-- 偉ぶらず卑屈にもならず、立場に関係なく相手に敬意を払う。チームは敵ではなく仲間。実践：誰でも「さん」付けで丁寧語。
+## 258 Up is Down, and Down is Up [Work Ethic]
+- A director can give instructions, but depends on staff to make the work real. The relationship has obligations in both directions.
+- Show people the same respect regardless of rank. In Japanese, one practice is to use the honorific “san” for everyone.

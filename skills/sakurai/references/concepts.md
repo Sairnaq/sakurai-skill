@@ -1,85 +1,85 @@
-# 企画コンセプト（桜井作品ごとの課題と解決）
+# Game concepts (design challenges and solutions in Sakurai’s games)
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 004 星のカービィ【企画コンセプト】
-- 「敵を利用する」楽しさを、リスクとリターンが表裏一体だから面白い、と分析して企画の核にした（吸い込み→吐き出し）。
-- 初心者向けに難易度を意図的に下げる：落下を飛行でパスでき、吸い込みで敵のリスクも減らす。開発中に「それでいいのか」と言われても、役割（初心者をゲームに導く）を優先した。
-- 理不尽な難しさは初心者の入口を塞ぐ。簡単でも楽しければ繰り返し遊ばれ、結果シリーズ最高の売上になった。
-- 音楽にもこだわる（ステージ開始をイントロに合わせる等）。
+## 004 Kirby's Dream Land [Game Concepts]
+- Inhaling and spitting out enemies makes the threat itself into a tool. Sakurai made that risk and reward the core of the project.
+- Design for beginners deliberately. Flight lowers the risk of falling, and inhaling makes approaching enemies less dangerous. The team kept that focus when the difficulty was questioned.
+- Unreasonable difficulty can block newcomers. An easy, enjoyable game can still encourage repeat play. This one became the series’ best seller.
+- The team gave the music close attention, including timing the start of a stage to the intro.
 
-## 011 星のカービィ 夢の泉の物語【企画コンセプト】
-- 課題は「初心者と上級者を同時に満足させる」こと。解決が「コピー能力」：吸い込み・吐き出しだけでもクリアでき、慣れた人はコピー能力で幅広く遊べる、という住み分け。
-- 敵に個別の意味を持たせられ、キャラクター性が大きく上がる（作る手間は増えるが許容範囲）。
-- 画面が広いと飛行が強くなりすぎる。下部の情報ボード大きめで縦を抑える、中ボスでスクロールロック、飛行速度を遅くする、で調整。
-- ワンボタンのサブゲームを3つ、ワールドマップに任意参加の入口として置く（強制しない初心者サービス）。
+## 011 Kirby's Adventure [Game Concepts]
+- Copy Abilities were designed to satisfy beginners and experts at once. Inhaling and spitting are enough to finish the game. Copy Abilities give more experienced players other ways to play.
+- The abilities give individual enemies more meaning and identity, at a manageable production cost.
+- An open screen made flying too strong. The team reduced playable height with a bigger HUD, locked scrolling at mid-bosses, and slowed flight.
+- Three optional one-button minigames on the world map gave beginners places to start on their own.
 
-## 020 星のカービィ スーパーデラックス【企画コンセプト】
-- 2人同時プレイの難題は、主役と脇役を分けて解決：カメラは主役だけ追い、脇役は画面外に出ても許容し、戻る手段（スペースジャンプ）を用意する。スクロールを引っ張り合う同格のキャラは作らない。
-- 敵キャラ自体がヘルパーとしてプレイヤーキャラになる設計で個性と楽しさが増える（その分パラメーターは大量に必要）。入力で技を使い分けられるようになり、雑魚にも耐久力を導入、体力もアナログ化。
-- オムニバス（複数シナリオ選択）にした理由は、決着までが長大すぎるゲームを避けるため。各シナリオを短めにし遊びも変えれば飽きずにボリュームを出せる。最初のシナリオは機能を制限して個性を出すべきだった、という反省。
-- 新しい背景表現（CG素材）はスタッフの習熟や地形の組み合わせの多さで相性が悪かった。それでも挑戦の研究は次に繋がる。
+## 020 Kirby Super Star [Game Concepts]
+- For two-player play, distinguish the lead from the helper. The camera follows Kirby, and the helper can go off-screen and use a Space Jump to return. This avoids tug-of-war over the camera.
+- Enemies become playable helpers, adding variety and many parameters. Different inputs select different moves, ordinary enemies have durability, and health is more granular.
+- Short selectable scenarios can offer more total play without a single game taking too long to resolve. In hindsight, limiting options in the first scenario could have given it a clearer identity.
+- A new CG background technique was hard to apply with the team’s experience and many terrain combinations. The experiment still informed future work.
 
-## 027 大乱闘スマッシュブラザーズ【企画コンセプト】
-- 格闘ゲームのコンボは対戦相手の介入がなく駆け引きにならず、初心者は見ているだけになる、という問題意識から、差し合いとアドリブ性を求めた。蓄積ダメージ方式（反応が毎回違い、画面外に出たら負け）が生まれた。
-- コマンド入力の複雑化に対し、方向＋ボタンだけで直感的に操作できるようにした。スマッシュ入力は入力が完成するまでの「時間」に着目して作った（アナログスティックの無段階入力だけに目を向けない）。
-- 初めて出会うキャラが多数並ぶと親しみにくいので、任天堂の人気キャラクターを起用して取っつきやすくした。ただし営業や既存の格闘ゲーム層には偏見があり、遊ばせるための補助（スマブラ拳など）を作った。
-- ルールを自由に変えられる柔軟性（アイテム有無、ステージ、人数）で、好きなところだけ好きなように遊べる方針は初代で確立。
-- 開発の経緯：プロトタイプを先に作って社内で評価を得、他のソフトが流れたため早く作れる4人対戦を選んだ。
+## 027 Super Smash Bros. [Game Concepts]
+- Long fighting-game combos can leave the opponent waiting. Sakurai wanted more back-and-forth and improvisation. Cumulative damage gave hits different reactions and made leaving the screen the loss condition.
+- Direction plus button offered simpler commands. Smash inputs use how fast the stick is moved, alongside its position.
+- Familiar Nintendo characters made the roster approachable. Some sales staff and fighting-game players had reservations, so the team created material such as the Smash Bros. site to help explain the game.
+- Players could change item settings, stages, and player counts from the first installment. This let people choose what and how to play.
+- A prototype earned support inside the company. After another project fell through, the team chose the four-player game it could build quickly.
 
 
-## 040 大乱闘スマッシュブラザーズDX【企画コンセプト】
-- 企画の多くは「課題を見つけて解決する」形だが、DXは「前作を全方位で飛躍的にパワーアップする」という単純なコンセプトだった（ファイター・ステージ・グラフィック・エフェクト・サウンド・ボリューム等）。
-- ハード世代交代の恩恵（ポリゴン数・テクスチャ・光ディスクによる生音楽）を活かし、できなかったことを一気に拡張した。
-- フィギュア収集のように他にない特徴になる要素は、手間をかけても作る価値がある。作品は「他にないもの」で成立する。
+## 040 Super Smash Bros. Melee [Game Concepts]
+- Melee’s concept was to make a substantial improvement across the board, including fighters, stages, visuals, effects, sound, and volume of content.
+- The new hardware supported more polygons and better textures. Optical discs let the team use recorded live music.
+- Distinctive features such as collecting trophies were worth the extra effort.
 
-## 059 カービィのエアライド【企画コンセプト】
-- コンセプトは「頂点を目指す遊び」を「広がる方向の遊び」に変えること。タイム短縮の一点に集約せず、箱庭を自由に走るシティトライアルや多様なスタジアムに広げた。
-- ドリフト＋チャージ解放という中核の面白さを軸に企画した（057参照）。
-- 実績に近い「クリアチェッカー」で、なんとなく遊ぶだけの行動にも達成感を持たせた。
-- 担当任せで1年以上進まなかったため、ディレクター本人が戻って仕様を切り直し、3ヶ月半で完成させた。素材が揃っていたことと、スタッフの全力があったから可能だった。
-- 全マシンの中身は同じ仕様で、パラメーターだけ違う。プログラムで出せる個性を数値で振り切ることで、個性的なマシンに見せている。
-- グラフィックとサウンドは世界観に合うか、事細かに監修する。
+## 059 Kirby Air Ride [Game Concepts]
+- The concept broadened the appeal from chasing the best time to exploring what machines could do. City Trial gave players a small world to roam and a variety of stadium events.
+- The core mechanic pairs drifting with charging and releasing a boost. See #057.
+- The Checklist gave players achievements even when casually trying things out.
+- After more than a year with little progress, Sakurai returned, reworked the specifications, and finished the game in three and a half months. Existing assets and the team’s effort made that possible.
+- Machines share the same implementation. Pushing their tuning values in different directions gives each a distinct feel.
+- Review graphics and audio closely for fit with the game’s world.
 
-## 074 メテオス【企画コンセプト】
-- 落ち物パズルのゲーム性は「落ちてくるブロック自体がリスク」で、積むほどリスクが高まり、揃えて一気に解消する時に快感が出る。
-- 根底から変えるため、「揃えたブロックを推進力にして打ち上げる」にした。縦・横展開や空中ドッキングなどの技術も生まれ、バカバカしくインパクトがある。
-- 苦手なジャンルでも、ゲーム性が生まれる原理を知っていれば企画できる。企画書はPowerPointのアニメーションで分かりやすく説明した。
-- 落ち物では珍しく、惑星ごとにブロックの形、フィールド幅、飛ぶ特性、音楽・効果音を全部変え、操作感を変えた。キャラ立ちがあり、素材集めで他の惑星が解放される。
-- 反省: 処理負荷対策のため想定のバランスにならず、バグも残ったままリリースされた。
+## 074 Meteos [Game Concepts]
+- Falling blocks create risk as the stack rises. Matching blocks and clearing them together provides relief.
+- Meteos reworked this by making matched blocks generate thrust and launch. That made room for techniques such as vertical and horizontal setups and docking in midair.
+- Knowing how a genre creates risk and reward can help you design in it even when it is unfamiliar. Animated PowerPoint slides explained the proposal.
+- Planets vary block shapes, field width, launch characteristics, music, and sound effects, giving each a distinct feel. Players can collect materials to unlock more planets.
+- Performance changes altered the intended balance, and the game shipped with some bugs still present.
 
-## 092 そだてて!甲虫王者ムシキング【企画コンセプト】
-- 既存ヒット作の駆け引き（じゃんけん）に育成を組み合わせた小規模LSIゲーム。育成要素があると強弱の差が出るので、対戦が破綻しないよう注意。
-- 「育てている感」のため、餌をゆっくり噛む表現など情緒に気を配る。なつき度・好物・病気・特訓など小さくても多様な要素を入れ、隠し仕様（無理に起こすと早寝早起きになる等）も仕込んだ。
-- 反省：開発基板と製品機で処理速度が違い、腹減りが想定より早くなりストレス仕様になった。実機で試せる時期が遅いと起きる。
-- 遠隔でのやり取り（メール・ネット）中心でも完成できた。
+## 092 Sodatete! Kouchuu Ouja Mushiking [Game Concepts]
+- The small hardware game adds raising a beetle to the hit arcade game’s rock-paper-scissors decisions. Account for training advantages so they do not overwhelm matches.
+- Slow chewing helped create the feeling of caring for a creature. The design also included affection, favorite foods, sickness, training, and hidden behaviors. For example, waking a beetle forcibly could shift its sleeping and waking times earlier.
+- The retail hardware ran faster than the dev board, so beetles got hungry too soon. Test on final hardware early enough to respond.
+- The team finished the project while communicating mostly by email and online.
 
-## 108 大乱闘スマッシュブラザーズX【企画コンセプト】
-- 大きな柱は「オンライン対応」と「長く遊べる一人用モード」。オンライン対戦はスマブラと相性が悪いと感じても、課題として決まったなら技術面を悩み過ぎずやり切る。
-- 対戦だけだったゲームに一人用（シナリオ・マップ・エンディング）を足すとほぼ別ゲー1本分の工数になる。外注先が見つからず内製になった。ファイター数を増やすと調整量はその倍になる。
-- 見せ場を増やす要素（最後の切りふだ、アシストフィギュア、曲セレクト）は、手間はかかるがキャラ性を引き立てる。他社キャラでも、原作感とゲームシステムの狭間を探る手順は自社キャラと同じ。
-- 前作は速度と操作難度が高く、カジュアル層には厳しすぎた。ハードの客層とオンラインの遅延も考え、スピードを抑えカジュアル寄りに調整した。ターゲット層に合わせて難度を決める。
-- バランス調整用にテストプレイヤーを初導入。
+## 108 Super Smash Bros. Brawl [Game Concepts]
+- Online play and a substantial single-player mode were the main priorities. The team committed to online play even though Sakurai had reservations about how it would fit the game.
+- A solo campaign with scenarios, maps, and an ending can cost nearly as much as another game. The team built it in-house after failing to find a partner. More fighters also increased the tuning load.
+- Final Smashes, Assist Trophies, and song selection take work and bring out the game’s character. For guest fighters, balance faithfulness to their original games with Smash’s mechanics.
+- Melee was fast and demanding for casual players. Brawl lowered the pace to account for its audience and online latency.
+- The team brought in dedicated playtesters for balance work for the first time.
 
-## 124 新･光神話パルテナの鏡【企画コンセプト】
-- 3DS向けに「他が担うカジュアル路線の逆」として、骨太でゲーマーも満足するTPSを選択。裸眼立体視を活かすため奥行きの出るジャンルにした。既存ジャンルはセオリーで固まっているので、スマブラの時のように新しい見せ方（タッチ操作など）を探る。
-- 既存キャラ（パルテナ）は企画との親和性で後から選ぶ。企画書の最後に載せる程度の位置づけ。
-- 初心者にTPSは「避ける・狙う・撃つ」が一気に来て難しい。まずレールシューターの空中戦から入り、決まった時間・コースで音楽展開を場面に合わせる。
-- 携帯機で画面が小さいので敵を大きく作る（雑魚でも主人公の4〜5倍）。弾き入力をダッシュ・緊急回避に割り当て、攻撃ボタンは距離で射撃・打撃を自動切替。エイムはタッチパネルをトラックボールのように使う。
-- シナリオは原則ゲーム中の会話（ラジオ感覚）にし、カットシーンやデモを避ける。ゲームの仕掛けと表裏一体にするため企画側が書く。原作の雰囲気（コミカル）に合わせる。
-- 武器（神器）108種を、単なる強弱でなくキャラのように性質差をつけ、「鉄板の1つしか出てこない」状況を避ける。持ち込み要素は上限を決めて枠に詰める形にする。
-- 難航の原因：開発中ハードの性能が不安定なこと、寄せ集めチームでやり方が合わないこと。
+## 124 Kid Icarus: Uprising [Game Concepts]
+- A substantial third-person shooter offered a different direction on 3DS and used stereoscopic depth. The team looked for a fresh take on the genre through ideas such as touch controls.
+- The team picked the Kid Icarus setting after developing the concept. The proposal introduced the choice at the end.
+- Dodging, aiming, and firing at the same time can be hard for beginners. An opening on-rails air battle provided a fixed route and timing for matching music to the scene.
+- Make enemies easy to see on a handheld screen. Even basic enemies could be four to five times Pit’s size. A quick input triggers dashing or dodging, the attack button changes between shots and melee with range, and touch aiming works like a trackball.
+- Use radio-style dialogue during play to keep the story closely tied to gameplay. Match the comic tone of the original.
+- Give the 108 weapons distinct roles instead of letting one obvious choice dominate. Cap how much power players can bring into a match.
+- Unfinished hardware performance and different production practices on a newly assembled team made development difficult.
 
-## 134 大乱闘スマッシュブラザーズ for 3DS / Wii U【企画コンセプト】
-- 携帯機と据え置き機の同時開発は、システム・モーション・バランスを共有すれば手間が2倍にならないと見込んだ。性能の低い側（3DS）に合わせて、吹っ飛び速度を抑えるなどの調整が要る。
-- 機種ごとに固有のモードを用意して個性を出す（3DS=フィールドスマッシュ、Wii U=ワールドスマッシュ）。強さを変動できる仕組みを入れると、カスタマイズやamiiboの育成など遊びの幅が増える。
-- パラメータ調整を作者ひとりの属人作業から、複数プランナーに任せる体制へ移した。ノウハウを共有すれば効率が上がる。
-- 3DSでも60fpsを保つことを必須条件にし、そのために切り詰めた。オンライン更新でDLCや調整ができるのは大きな利点。
-- 発表用の参戦ムービーはエンタメ性のある告知手段になり、好評で以後も続いた。
+## 134 Super Smash Bros. for 3DS / Wii U [Game Concepts]
+- Sharing systems, animations, and balance work kept simultaneous development on two platforms from requiring twice the effort. The lower-powered 3DS still needed adjustments such as reduced launch speed.
+- The 3DS had Smash Run and Wii U had Smash Tour. Custom moves and amiibo training provided ways to vary power and broaden play.
+- Multiple designers took over parameter tuning that one person previously handled. Sharing techniques improved efficiency.
+- Maintaining 60 fps on 3DS was a requirement, so the team trimmed work to meet it. Online updates made tuning and DLC possible.
+- Fighter reveal trailers made announcements entertaining and became a recurring format.
 
-## 158 大乱闘スマッシュブラザーズSPECIAL【企画コンセプト】
-- コンセプトは一言で言い切れるほど明確に（「全員参戦」）。前作とチーム・開発環境が同じだったから実現できた。可能性があるのは今だけと判断して無理を通した。
-- 企画書は前作の最終発表の日に完成させる。スタッフに空白期間を作らないため、責任者が真っ先に動く。企画書は200ページ超で、新規要素と調整点を列挙。ボツ案も書く。
-- キャラごとの調整項目を70〜100項目洗い出す（絵・音・技・モーション）。テンポは「熟練者に刺激的で、初心者がぎりぎり付いていける線」を狙う。パラメータは前作から流用せず毎回練り直す。
-- ROM容量が半減した時は、圧縮技術やDLC化で対処。ボリュームが爆発するゲームでは、できないこと（専用ステージ、雑魚敵、カスタマイズ系）を割り切り、既存資産で遊びを作る（スピリッツ）。
-- 発売後のDLCも開発期間は本体並み（3年）。在宅移行でテスト・意思疎通が難しくなった。拡大路線は限界に達する。
+## 158 Super Smash Bros. Ultimate [Game Concepts]
+- “Everyone is here!” captured the concept. Carrying over the team and development environment made it possible to bring the entire roster back.
+- Sakurai completed the proposal on the day of the previous game’s final presentation. Getting ahead kept staff from waiting for work. The 200-plus pages laid out new features, adjustments, and proposals.
+- The team identified 70–100 changes per fighter across visuals, audio, moves, and animation. It retuned parameters to find a pace that excited experienced players while still giving beginners a chance.
+- With half the available ROM capacity, use compression and DLC where appropriate. Cut features that cannot fit the scope, such as dedicated stages, minor enemies, and customization, and find new uses for existing assets, as with Spirits.
+- Post-launch DLC took three years, as long as the base game. Remote work made testing and communication harder. The approach of expanding every installment was reaching its limit.

@@ -1,167 +1,167 @@
-# ゲーム性（リスクとリターン・駆け引き・難易度・報酬）
+# Game essence (risk and reward, strategy, difficulty, rewards)
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 006 リスクとリターン【ゲーム性】
-- ゲーム性＝駆け引き＝リスクとリターン。リスクを負うことでリターンを得る可能性が生まれる構造が面白さの本質。攻略は「リスクを抑えてリターンを得る」こと（システム側が駆け引き、プレイヤー側が攻略）。
-- 例（インベーダー）：敵に近づくほど被弾リスクが上がり、同時に倒せるリターンも得られる。攻撃範囲は敵の横移動で斜めになるため、追うより迎え撃つ方が同じリスクで当てやすい、という攻略が生まれる。
-- リスクを変える仕組み（トーチカで隠れる、斜め撃ち、弾数制限など）が駆け引きの肝。ただ全方向に撃てるのは派手だが駆け引きが薄い。
-- 例（マリオ）：敵に近づくほどリスク増、ジャンプ踏みで初めてリターン。空中の不自由さがスリルを増す。リスクとリターンは近い位置に適切な大きさで置く。
-- 注意：ゲーム性は面白さの一側面。ゲーム性が上がると一般性（誰でも遊べる度合い）は下がる傾向がある。
+## 006 Risk and Reward [Game Essence]
+- Game essence comes from risk and reward. Taking a risk creates a chance to earn a payoff. The system creates the tradeoff, and the player finds a way to manage the risk and collect the reward.
+- In Space Invaders, approaching enemies raises the risk of being hit and improves your chances of taking them out. Their sideways movement creates a diagonal firing window. Meeting an approaching enemy can make the shot easier at the same level of risk.
+- Mechanics such as cover, diagonal shots, and limits on ammunition change the risk and create decisions. Shooting in all directions can look exciting while offering few tradeoffs.
+- In Mario, getting close to an enemy is risky, and jumping on it earns the payoff. Limited control in the air adds tension. Keep the risk and reward close together and proportional.
+- Game essence is one source of fun. Adding more of it tends to narrow the audience.
 
-## 009 ギュッとしてパッと解消【ゲーム性】
-- 面白さは「ストレスをかけて解消する」構造から来る。ストレス（敵・障害・謎）は消さずに与え、クリアで気持ちよく解消させる。
-- 解消の際は経験値・スキル・お金など数字や成長のご褒美につなげ、さらに選択の幅（何に使うか）を持たせるとゲーム性が上がる。
-- 他作の真似ではなく、その要素が元々何のためにあるかを考え直すと新しいゲームになる。
+## 009 Squeeze and Release [Game Essence]
+- Enemies, obstacles, and mysteries create tension. Clearing them provides a satisfying release.
+- Tie the release to growth or a reward such as XP, skills, or money. Let players choose how to spend what they earned to add strategic depth.
+- Revisit what an element does for the experience. Understanding its purpose makes it possible to build something original.
 
-## 015 RPGのゲーム性【ゲーム性】
-- 奥へ進むほど敵が強くなる危険地帯と、それ以上のリターン（戦利品）、失う物が増える帰還の緊張でリスクとリターンが成立する。常に安全に戻れるタイプは戦闘ミス確率などで調整してヒリつきを出せる。
-- 戦闘：敵の見た目や性質から当たりをつけ、試して成功したら経験にする→弱点を突いて同じ戦力でより良い結果を出すのが攻略。
-- プレイヤーが考えてくれるとは限らないので、弱点を突くと連続攻撃できる（ペルソナ型）など、システム側で促すのも手。
+## 015 Game Essence in Role-Playing Games [Game Essence]
+- The deeper you go into a dangerous area, the tougher the enemies and the better the loot. Returning becomes tense when you have more to lose. If returning is always safe, combat uncertainties such as the chance of missing can restore some tension.
+- Read an enemy’s appearance and behavior, test a hypothesis, and learn from the result. Exploiting a weakness gives better results with the same resources.
+- Encourage players to look for weaknesses. In Persona, hitting a weak spot opens up another attack.
 
-## 026 ゲーム性以外の面白さ【ゲーム性】
-- ゲーム性（駆け引き）はゲームの面白さの一部。それ以外の面白さを持つ7種類：
-  1. 操作が楽しいもの（適切な仕様と操作感の調整が必要）
-  2. アドベンチャー／ノベル（物語を進める面白さ。小説と違う表現・システムを活かす）
-  3. ムービー・ストーリー重視（ジャンル問わず付けられ、先に進みたい欲求がリスクに立ち向かう動機になる）
-  4. 版権・キャラクターもの（ファン向け。作品世界を楽しませられるかが重要）
-  5. 実在の再現・シミュレーション（扉の開閉音や足音などの効果音少数でも、画面外の世界を感じさせられる）
-  6. クラフト系（リスクとリターン、例えば高所から落ちたら死ぬ、防衛、危険を冒して素材を得る、を絡めると飛躍的に面白くなる）
-  7. 音ゲー（リズムに乗る原始的な喜び。パーフェクトから離れるほど急に悪くなる設計だと駆け引きが生まれる。ゆるい判定だと薄まる）
-- 境界は曖昧でつながっている。自分が楽しいと感じる要素に敏感になり、噛み砕けると作れる幅が広がる。
+## 026 Fun Beyond Game Essence [Game Essence]
+- Strategic tradeoffs are one source of fun. Seven other sources include the following.
+  1. Satisfying controls, supported by good specifications and careful tuning.
+  2. Adventure games and visual novels, where progress through the story is enjoyable and the format offers possibilities prose fiction cannot.
+  3. Cutscenes and story, which can motivate players of any genre to take risks so they can see what happens next.
+  4. Licensed worlds and characters, which let fans spend time in a setting they enjoy.
+  5. Simulating something real. Even footsteps and the sound of a door can suggest a world beyond the screen.
+  6. Crafting, where hazards such as falling, defending a base, and risking danger to gather materials add depth.
+  7. Rhythm games, which tap into the pleasure of moving to a beat. Punishing deviations from perfect timing creates tradeoffs, while lenient scoring reduces them.
+- These sources can overlap. Pay attention to what you enjoy and figure out how each element works to broaden what you can make.
 
-## 041 悪魔の窯【ゲーム性】
-- 難易度選択の代わりに、ステージ開始時に所持金（ハート）を賭けて「本気度」を上げ下げする仕組み。上げるほど敵が強くなるが報酬も増え、ミスすると賭け金が減り難易度が下がる。下げたければ金を払えば最低0.0まで下げられる。
-- 利点：リスクとリターンが明確、やられれば勝手に難易度が下がり行き詰まりにくい、「イージーにしますか」と聞かれる屈辱がない、イージーのまま手応えなしで進むことも防げる。
-- 欠点：常にギリギリを突きつけられ手触りがハードになりカジュアルさが落ちる。「本気度を下げれば楽になる」という周知が足りず、初心者導入が弱かった。
-- 現代は自由に難易度を変えられるのが当然だが、うまいプレイを称えたい気持ちとの両立を考える。
+## 041 The Fiend's Cauldron [Game Essence]
+- At the start of a Kid Icarus: Uprising stage, players wager hearts to raise or lower the Intensity. Higher Intensity means tougher enemies and better rewards. A loss costs part of the wager and lowers the difficulty. Players can pay to lower Intensity as far as 0.0.
+- The stakes are clear, losses automatically reduce difficulty, and players avoid being asked whether they want Easy mode. There is also an incentive to try a more rewarding challenge.
+- The system keeps players near their limits and can feel demanding. The game could have done more to teach beginners that lowering Intensity makes it easier.
+- Let players change difficulty freely and think about how to recognize skillful play at the same time.
 
-## 048 ズルを許す【ゲーム性】
-- 攻略とは、プレイヤーが損をせず目的を達成する遊び（損を減らす、あるいは何かを犠牲に別を伸ばす）。多くのジャンルに当てはまる。
-- ゲームは複雑なので、一方的に得をする「ズル」（ダークソウルの自滅ポイント、ドラクエのメタルスライム狩り、リセットチャレンジ）が生じる。デバッグで全部潰さず、ゲーム内でできる範囲は許容した方が印象に残り楽しい。
-- パラメータ書き換えのような外部改変は論外。完全に平坦な道は面白くない。
+## 048 Let Players Cheat the System [Game Essence]
+- A strategy helps a player accomplish a goal while limiting losses or knowingly giving up one thing to gain another.
+- Complex games produce clever shortcuts such as enemy self-destruction spots in Dark Souls, Metal Slime farming in Dragon Quest, or retrying by resetting. Some legitimate in-game tricks make play more memorable, so leave room for them during testing.
+- This applies to what the game itself lets players do. External changes such as editing parameters fall outside the idea.
 
-## 065 浮遊感は落ちてこそ生まれる【ゲーム性】
-- ある気持ちよさを出したい時は、それと相反する要素を一緒に入れる。飛ぶゲームなら落ちる、高速なら遅くなる条件。
-- 例: エースコンバットの橋の下をくぐると気持ちいいのは、ぶつかればアウトのリスクがあるから。何もぶつからない宇宙空間のフライトは、気持ちよさをまとめにくい。
-- 空中の爽快感には、地上や地形との関係を正しく作る。エアライドは地形の段差で踏み切ると飛び、踏切点を探す遊びや飛べない機体との混在で飛ぶ気持ちよさを深めた。
-- リスクとリターンは表裏一体。攻撃と被弾をセットにする、が基本。
+## 065 Falling Sells the Feeling of Flight [Game Essence]
+- Pair the feeling you want with something that brings it into focus. A flying game needs the possibility of falling, and fast movement needs conditions that slow it down.
+- Flying under a bridge in Ace Combat is satisfying because a collision would end the run. Achieving the same feeling in empty space is harder.
+- Build flight around its relationship to the ground. In Kirby Air Ride, changes in elevation create takeoff points to hunt for, and sharing the track with machines that cannot fly makes flight feel special.
+- Pair opportunities with risks, such as landing an attack and exposing yourself to a hit.
 
-## 071 はたして敵は必要なのか【ゲーム性】
-- 多くのゲームは「ストレスをかけて解放する」ことで楽しませる。障害（敵）はストレスで、排除（解消）、報酬や経験による強化（成長）、先へ進む（進展）が楽しみになる。
-- 最初のストレスがないと他3つは成り立ちにくいので、障害は必要。ただし敵である必要はない。
-- 例: アンダーテールは倒さなくてもクリアできるが、別のストレスがある。アドベンチャーの主人公の危機、資源の支払いと貯め込みもストレスと解消の形。
-- 結論: 敵に当たるストレスと解消は必要。進展と成長を積極的に取り入れる設計にする。
+## 071 Do We Really Need Enemies? [Game Essence]
+- Obstacles create tension. Removing them provides release, rewards and experience provide growth, and getting past them provides progress.
+- Those payoffs need an initial obstacle. It can take many forms besides enemies.
+- Undertale can be cleared without killing, and it still creates tension. The protagonist of an adventure can face a crisis. Spending and accumulating resources can play a similar role.
+- Design the tension and its release, and build in progress and growth.
 
-## 075 ごほうび要素はまっ先に【ゲーム性】
-- 敵を倒すゲームでは、撃破やクリア時の報酬（お金、経験値、スキルポイントなど）は不可欠。ご褒美はゲームを進める欲求の源なので、骨組みができたら真っ先に考える。
-- 数値の報酬は消費とセットで、消費して得る物に魅力が必要。素材を集めて何かを作る形は、作る物の必要度が高いほど有効。コレクションやキャラ・装備の解放もある。
-- 集める作業が延々と続くと嫌になることもあるので量に注意。ただし重要な要素。
-- 例: スマブラSPのスピリッツが最初から全部揃っていたら喜びがない。
+## 075 Consider Rewards First [Game Essence]
+- Defeating enemies or clearing stages should pay off in money, XP, skill points, or something similar. The payoff motivates progress, so decide on rewards as soon as the basic game is in place.
+- Give numerical rewards something appealing to buy. Gathering materials works best when players want the thing they can craft. Collections and unlockable characters or equipment are other options.
+- Keep the amount of collection work reasonable so a good reward does not become a grind.
+- Collecting Spirits in Super Smash Bros. Ultimate is satisfying because the player has a collection to build.
 
-## 082 対戦は複雑になるもの?【ゲーム性】
-- 対戦ゲームは要素を足すほど駆け引きが生まれる。パンチ1種は連打だけ、歩きで間合い、隙の違うキックで読み合いが生じる。
-- 何百回も遊ばれるものには相応のシステムの深さが必要。ただし広く浅く遊べることとの両立は難しい。
-- 駆け引きを生まないのに複雑なルールは起こりうる。作り慣れると当然に感じるので、開発開始のたびにルールを見直す。
+## 082 Do Competitive Games Have to Be Complex? [Game Essence]
+- Adding elements can create more decisions. One punch invites button mashing. Walking introduces spacing, and kicks with different recovery times reward reading the opponent.
+- A game people will play hundreds of times needs depth. That can make it harder to welcome a broad, casual audience.
+- Complicated rules sometimes add very few decisions. Review them at the start of each project, when a familiar rule is easiest to question.
 
-## 086 落ちものパズルのゲーム性【ゲーム性】
-- ジグソーやペントミノのように「リスクとリターン」がなければゲーム性は生まれない（達成感だけ）。
-- テトリスのリスクは積み上がること、リターンは消してリスクを下げる爽快感。まとめ消しほど気持ちいい、落下速度上昇はリスク増の刺激、接地後の回転や移動で粘れるのもリスクを引きつける要素。
-- 「ブロックが消える」から企画せず、「消すことがなぜ面白いか」を考える。ゲーム性が生じる原理を理解していれば苦手なジャンルでも短時間で企画できる（メテオスは5分）。
+## 086 Game Essence in Falling-Block Puzzle Games [Game Essence]
+- A jigsaw or pentomino puzzle can provide a sense of accomplishment without the risk-and-reward dynamics Sakurai calls game essence.
+- In Tetris, a growing stack creates risk and a line clear provides relief. Multiple clears at once feel better. Faster drops raise the stakes, and moving or rotating a piece after it touches down lets players push their luck.
+- Ask why removing the blocks is satisfying. Understanding the underlying appeal can make design fast even in an unfamiliar genre. Sakurai says the concept for Meteos took five minutes.
 
-## 097 やられるとスッキリする?【ゲーム性】
-- 対戦FPSで倒された側が安心する、という研究がある。ストレスからの開放感がある。
-- 理由の仮説：キャラに感情移入していない／リスタートが早く尾を引かない／倒すこと自体が目的ではなく最終目的は勝利で、倒した側も油断できない。
-- 勝っても負けても面白い状態が娯楽として最高。負けて悔しくても次をやりたくなるよう、リトライの導線まで考える。対戦＝制圧の快感とは限らない。
+## 097 Dying Comes as a Relief? [Game Essence]
+- Sakurai cites research suggesting that getting killed in a competitive FPS can briefly relieve stress.
+- Possible explanations include limited attachment to the avatar, a quick respawn, and a team goal that matters more than an individual kill. The player who got the kill still has to stay alert.
+- Aim for matches that are enjoyable on either side of the result. Give frustrated players an easy path to another try.
 
-## 105 単調な坂は山登りにならない【ゲーム性】
-- 自キャラの強さと敵の強さを正比例の一直線にしない。単調な坂の山登りは作業になる。
-- 難関（ボス等）と平地を交互に作って凸凹にする。ボスは「周りより強い」からではなく「攻略を考えさせる困難」として置き、クリアに相応の報酬を出す。
-- 敵のいない空間、稼げる場所を適切に置く。自由度が高いゲームで自キャラに合わせて敵を強くする方式にすると、成長の意味が消えるので避け、攻略の余地を残す。
+## 105 Mountain Climbing Is More Than Just Climbing [Game Essence]
+- Player strength and enemy strength need not grow in lockstep. A steady climb soon feels like work.
+- Alternate demanding challenges with easier stretches. A boss should make players think about how to win and offer a reward that matches the effort.
+- Leave room to breathe and places to earn resources. Scaling opponents directly with the player can erase the payoff of progression. Preserve multiple ways to approach a challenge.
 
-## 116 リトライは迅速に【ゲーム性】
-- ミス後の再開はなるべく迅速に。やられてから操作できるまでの時間にプレイヤーは急速に冷めるため、冷める前に操作を返せば再挑戦してもらえる。ペナルティの重さより再開の速さのほうが投げ出しやすさに効く。
-- 「やられた」と思わせる演出は短く派手に（ジャンルによるが1秒〜数秒）、ロードも短く。メッセージ送りだけでも操作を返すことになる。
-- ただし即復活の無限ループで何も考えずクリアできる状態は避ける。復活直後に敵が襲ってくる、操作前に勝手にやられ続ける状態もNG。
+## 116 Make Retries Quick [Game Essence]
+- Restore control quickly after a loss. Interest can fade in the gap between defeat and the next attempt. Time to retry matters more to players’ willingness to continue than the size of the penalty.
+- Use a brief, punchy defeat sequence, from one to several seconds depending on the genre. Cut loading time and consider restoring control once a player dismisses the message.
+- Avoid letting repeated instant respawns trivialize a challenge. Give revived players enough time to act before they can be hit again.
 
-## 127 やり直しに見合う魅力はあるか？【ゲーム性】
-- 「ミスしたらやり直し」型（ローグライク・ローグライト）は同じ内容を繰り返すためリソースの少ないインディーに向くが、プレイヤーは同じものを延々遊びたいわけではない。
-- 先に進む動機は「先を見たい」こと。そのために先への期待（変化・魅力）を見せ続ける必要がある。システムだけ真似て動機づけがないと続けてもらえない。
-- 詰まる人が想定より多い場合、彼らが見る景色は同じものばかりになる。自分が何とかクリアできる難度で良しとせず、どこまで魅力を提供できるか、同じ場所で何度も死ぬ状況を想定する。
+## 127 Is Your Game Appealing Enough to Start Over? [Game Essence]
+- Roguelikes and roguelites stretch a small content budget through retries. Players still need a reason to revisit the same content.
+- Tease changes and appealing discoveries ahead to keep players curious about the next run.
+- Playtest what happens when people die repeatedly in the same spot. Even if developers can clear it, consider how much variety and anticipation a stuck player sees.
 
-## 133 シューティングゲームのゲーム性【ゲーム性】
-- 面白い駆け引きは「リスクを取ってリターンを得る」構造から生まれる。何でも簡単に倒せる設計は爽快でも駆け引きが生まれにくい。
-- 例: ダライアスは弾数が少ない代わりに、敵に近づくほど連射できる（近づくリスクで火力が上がる）。グラディウスは、地形の近くの敵がリスクになり、倒せばリターンになる。
-- 武器に長所と短所をセットで持たせる（ダブルは上の敵に強いが連射が効かず前方が弱い）。どのデメリットでどのメリットを得るかを設計する。
-- ゲーム性を上げすぎると派手さが失われ面倒にもなる。他作の真似でなく「なぜ面白いのか」を考えて作る。
+## 133 Game Essence in Shooting Games [Game Essence]
+- Interesting tactics are born from the structure of "taking risks and getting returns." Although it is refreshing to have a design that allows you to easily defeat anything, it is difficult to create tactics.
+- In Darius, the limited number of shots in flight means you can fire faster at point-blank range. More firepower comes with the risk of closing in. In Gradius, enemies near the terrain create risks and rewards around that terrain.
+- Give weapons distinct strengths and weaknesses. The Double in Gradius shoots upward, with weaker forward fire and limited rapid firing.
+- If you increase the gameplay too much, it loses its flashiness and becomes troublesome. Don't try to imitate other works, but think about why it's interesting.
 
-## 146 ゲーム性を上げると、一般性が下がる【ゲーム性】
-- リスクとリターンはおおむね比例する。リスクを下げるとリターンも下がり、スリルが薄れる。逆にゲーム性を上げすぎると、ルールが複雑になり、一般の人には遊びにくくなる。
-- マリオはリスクとリターンが近く（敵に接近→反撃）て面白いが、初心者には難しい。初代カービィは、吸い込み・体力制・飛行でリスクを下げ、初心者向けにした代わりにスリルは薄い。
-- 経験者には小さいリスクでも、慣れていない人には大きなリスクになる。ターゲットを決め、狙いに合わせてバランスを決める。正解はない。
+## 146 More Game Essence Means Less Broad Appeal [Game Essence]
+- Risk and reward are usually proportional. Lowering the stakes reduces the thrill, while too much complexity can make a game difficult to approach.
+- Mario pairs the danger of approaching an enemy with the reward of stomping it. The original Kirby lowered the stakes through inhaling enemies, a health system, and flight. It was easier for beginners, with less tension.
+- The risk may be small for experienced users, but it becomes a big risk for inexperienced users. Decide on a target and balance accordingly. There is no right answer.
 
-## 157 昇龍拳コマンド【ゲーム性】
-- 入力コマンドはリスクとリターンの設計として作る。昇龍拳は「前→下→斜め前」で防御できない最大のピンチ姿勢から出るので、出せた時の見返り（出だし無敵・近いほど有利）が大きい。
-- 難しさ、入力に要する時間、相手の攻撃速度、空振り時の隙を合わせてバランスを取ると駆け引きが生まれる。
-- リスクが大きい技ほどリターンも大きくする。
-- 同じ技でも、ワンボタン版は弱め、コマンド版は優遇、とすれば初心者の手軽さと上級者の格差を両立できる（スマブラのリュウ）。コマンド必須にすると難しくなりすぎる。
+## 157 The Shoryuken Command [Game Essence]
+- The Shoryuken’s forward → down → down-forward input leaves the player unable to block while entering it. The payoff is startup invincibility and a strong close-range move.
+- Balance execution difficulty and input time against opposing attack speed and the recovery on a whiff.
+- The greater the risk, the greater the return.
+- As with Ryu in Smash Bros., offer an easy button input with a weaker result and a stronger version for players who enter the full command.
 
-## 168 ランキングの功罪【ゲーム性】
-- 良い点: 目的意識を持たせる。マッチングの指標になる。悪い点: 1位以外は永遠に達成感が得られず、「10000位」と表示されても意欲が出ない。
-- 対策（スマブラの世界戦闘力）: 順位ではなく、母数（全プレイ人口）の中での強さを数値化し、高いほど良い形にする。上位の一部を見せなくでき、チートの異常値も自然に除外できる。
-- VIPルームで上位者に特別感を与えつつ、上位者同士で対戦させて初心者への流入を防ぐ。
-- マッチングは幅を狭めると成立せず、広げると実力差が出る。人口の少ない地域に配慮する。
+## 168 The Pros and Cons of Leaderboards [Game Essence]
+- Leaderboards give players a goal and help match opponents. A display of 10,000th place offers little sense of achievement to most players.
+- Global Smash Power expresses how many players you rank above, so a higher number is better. The system can hide some top results and filter out outliers caused by cheating.
+- An exclusive matchmaking pool such as Elite Smash recognizes strong players and matches them against each other, keeping their matches away from beginners.
+- Narrow matchmaking ranges make it hard to find a match. Wide ranges can pair players of very different ability. Account for regions with small player pools.
 
-## 176 遊びって、何？【ゲーム性】
-- ロジェ・カイヨワ『遊びと人間』の4要素: アゴン（競争）、アレア（偶然）、ミミクリ（模倣）、イリンクス（めまい・生理的快感）。要素に分解して設計を点検できる。
-- 例: アレアは偶然出たアイテムが勝敗を分ける仕様、ミミクリは硬そうな床や大振りの技で「痛そう」と伝える情報量、イリンクスは相手を気持ちよく吹き飛ばす爽快感や落下の恐怖。
-- 自作の「駆け引き」は主にアゴン。必殺の一手が勝敗を分けるものを指す。遊びは活力を得る訓練であり、癒しでもある。
+## 176 What is “Play”? [Game Essence]
+- Roger Caillois’s Man, Play and Games defines four categories. Agon is competition, alea is chance, mimicry is imitation, and ilinx is vertigo or a physical thrill. Use them to examine what a design offers.
+- A lucky item deciding a match is alea. A hard-looking floor or a heavy swing that conveys pain is mimicry. The exhilaration of launching an opponent, or the fear of falling, is ilinx.
+- Sakurai’s strategic tradeoffs mostly fall under agon, where one decisive move can determine a result. Play builds vitality and can also restore it.
 
-## 186 キャラゲームはらしさが第一【ゲーム性】
-- キャラ物・版権物が面白くなりにくいのは、原作がゲームデザインの縛りになるため（設定改変不可、ストーリーはネタバレ済み、物語とゲームの見せ方の違い）。
-- 原作の設定がゲームの核と噛み合う幸運な例（女神転生の悪魔召喚）もある。
-- キャラゲームで最優先なのは「原作らしさ」とファンの「好き」に応えること。商品群（漫画・アニメ・フィギュア）の一形態として適切な時期に出すことも求められ、駆け引きの正しさや純粋な面白さは優先度が下がる。
-- 原作に既存の振る舞いが少ないキャラは、技を自由に設計しやすい。
+## 186 Faithfulness Comes First in Licensed Games [Game Essence]
+- Licensed game design has constraints. Established details can be hard to change, fans may already know the story, and games tell stories differently from other media.
+- Sometimes the source material fits the core mechanic, as with summoning demons in Megami Tensei.
+- Prioritize what fans love and what makes the property recognizable. A game may also need to launch alongside manga, anime, or figures. Those goals can take priority over mechanical depth.
+- When the original gives a character few established actions, there is more freedom to design their moves.
 
-## 191 アクションゲームのゲーム性【ゲーム性】
-- ゲーム性＝リスクを負ってリターンを得ること。アクションの各要素は危険とチャンスが表裏一体になるよう設計する。
-- ジャンプ：崖際ギリギリほど遠くへ跳べるが落ちやすい。ダッシュ：速いが制御しにくい・隙・スタミナ消費。近接攻撃：当たる距離は被弾距離でもある。射撃：一方的に撃てるが弾数制限と撃ち返される位置取りのリスク。
-- 回避：寸前で避けると得だが動きが不自由になる。パリィ等はリスクを高いリターンに変える発展形。隠れる：安全だが攻撃できずリターンも減る。
-- 各アクションの意味（何のリスクが何のリターンか）を意識して設計すると面白くできる。
+## 191 Game Essence in Action Games [Game Essence]
+- Design actions so their opportunities come with risks.
+- A jump launched at the very edge goes farther and is more likely to fail. A dash gains speed at the cost of control, recovery, or stamina. Melee puts you within striking range, and ranged attacks bring ammo limits and a risk of return fire.
+- A last-moment dodge pays off and can limit movement. Parries turn that risk into a larger reward. Cover gives safety at the cost of opportunities to attack.
+- Define the risk and reward of each action when deciding what it should do.
 
-## 201 作業ゲームを面白くするには【ゲーム性】
-- 駆け引きが無くても面白いゲームはある（メカ整備、クリッカー、リフォーム、高圧洗浄）。共通点：現実の何かがモチーフ、お金が儲かる、黙々とやってしまう。
-- 現実モチーフは情報量を増やし、終わり（きれいになる、片付く）のイメージが意欲を生む。
-- 稼ぎ→作業を楽にする道具やスキルを買う流れが没頭の核で、これが無いと寿命が極端に短くなる。最優先で考える要素。
-- 明確なエンディングが無い場合は、先が見えないほど遠くに割り切る。仕事・儲け・パワーアップのバランスが大事で、遊びの妙が加わると最良。
+## 201 Making "Work" Games Fun [Game Essence]
+- Games about maintenance, clicking, renovation, or pressure washing can be fun with little strategy. They often draw from real activities, let players earn money, and make it easy to lose yourself in the work.
+- A real setting adds a wealth of familiar details. A clear picture of a clean or tidy result gives the work a purpose.
+- Design the central loop early. Players earn money, then buy tools and skills that make the work easier. Without that loop, interest can fade quickly.
+- An endless game needs a far-off horizon. Balance the work, earnings, and upgrades, and look for play in the work itself.
 
-## 211 クリアできないよりマシ【ゲーム性】
-- ゲームは勝敗ギリギリで最も楽しい。ただ、終盤で詰んでクリア不能になるのは最悪。
-- 救済策を用意する。負け続けたら難易度を下げる提案、難所のスキップ、ゲーム中の難易度変更。屈辱感を与えない形にする。
-- 途中で調整できず詰む設計は設計ミス。ヒリヒリ路線を貫くならコンセプトとして割り切る。ユーザーはついてきてくれるとは限らない。
+## 211 Better Than Not Being Able to Beat the Game [Game Essence]
+- A close contest is fun. Getting stuck near the end with no way to finish is frustrating.
+- Offer a lower difficulty after repeated losses, a way to skip a roadblock, or mid-game difficulty changes. Let players use these options without embarrassment.
+- Decide explicitly if a permanently demanding experience is part of the concept. Some players will leave when they hit a wall.
 
-## 217 強制感と攻略バランス【ゲーム性】
-- ボスの攻略法を一本道に固定すると、チュートリアル的な強制感が出て駆け引きが薄くなる。
-- 一方で、攻略法を探して見つける面白さもある。自由攻略型と固定攻略型のどちらが正解ということはないので、狙いを定める。
-- 他作品は表面を真似せず、学んで自分のシステムに合うよう調整する。
+## 217 Mandatory Strategies and Strategic Balance [Game Essence]
+- One required boss solution can feel like a forced tutorial and limit tactical decisions.
+- Discovering a specific solution can be fun too. Decide how open the encounter should be based on the experience you want.
+- Study other games’ solutions and adapt them to your own systems.
 
-## 228 戦略シミュレーションのゲーム性【ゲーム性】
-- 駆け引きの根本は「同じ戦力でぶつけると引き分けになるが、組み合わせと相性で圧勝できる」こと。じゃんけん的な三すくみ（歩兵・戦車・砲兵など）で長所と短所を明確にし、コストで釣り合わせる。
-- 将棋やチェスのように、攻撃範囲や位置取りで駆け引きを作る方式もある。
-- ランダムの回避判定は不公平に感じられやすいので、極力排除しても成立しうる。
-- 性能と相性は遠慮せず極端に突き詰めると、はまった時の気持ちよさが出る。
+## 228 Game Essence in Strategy Games [Game Essence]
+- Equal forces may draw in a direct clash. Combinations and matchups can make the result decisive. Give unit types clear counters and use costs to balance them.
+- Like shogi and chess, there are also methods to create tactics based on attack range and positioning.
+- Random avoidance judgment tends to feel unfair, so it can work even if you eliminate it as much as possible.
+- Push unit differences and counters so that a well-chosen matchup feels rewarding.
 
-## 236 どれぐらい良いことをした？【ゲーム性】
-- 難易度・報酬・ペナルティは「プレイヤーはそれだけ良い（悪い）ことをしたか」で見直す。取り返しのつかない要素には、挽回の労力と釣り合う罰か確認する。
-- 例：弱攻撃（速く隙が小さい）とスマッシュ（遅く隙が大きい）は、リスクの大きい方に見合う威力を持たせる。敵の強さ・倒しにくさに応じてスコアを決める、部位破壊で相手が弱くなる、なども同じ考え方。
-- 整えすぎるとゲームが丸くなり刺激を失う。常識を軽く外す程度に留める（例：逃げる・硬いレア敵に大きな報酬）。
+## 236 How Good Were the Player’s Actions? [Game Essence]
+- Check how much the player actually accomplished or lost when assigning difficulty, rewards, or penalties. For permanent losses, consider what it costs to recover.
+- A quick light attack leaves a small opening. A slower smash attack needs more power to justify the larger opening. Apply the same thinking to scores for hard-to-defeat enemies and to weakening a target by breaking parts.
+- Excessive tuning can make the game bland. A slight exception, such as a large reward for a tough, fleeing rare enemy, can add excitement.
 
-## 245 長所を伸ばし、短所も伸ばす【ゲーム性】
-- バランス調整で「強すぎる所を削り、弱い所を埋める」を繰り返すと、全部が同じ性能に近づき、ゲームが無個性になる。
-- ゲームはでこぼこを良しとし、強みも弱みもあるのが当たり前。ダイナミックレンジはできるだけ大きく持つ。評価が割れる（Aが強い、Bが強い）のは健全。
-- 調整が必要なら、攻撃力は個性として残し、後隙を伸ばす・判定を小さくするなど、発生・持続・後隙・判定・威力など多軸の中から手段を選ぶ。
+## 245 Amplify Both Strengths and Weaknesses [Game Essence]
+- Repeatedly trimming strengths and patching weaknesses pushes everything toward the same performance and washes out identity.
+- Keep substantial differences between options. Players disagreeing over which option is stronger can be a healthy sign.
+- Preserve distinct attack power where possible. Tune startup, active duration, recovery, or hitbox size to bring the move into balance.
 
-## 254 ハンデをつけてバランス調整【ゲーム性】
-- 難しいゲームの調整は簡単（慣れた開発者がギリギリクリアできるようにすればよい）だが、それでは大半の人が最後まで行けずつまらない。
-- 開発者は慣れているので、自分たちを標準と思わず、思ったより下げるくらいがちょうどよい。
-- 慣れた人にも新規の人にも通しプレイは繰り返せないので、開発者側がハンデ（片手プレイ、体力を減らす、条件を厳しくする等）をつけて難易度を体感する。
+## 254 Give Yourself a Handicap When Balancing Your Game [Game Essence]
+- Tuning a game so developers can barely finish it can leave most players unable to reach the end.
+- Developers have extensive practice. Aim a little easier than your first estimate.
+- Repeated fresh playtests take time. Simulate some of the difficulty a newcomer faces by playing one-handed, reducing health, or applying stricter conditions.

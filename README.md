@@ -1,67 +1,68 @@
 # sakurai-skill
 
-YouTube「[桜井政博のゲーム作るには](https://www.youtube.com/@sora_sakurai_jp)」の**全本編257本の字幕**から作った、ゲーム制作の原則をまとめた Agent Skill（Claude Code などで使える `SKILL.md`）です。
+An Agent Skill for game development based on AI summaries of the Japanese captions from **all 257 main episodes** of [Masahiro Sakurai on Creating Games](https://www.youtube.com/@sora_sakurai_jp). You can watch the series on the [official English channel](https://www.youtube.com/@sora_sakurai_en).
 
-ゲームの企画・ゲーム性・難易度・ご褒美・導入・操作感（ヒットストップ、ジャンプ、カメラ）・モーション・エフェクト・グラフィック・UI・サウンド・パラメーター調整・デバッグ・チーム運営・企画書・広報を考えるとき、レビューするとき、「手応えがない」「もっさり」と言われて直すときに使います。
+Use it to design, review, and refine gameplay, difficulty, rewards, onboarding, game feel (hitstop, jumping, camera), animation, effects, graphics, UI, and audio. It also covers parameter tuning, debugging, team management, game proposals, and marketing. It can help diagnose feedback like “the hits feel weak” or “the controls feel sluggish.”
 
-> 非公式のファンメイドです。桜井政博氏・有限会社ソラとは関係ありません。中身は動画の内容を AI が要約したもので、桜井氏の発言そのものではありません。正確な内容は元の動画で確かめてください。
+> This is an unofficial fan project. It has no affiliation with Masahiro Sakurai or Sora Ltd. The skill contains AI-generated summaries. Consult the original videos for Sakurai’s exact wording and context.
 
-## まずは動画で
+## Watch the walkthrough
 
-**[X の紹介ポスト](https://x.com/MvKWt5XpPV36233/status/2120977715864252887)** に、使い方の動画（約100秒）を付けています。このスキルで何ができるか（入れ方・頼み方・手ごたえの足し方・別のAIによるレビュー・レベルデザインの見直しなど）が、作例のゲームと一緒に見られるので、先に見ておくと分かりやすいです。
+The [announcement on X](https://x.com/MvKWt5XpPV36233/status/2120977715864252887) includes a roughly 100-second walkthrough. It uses the example game to show installation, prompting, ways to improve impact feedback, a second AI agent’s review, and a level design pass.
 
-## 入れ方
+## Install
 
 ```bash
-git clone https://github.com/kociden/sakurai-skill.git
+git clone https://github.com/Sairnaq/sakurai-skill.git
+mkdir -p ~/.claude/skills
 cp -r sakurai-skill/skills/sakurai ~/.claude/skills/
 ```
 
-Claude Code では「桜井さんならどうする？」「このゲームの手応えをレビューして」などと頼むと読み込まれます。
+In Claude Code, try “What would Sakurai do?” or “Review this game’s feel.”
 
-## 作例：ハジキ
+## Example game — Hajiki
 
 <img src="examples/hajiki/hajiki_icon.gif" width="160" align="right">
 
-このスキルを読み込んだ AI エージェントが、企画から磨き込み・タイトル・アイコンまで作った Godot 4.6 の一画面アクションです。敵の弾を引きつけるほど強く打ち返せます。
+An AI agent using the skill built this single-screen action game in Godot 4.6, from initial design through polish, title screen, and icon. The closer an enemy projectile gets before you deflect it, the harder it hits on the way back.
 
-- [unityroom で遊ぶ](https://unityroom.com/games/hajiki)
-- [このゲームでスキルのどこを参照したか（動画番号つき）](examples/hajiki/README.md)
+- [Play on unityroom](https://unityroom.com/games/hajiki)
+- [See how the game used the skill, with episode numbers](examples/hajiki/README.md)
 
 <br clear="right">
 
-## 中身
+## Repository layout
 
-```
+```text
 skills/sakurai/
-  SKILL.md            原則の要約（14章）と、レビュー・企画・手応えの直しの手順
-  references/         動画ごとの要点をカテゴリ別に並べたもの（必要なときだけ読む）
+  SKILL.md            14 sections of principles and workflows for design, review, and game feel
+  references/         Episode summaries by topic, intended for selective reading
     gameplay.md  planning.md  concepts.md  specs.md  motion.md  effects.md  graphics.md
     ui.md  sound.md  tech.md  team.md  mindset.md  pr.md  misc.md
 tools/
-  to_text.py          字幕（srv1）を時刻なしの本文にする
-  build_refs.py       要点メモをカテゴリ別の references/ に並べ替える
+  to_text.py          Convert Japanese srv1 captions into plain text without timestamps
+  build_refs.py       Group episode notes into reference files by category
 ```
 
-- `SKILL.md` は約2.7万字。読み込みを軽くするため、具体的な数値・手順・作品例は `references/` に分け、必要なカテゴリだけを読む作りです。
-- 各要点には動画の通し番号（古い順の 001〜259）とタイトルを付けているので、元の動画をたどれます。
+- For specific values, procedures, and examples from published games, open the relevant file in `references/`.
+- Episode numbers and titles identify the source for each summary. The numbers follow the repository’s oldest-first source order (001–259).
 
-## 既存の Sakurai-Skills との違い
+## Related project
 
-同じチャンネルを元にしたスキルに [kokuren333/Sakurai-Skills](https://github.com/kokuren333/Sakurai-Skills) があります（このリポジトリより先に公開されています）。目的は近いですが、作り方と向きが違います。
+[kokuren333/Sakurai-Skills](https://github.com/kokuren333/Sakurai-Skills) is an earlier project based on the same channel.
 
-| | kokuren333/Sakurai-Skills | このリポジトリ |
+| | kokuren333/Sakurai-Skills | This repository |
 |---|---|---|
-| 元にした物 | まとめ動画（雑談を除く）を Gemini が要約した中間メモ。README によると動画との照合はしていない | 全本編257本の自動字幕を直接取得して要約 |
-| 範囲 | 原則177件＋横断原則17件 | 動画257本すべて（雑談回も `misc.md` に収録） |
-| 言語 | 英語が中心（日本語 README あり） | 日本語 |
-| 形 | 24個のタスク別スキル、ルーター、チェックリスト、原則グラフ、lint ルール、テストまで揃った体系的な作り | スキル1つ（SKILL.md＋参照14ファイル）の軽い作り |
-| 出典のたどり方 | SOURCE / GENERALIZED / AGENT の3層で、元メモの記述と解釈を分けて記録 | 要点ごとに動画番号とタイトル |
-| 向いている使い方 | 大きなプロジェクトで、工程ごとのレビューや点検を体系的に回す | 普段の会話で手軽に読み込み、具体的な数値・手順・作品例まで引く |
+| Source material | Gemini summaries of the category compilations, excluding Grab Bag episodes. Its README says the notes were not checked against the videos. | Summaries made directly from automatically generated captions for all 257 main episodes. |
+| Coverage | 177 principles and 17 cross-cutting principles | All 257 main episodes, including Grab Bag episodes in `misc.md` |
+| Language | Primarily English, with a Japanese README | English translation of [the Japanese original](https://github.com/kociden/sakurai-skill) |
+| Structure | 24 task-specific skills, a router, checklists, a principle graph, lint rules, and tests | One skill with 14 reference files |
+| Source tracking | SOURCE, GENERALIZED, and AGENT layers distinguish the source notes from interpretations. | Episode numbers and titles accompany the summaries. |
+| Typical use | Repeatable reviews and checklists across stages of a large project | Quick access during a conversation, including specific values, procedures, and examples |
 
-どちらも AI による要約で、人の目で全部を照合したものではありません。このリポジトリは元が自動字幕なので、聞き取りの誤りが要約に残っている可能性があります。
+Both projects use AI-generated summaries and have not been checked by hand against every video. Automatic captioning errors may carry over into these summaries.
 
-## 注意
+## Notes
 
-- 原則は桜井氏の大作・アクション寄りの経験に基づくので、ジャンルや規模に合わない所はそのまま当てはめず、狙い（遊ぶ人を楽しませること）から読み替える前提で書いています。
-- 誤りや抜けを見つけたら issue で教えてください。
+- Sakurai draws heavily on experience with large productions and action games. Adapt the principles to the project’s genre and scale, with the player’s enjoyment as the deciding factor.
+- Please open an issue if you find an error or omission.

@@ -1,80 +1,80 @@
-# UI（メニュー・文字・HUD・キーコンフィグ・スキップ）
+# UI (menus, text, HUDs, control remapping, skipping)
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 018 わかりやすさとスタイル性【UI】
-- 分かりやすいUIとスタイリッシュなUIは相反しやすい。UIは「引き出し」で、入れるものの量・性質はゲームによって違うので、ゲームごとに目的に合わせて決める（一律に分かりやすい＝良いではない）。
-- 工夫の道具：視線誘導、大きさ、ウィンドウ化による関連付け、輝度・明度、適切なフォント。利便性とスタイルのどちらを優先するかを決め、世界観に合わせる。
+## 018 Clarity vs. Style [UI]
+- A UI organizes whatever the game needs to present. Choose a balance of clarity and style that fits the quantity and kind of information.
+- Guide the eye with sizing, grouped windows, contrast, and typography. Match the presentation to the game’s world and the player’s needs.
 
-## 033 文字の大きさ【UI】
-- 適切な文字サイズは言語で違う。日本語・漢字は1文字の情報量が多く大きめに要り、英語は小さくても読めるが文が長くなる。仏語はさらに長い。
-- 英語前提でテキスト領域に余裕のないレイアウトにしない。文字サイズ選択を付けると丁寧。
-- 携帯機前提なら文字は大きめに組まれるので、必ず実機（携帯モード）で確認する。大きい文字はクールさと引き換え。
+## 033 Text Size [UI]
+- Dense Japanese characters often need larger text. English can be smaller but may occupy more horizontal space, and French can run longer still.
+- Give localized text room to grow and consider a type-size option.
+- Test on actual handheld hardware. Readability may require larger text even if you prefer the look of smaller type.
 
-## 055 いまどきの親切設計【UI】
-- 大作ならオプションは手厚く作る。TLOU Part1のアクセシビリティが手本（色弱対応、ハイコントラスト、HUDサイズ変更、酔い対策など）。
-- 設定は変更結果をプレビューで確認でき、まとめて設定できるプリセットも用意する。
-- 酔い対策: カメラ揺れを抑える、中央表示を使う。ナビ矢印や音の手がかりも、見えない情報を補うので重要。
-- 難易度に直結する項目は一旦ロックして、ひと手間かけさせる設計もあり。
-- キーコンフィグは操作に名前を付けられる、デフォルトに戻せる、長押しで変更して誤操作を防ぐ、横持ち・左右スティック入替に対応する、という細部が親切。
-- 字幕は大きさ・背景・名前の色分け・声の方向表示を変えられるようにする。映像モード（画質優先/性能優先）、明るさ調整の比較表示、ムービー振動のオンオフも有用。
-- 決まった操作自体に価値があった昔と違い、今は多様な人が遊ぶので、好みに合わせて変えられることが必須。
+## 055 Modern Quality of Life Features [UI]
+- For a large project, plan substantial accessibility options. The Last of Us Part I is an example for color-vision settings, high contrast, HUD size, and motion sickness options.
+- Let players preview changes and apply related settings with presets.
+- Reduce camera shake and offer a fixed center-screen reference for motion sickness. Direction arrows and audio cues can communicate information outside the player’s view.
+- Consider an extra confirmation for settings that directly affect difficulty.
+- Let players name mappings, restore the defaults, hold to avoid accidental changes, and support sideways controllers and swapped sticks as appropriate.
+- Offer subtitle size and background settings, speaker colors, and voice direction cues. Other useful choices include quality or performance modes, a brightness comparison, and disabling controller vibration in cutscenes.
+- A broad audience needs room to adapt the controls to individual preferences.
 
-## 078 ローディング画面【UI】
-- 待たされるだけのローディングは歓迎されない。演出で補う例（バイオハザードの扉演出）は、必要な読み込みと演出が合致した例。
-- 現代は単なる待ち時間は歓迎されないので、演出を作り込まないなら「読み込み中」と素直に表示する方が納得されやすい。
-- 開発中と完成後では最適化でロード時間が変わるため、演出の長さに依存しない。表示はシンプルなマークで、どこにでも出せるようにしておく。
-- 余力があれば、ゲームの世界観を出す場として使う。
+## 078 Loading Screens [UI]
+- A loading transition can serve the game, as with the doors in Resident Evil.
+- A simple “Loading” label is enough if there is no purpose-built effect.
+- Optimization can change load durations. Keep the indication independent of the length of an animation so it can work wherever needed.
+- With time to invest, use the loading screen to convey something about the setting.
 
-## 093 文字強調【UI】
-- テキスト主体の作品では、文字の大きさ・色・アニメ・フォント変更や画面振動で感情を伝え、単調な進行に彩りを加える。
-- 演出を指定するスクリプトデータを翻訳者が直接調整できるようにする。言語によって適切な強調の仕方が違うため、ネイティブに任せる。
-- 日本は漫画文化で書き文字・漫符（汗・青筋マーク）等の表現が豊か。同サイズの文字を淡々と送るだけではもったいない。
+## 093 Emphasizing Text [UI]
+- Use size, color, animation, fonts, and screen shake to convey emotion and variety in text-heavy games.
+- Let translators adjust effects in the script data. Emphasis lands differently across languages.
+- Manga offers examples such as hand lettering, sweat marks, and stress lines. Use typographic and visual expression where it helps the text.
 
-## 111 メニューは世界を語る【UI】
-- 同じゲーム内容でも、UIとフォントの使い方でターゲット層や世界観（大人向け・可愛い・ホラー・和風・電脳など）を変えられる。
-- フォントだけでなく色合い・装飾・壁紙・アイコンもセットで設計する。見やすさは保ちつつ、世界観を積極的にデザインする。
+## 111 Menus Define Your World [UI]
+- Menus and typography can make the same game feel mature, cute, scary, Japanese, or futuristic.
+- Design fonts, colors, decoration, backgrounds, and icons together. Convey the setting while keeping the interface legible.
 
-## 132 色による区分【UI】
-- メニューをモードごとに色分けすると、遊ぶ場所の区別がつきやすい（スマブラSPは大乱闘=赤、スピリッツ=緑）。ただし色を使いすぎると低年齢向けに見えるので、ゲームのトーン＆マナーを優先して決める。
-- 同じ画面に色を混ぜない。ごちゃついて見える。
-- 大きなキャラ絵をメニューに置くと、文字より絵のほうが速く直感的に認識でき、見つけやすくなり印象にも刷り込まれる。
+## 132 Color-Coding Your Game [UI]
+- Color-code modes to orient players. In Super Smash Bros. Ultimate, Smash is red and Spirits is green. Choose colors that suit the game’s tone.
+- Use a restrained palette within each screen to avoid a cluttered look.
+- A large character image can be faster to recognize and easier to remember than a text label.
 
-## 145 大事なものをより大きく【UI】
-- メニューをアイコン化し、重要度（よく使うモード）に応じてサイズを変えると、自然にアクセスしてもらえる。ゲームキューブのコントローラーのAボタンが大きいのと同じ考え方。
-- 選択肢の価値がすべて同じゲームには向かない。
-- 欠点: 多言語対応で長い文字がアイコンに収まらなくなる。
+## 145 Make Important Elements Bigger [UI]
+- Make icon size reflect importance or frequency of use. The GameCube controller’s large A button follows the same principle.
+- Use equal sizing where all options carry equal weight.
+- Allow for long labels in other languages when sizing icons.
 
-## 167 高速に選びたい【UI】
-- メニュー選択は高速にしたい。ホイール（ジョグダイヤル）のように一気に選べ、クリック感のある入力デバイスが欲しいと提案していた。
-- アナログスティックを倒して選ぶ操作は満足できない。新デバイスがあるなら、当たり前になった操作の見直しに使う。
-- 慣れた人だけが速く選べるショートカットは、一般性を下げる恐れがある。
+## 167 I Want to Choose Fast! [UI]
+- Consider a wheel or jog dial for quick menu navigation, with satisfying physical clicks.
+- Moving an analog stick to navigate menus can feel imprecise. New hardware is a chance to reconsider familiar controls.
+- Expert-only shortcuts can make fast selection harder for the broader audience.
 
-## 178 必ず飛ばせるように、止められるように【UI】
-- ロゴ、オープニング、イベントなど、ゲームをしていない場面は必ずスキップできるようにする。初見とは限らない。ガイドラインが飛ばせない前提でも、飛ばせる設定にする。ムービーは台詞単位でも飛ばせると良い。
-- ムービーは必ず一時停止できるようにする（電話・来客などの事情がある）。スキップしかできないのは古い。
+## 178 Let Them Skip, Let Them Pause [UI]
+- Let players skip logos, openings, and events, including when revisiting a sequence. If platform rules require an opening display, keep the remainder skippable. Allowing players to move through cutscenes one line at a time can help.
+- Let players pause cutscenes for interruptions such as a call or a visitor.
 
-## 195 ボタン設定【UI】
-- シンプルな作品でもキーコンフィグは必ず付ける。重い仕様だが必要とする客がいるので、可能な限り対応する。
-- 項目を縦に並べるだけにせず、コントローラー画像で対応を図示すると分かりやすい（作りは大変）。
-- 操作は「変えるボタンをカーソルで選び、そこで割り当てたいボタンを押す」方式。「押して→入れ替え先を押す」は、画面から抜けるボタンが変更操作になってしまう等の問題があるので避ける。
-- 同じ機能を複数ボタンに割り当てる重複を許可する。
-- 設定は名前（プロフィール）に紐付けて保存し、名前を選ぶだけで配置が反映されるようにする（ゲストが多い場合に有効）。可能ならコントローラー本体に記憶させる。
-- 決定／キャンセルの位置は機種で異なる（PS5は×決定、Switchは○決定が標準）。機種側で入れ替えられても全アプリに効いてしまうので、ゲーム内の設定が無いと対応できない。
+## 195 Button Settings [UI]
+- Include control remapping even in simple games. Players may depend on it.
+- A controller diagram makes the mapping easier to understand than a list alone, though it takes work to build.
+- Use a cursor to select an action, then listen for the new button. This avoids conflicts with inputs such as the button used to leave the screen.
+- Let more than one button trigger the same action.
+- Save mappings under a named profile so guests can restore theirs quickly. Store them on the controller if the hardware allows it.
+- Confirm and cancel conventions vary by platform. Offer an in-game swap because system-wide remapping affects all apps.
 
-## 209 テキストの読み進め【UI】
-- プレイヤーは字幕を速く読む。セリフ単位で飛ばせる（次のセリフの頭出し）機能を付ける。
-- 動画配信で倍速視聴が文化になっている。演出がゆっくりすぎないか見直す。遅く見たい人にも速く見たい人にも対応できる仕組みが理想。
+## 209 Advancing Text [UI]
+- Players can often read subtitles faster than the dialogue plays. Let them advance one line at a time.
+- Video viewers commonly use double-speed playback. Check whether dialogue delivery feels slow, and accommodate players who prefer both faster and slower pacing.
 
-## 227 メニューにヘルプを【UI】
-- メニュー項目の機能説明（ヘルプ文）を画面下などに積極的に入れる。
-- メニューと同じ言葉で説明しない（「オプション＝オプションに行く」は無意味）。意味が分からない人のためのものだから。
-- 作り手が考えた説明文はさらに噛み砕き、専門用語（コンフィグ等）を避け、ひらがなを開く。項目名も「シングルモード」より「ひとりで遊ぶ」のように分かりやすく。
+## 227 Adding Help Text to Menus [UI]
+- Add brief help text near menu items, for example at the bottom of the screen.
+- Explain what the option does in words the player can already understand.
+- Avoid specialist words such as “config” and favor simple writing, including hiragana where it helps in Japanese. “Play solo” is clearer than “Single Mode.”
 
-## 238 言語がなくてもわかるように【UI】
-- できる範囲で、言葉が分からなくても遊べるようにする。アイコンに絵やキャラを入れると、見て楽しく、何ができるかも伝わる。
-- トップメニューからボタンを連打するだけで本編（ファイター選択、最初のステージ、チュートリアル付きの最初のシナリオ）に入れるようにしておく。意図的に設計する。
+## 238 Making Things Clear, Even Without Words [UI]
+- Use images and characters in icons so players can use the game even when they cannot read the labels.
+- Set defaults so repeatedly pressing Confirm takes players into the game, through character selection and into an opening stage or tutorial.
 
-## 252 HUD【UI】
-- HUDは画面に付く表示全般。キャラに追従する表示の方がHUDらしい。日本作品は情報多め、海外は没入感のため抑えめ（随時オフにできるものも）。多すぎるとごちゃつくので、ゲームがやりやすく面白くなる前提で決める。
-- 工夫例：キャラの顔を出して小さな画面でもキャラ性を出す。背景にスクロール模様で熱量を出す。重なったら半透明。常時出すとうるさいカーソルは距離や状況で出し入れする。状態（能力取得・破損）でメーターの表示を変える。3Dで分かりにくい被ダメージ対象は、倒した相手をアイコンで見せる。
+## 252 HUDs [UI]
+- A HUD is screen-attached information, sometimes drawn to follow a character. Some games present many details, while others hide or toggle them for immersion. Show what makes the game easier or more enjoyable to play.
+- Portraits can emphasize character on a small screen, and animated backgrounds can add energy. Fade overlapping elements, show contextual cursors only when needed, and change meters to reflect status. An icon can identify a defeated target that was hard to see in 3D.

@@ -1,105 +1,105 @@
-# モーション（構え・攻撃ポーズ・フォロースルー・誇張）
+# Animation (windup, attack poses, follow-through, exaggeration)
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 014 モーション指定の仕方【モーション】
-- 技のモーションは、まず全モーションのリスト（文章でイメージ、長さ、攻撃発生までの時間、ループ指定）を作る。
-- 要所のポーズはフィギュアを撮影した写真で指定し、仕様書に落とす（1キャラ70〜80枚程度）。原作に参考があればそのコマを指定、人形で再現できないものは文章のみ。
-- 指定はあくまで出発点。可動域など人形とモデルは違うので、デザイナーが工夫する余地が大きく、何度も監修して調整する。
-- ノウハウや注意点はモーション担当全員に共有して、同じ失敗を防ぐ。
+## 014 Assigning Animations [Animation]
+- Start with a list of animations. Describe each action and specify its duration, the first active attack frame, and any loop behavior.
+- Include reference photos of posed figures in the specifications, roughly 70–80 per character. Cite the exact frame when using the source work. Describe poses in text when a figure cannot reproduce them.
+- Treat the brief as a starting point. Figures and digital models have different ranges of motion. Give animators freedom to solve the pose and review the result in several passes.
+- Share animation guidelines and lessons across the team so everyone can avoid repeating the same mistakes.
 
-## 028 やり過ぎてちょうどよい【モーション】
-- 攻撃モーションは「OK」と思った量よりさらに大げさにする。小さい画面では足りないことの方が日常茶飯事で、やり過ぎが問題になることはほぼない。
-- 可動範囲が理屈で正しいことより勢いが大事。モデルが破綻して見える極端なポーズでも、止め絵の破綻を直しすぎると勢いが死ぬ。
-- 直線的な動きは「行き過ぎて少し戻す」のも有効（FC時代のカービィのニードルでも使用）。
+## 028 Too Much is Just Right [Animation]
+- Push attack animation beyond the pose that first feels acceptable. Movement is more likely to look underplayed on a small screen.
+- Favor momentum in motion. An extreme pose that looks broken in a still frame can work at speed. Cleaning it up too much can make the movement weaker.
+- Overshoot and settle back a little to give straight movement energy. Kirby’s Needle used this technique in the Famicom era.
 
-## 036 攻撃モーションの内訳【モーション】
-- 攻撃モーションは「待機→構え（予備動作）→攻撃→フォロースルー」で分けて考える。待機ポーズが全動作の原点なので最初に固めてぶらさない。
-- 構えは最初の1フレームで大きくポーズを飛ばす。入力を受け付けたことを即見せ、相手にも回避の猶予を与えるため。
-- 攻撃は判定が出る瞬間・ヒットの瞬間にポーズをビシッと決める（ここがダメなら全部ダメ）。フォロースルー（硬直）は待機ポーズに近いまま済ませず時間を使い切る演出にする。
-- 戻りの途中からキャンセルして操作可能にするフレームを設定する（無いと操作が重く窮屈）。
-- モーション発注時の指定は「待機ポーズ・攻撃ポーズ・攻撃発生フレーム・総フレーム（キャンセルまで）」の4点。
+## 036 Breaking Down Attack Animations [Animation]
+- Build attacks as idle → windup → attack → follow-through. Establish a stable idle pose first.
+- Make the windup a big change on the first frame. It acknowledges the input and gives the opponent time to react.
+- Hold the contact pose during hitstop and make it count. Use the recovery time for a follow-through rather than an early return to idle.
+- Add a cancel window during the recovery so players can act before the character fully returns to idle.
+- In an animation brief, specify the idle pose, hit pose, first active frame, and total frames until a cancel.
 
-## 049 かまえは瞬時に極端に【モーション】
-- 入力を受け付けたらすぐ反応を返すのが理想。ボタンを押した瞬間にポーズを大きく変えるため、補間は多少コマ飛びしてもレスポンスを優先する。
-- 構えがほぼない攻撃（1フレームで出る弱攻撃、ファイナルファイトのジャブ）もレスポンスが良く成立する。
-- ただし溜めはオンライン遅延を隠す役割や、ガツンと攻撃した印象を作る役割もあるので、ただ速くすれば良いわけではない。
+## 049 Making Lead-ins Instant and Impactful [Animation]
+- Change the pose as soon as the input registers. Prioritize the response even if interpolation needs to skip frames.
+- Attacks with almost no windup, such as one-frame light attacks and jabs in Final Fight, can feel especially responsive.
+- A charge can mask online latency and communicate a stronger attack. Give it time to do its job.
 
-## 062 攻撃ポーズ【モーション】
-- 攻撃モーションで一番印象に残るのは、ヒット瞬間（ヒットストップ中）のポーズ。ここを作り込む。
-- 勘所: 遠くからでも分かる大げさな動作、体の正中線をまたぐ攻撃（奥や手前に逸れると当たって見えない）、左右対称にしない（コミカルにしたい時だけ）、胴体を真横に向けすぎず少しねじる。
-- 振り抜く途中ではなく少し振り抜いた所でヒットストップさせ、画面左右での見え方の差も考慮する。
-- 最重要はシルエットが綺麗に見えること。横視点のゲームなら横から見たシルエットで決める。
-- 感覚を養うには、フィギュアなど立体物を動かしてポーズを見る。
+## 062 Attack Poses [Animation]
+- The pose held at impact during hitstop is often the most memorable. Build the attack around it.
+- Exaggerate for distance. Swing across the body’s midline, use asymmetry for most poses, and twist the torso slightly. A strike posed too far forward or back may become hard to see.
+- Hold the attack a little beyond the middle of the swing. Check how the pose reads facing either side of the screen.
+- Prioritize the silhouette from the actual gameplay camera, including the strict side view in side-on games.
+- Practice posing figures in 3D to develop an eye for strong poses.
 
-## 077 フォロースルーで印象が決まる【モーション】
-- フォロースルー（攻撃後の隙の動作）は表示される時間が最も長いので、攻撃の印象を決める。
-- 攻撃の発生は全体の最初の1/3〜1/4（早い技は1/5）。残りがすべて隙。標準的な攻撃は1秒未満、大きなスマッシュでも1秒を超えるものは少ない。
-- 強い攻撃の後に隙がないと大味なゲームになる。駆け引きのために攻撃後の硬直を長く取る。
-- フォロースルーでは、直前に何をしたかが伝わる動きにし、与えられた時間のギリギリまで攻撃の余韻を粘って見せてから待機ポーズに戻す。
-- 待機に戻る途中にキャンセルフレームを設け、そのポーズは「操作できそう」に見える程度まで復帰させる。
+## 077 Follow-Throughs Make the Impact [Animation]
+- The follow-through stays on screen the longest and strongly shapes how the attack feels.
+- An attack often connects a quarter to a third of the way through the animation, or as early as a fifth for fast attacks. The rest is recovery. Standard attacks take under a second, and even big smash attacks rarely run longer.
+- Give powerful attacks a meaningful recovery window. A large payoff with little exposure reduces the tradeoff.
+- Let the follow-through show the force and direction of the attack. Hold it nearly to the end before returning to idle.
+- Put the cancel window where the character visibly looks ready to act again.
 
-## 091 情報が減るからおおげさにふるまう【モーション】
-- ポリゴンやアニメのキャラは人間が持つ情報が欠けるので、大げさに演技させてちょうどよい（映画監督の言葉）。モーションキャプチャーもそのままでは使えないことが多い。
-- 画面上のキャラが小さい・遠いほど動きが小さく見えるため、ドンと大きく堂々と動かす。画面上の大きさや操作感も考慮する。
+## 091 Exaggerate to Make Up for Information Loss [Animation]
+- A polygon model or animated character carries less visual information than a real actor. Exaggerate the performance and adjust motion capture to suit the character.
+- Move small or distant characters boldly so their actions read. Account for screen size and how the input feels.
 
-## 106 ポージングのススメ【モーション】
-- 可動フィギュアを触ってポーズを付けると、決まるポーズや良いアングルが学べる。
-- 立ちポーズのコツ：左右対称・真正面を避ける、顎を引く、首を垂直にしない、上半身・腰・足を一直線に並べない、マフラーなど揺れものの流れが見える角度にする。
-- 肩は少し上げ、左右の腕は別の角度に、脇は開きすぎず、手首は軽く曲げる、重心は少し崩す、足は手前と奥にずらし軽くハの字にする。
-- 最終的には理屈でなく「良いと思える感覚」。立体物をいじって養う。
+## 106 Posing Suggestions [Animation]
+- Pose articulated figures to learn what reads from different angles.
+- For a standing pose, break symmetry, tuck the chin, tilt the neck, and offset the torso, hips, and legs. Pick an angle that shows the flow of loose items such as a scarf.
+- Try slightly raised shoulders, different arm angles, lightly bent wrists, and a small weight shift. Keep the arms from spreading too far and stagger the feet for a gentle C-shaped stance.
+- Handling and posing physical figures develops a feel for what looks good.
 
-## 120 扁平スケーリング【モーション】
-- 移動・回転に比べ軽視されがちなスケーリング（潰し・伸ばし。スクワッシュ&ストレッチ）を併用すると、質感や勢いが大きく良くなる（例：バウンドする球）。
-- 質量を保つ前提で、縦に潰したら横に伸ばす。単純な拡縮だと量感に欠けるため、ドット絵のような端の丸みを残すブレンドシェイプなどで補う。
-- モーションの味付けに困ったらまずスケーリングを試す。
+## 120 Squashing and Scaling [Animation]
+- Use scaling alongside movement and rotation. Squash and stretch can add momentum, as in a bouncing ball.
+- Preserve apparent volume by widening the shape when compressing it vertically. Simple scaling can flatten the form. Use blend shapes to keep rounded edges, as you would when drawing a squashed sprite.
+- Try scaling when a movement needs more character.
 
-## 140 ダメージモーション【モーション】
-- 被ダメージの1フレーム目はヒットストップで長く見えるので、ここを待機ポーズとまったく違う極端な痛そうポーズにして、遠くからでも被弾が分かるようにする。
-- 攻撃を受けた姿勢からは少しだけ補間でつなぎ、必ずダメージポーズになるようにする。
-- 受けた位置（上・中・下）と強さ（小・中・大）で9通りに分けるなど、リアクションに種類を持たせる。
-- シンメトリーにしない。体をひねってシルエット（手足）がはっきり見えるようにする。被弾の見た目の迫力を、攻撃した感・やられた感に直結させる。
-- 体型がばらばらだとモーションを使い回せず、キャラ追加の負担が大きい。
+## 140 Damage Animations [Animation]
+- Hitstop holds the first damage frame on screen. Give it a pained pose distinct from idle so the hit reads at a distance.
+- Use a little interpolation from the point where the attack caught the character so the blend still reads as a damage reaction.
+- Vary reactions by hit location and strength. High, middle, and low hits at three strengths give nine variations.
+- Use asymmetry and a twist to keep the limbs readable in silhouette. The damage pose conveys impact to both attacker and target.
+- Different body proportions make animation reuse harder and can drive up the cost of adding characters.
 
-## 148 モーション補間のワナ【モーション】
-- モーションツールの自動補間に任せると、ポーズが同じでも動きがぬるくなる。特に2Dの切れ味ある動きを3Dに移すと目立つ。
-- 同じ8フレームのキックでも、構えと攻撃に時間をかけ、中割りはほぼ省く。キーフレームのポーズは原作より大きく引き絞る（誇張する）と、切れ味が出る。
-- 構えのためは長め、振り抜きは1フレームで一気に。フォロースルーは往路と同じ軌跡にしない。待機に近い無駄なポーズに時間を使わない。
-- 補間は便利だが、印象がもっさりしないよう常に確認する。
+## 148 The Perils of Interpolation [Animation]
+- Automatic interpolation can make the same key poses feel sluggish, especially when adapting sharp 2D movement to 3D.
+- In an eight-frame kick, spend time on the windup and strike and trim the in-betweens. Push the key poses to make the movement read more sharply.
+- Hold the windup and swing through in one frame. Give the follow-through a different path from the swing and cut frames spent near idle.
+- Review the resulting animation at gameplay speed to see whether the blending dulled the impact.
 
-## 164 フェイシャル【モーション】
-- キャラが小さい作品でも表情は作る。ただしリップシンクのような繊細さは不要で、元気で分かりやすい大きな表情が向く。
-- 上がってきた表情案は小さすぎることが多い。「頑張った」と思ったところからさらに大きく動かす。目を見開く時は上下の白目を見せ、歯は噛み合わせない。
-- CGは情報が減りがちなので、大げさにしてちょうど良い。リアル系とコミカル系で方針を変える。原作らしさ優先で表情を絞る場合もある。
+## 164 Facial Animations [Animation]
+- Give even small characters readable expressions. A broad expression can communicate more than fine lip sync.
+- Push the face further once it seems expressive enough. Show the whites above and below widened eyes and separate the teeth.
+- Exaggeration compensates for information lost in CG. Adjust to realistic or comic art direction and keep expressions true to the character.
 
-## 179 フリップモーション【モーション】
-- 向かい合うキャラの片方が背中を向けないよう、ポーズや動きを左右反転（鏡対称）して必ず正面を向かせる。見栄えが良く、表情も見え、情報量が増える。
-- 手間: 右ストレートを左ストレートに入れ替える、持ち物の持ち手を入れ替えるなど管理が面倒になる。左右非対称のキャラ（剣を持つ者）には適用しにくい。
-- 真横から見るだけだと顔が見えず、動きの半分が失われる。斜めに走らせてでも顔を見せる。
-- 余談: 左右反転しても読める文字（MAXIMUM、M）を選んだデザイン例がある。
+## 179 Flipped Animation [Animation]
+- Mirror poses and movement so two characters facing one another can both show their faces to the camera. Facial expressions add information.
+- Mirroring means tracking changes such as a right punch becoming a left punch or a held item changing hands. Asymmetrical characters, such as sword users, are harder to mirror.
+- A strict side view can hide the face and some movement. Consider letting the character run slightly diagonally so the face stays visible.
+- Some designs use mirrored lettering, such as the symmetric M in MAXIMUM.
 
-## 192 モーションブレンド【モーション】
-- 2つ以上のモーションを重み・時間を指定して合成する技術。キャンセルフレーム以降に操作が入った時、前の動作と次の動作の中間ポーズになり、動きがパキッと切り替わらない。
-- 待機→歩行は違和感がないが、攻撃→歩行のように開始ポーズが大きく違うと効果が分かりやすい。
-- 中間モーションが増えるとメリハリが失われ、機械補間で破綻もする。時間は短く素早く行う。
-- 応用：ガード時の方向シフト（外周モーションと中央固定モーションの合成）。3Dゲームでは上半身下半身の別制御、地形に合わせた足運び、武器の傾斜などで特に効く。キビキビした対戦アクションでは影響は小さい。
+## 192 Animation Blending [Animation]
+- Blend two or more animations over time using weights. When a new action begins after a cancel frame, a short blend can soften the switch.
+- A blend is easier to see going from an attack to a walk than going from idle to a walk.
+- Keep the blend short so it does not dull the motion.
+- Blend guard motion with a centered pose to shift the guard direction. In 3D, blending can control upper and lower body separately, place feet on terrain, or tilt a weapon. Fast competitive action often needs shorter blends.
 
-## 208 指の表現【モーション】
-- 物を握る手は、手に対して垂直にグリップするのが自然。前腕の動きに合わせる場面だけ斜めにする。指の角度で自然な持ち方にする。
-- 指は小さいのに構造が複雑で処理負荷が重く、真っ先に削られやすい。固めたり数パターンの指形を当てはめる手もある。
-- 費用対効果を常に考え、省く所は省いて大事な所に処理を回す。
+## 208 Portraying Fingers [Animation]
+- Align a held object across the grip. Angle it when the forearm’s movement calls for it, and curl the fingers naturally.
+- Finger rigs can be costly for such small details. Fixed poses or a few prepared hand shapes can be enough.
+- Spend the processing budget where it improves what players can see.
 
-## 223 攻撃判定を常に意識【モーション】
-- 攻撃判定は剣や拳の形ぴったりではなく、広めに取る。ヒットしないとストレスになるため。
-- 見た目と判定の大きさは多少ズレてよいが、モーションの軌道そのもののズレは破綻する。
-- ヒット瞬間とヒットストップ中のポーズが目に残る。そこで攻撃感のあるポーズになるよう、判定の出るタイミングも調整する。
-- モーション担当も、判定の発生と範囲を常に意識して作る。
+## 223 Always Keep Attack Collision in Mind [Animation]
+- Give attack hitboxes some extra reach beyond the sword or fist to avoid frustrating near misses.
+- A little difference in size can work. The collision still needs to follow the visible path of the move.
+- Time collision to a convincing impact pose. Players remember the pose held during hitstop.
+- Animators should know the timing and range of attack hitboxes as they work.
 
-## 234 スケルトンの限界【モーション】
-- スケルトン（FK/IK）は編集しやすく接地も表現しやすいが、関節の可動限界（180度）に縛られると表現が常識の枠に収まる。アニメを元気にするには、理屈を超えて誇張できる仕組み（まっすぐを超えて反らす等）を検討する。
-- 既存の便利なシステムは、そこからはみ出す表現を生みにくい。頭の中に限界線を引かない。ただし多関節化は処理負荷とアニメーターの感覚が要るので、費用対効果で判断する。
+## 234 The Limitations of Skeletons [Animation]
+- FK and IK rigs help with editing and planting feet. A rigid 180-degree joint limit can make acting too literal. Consider bending beyond straight when exaggeration serves a pose.
+- Treat the rig as a tool and test the limits it imposes. Additional joints increase the cost and require an animator who can use them well.
 
-## 249 二軸で回転【モーション】
-- 人間らしいものを回す時、単軸回転（首をY軸だけで横に回す等）は機械的。2軸の併用（下を向けて回す＝X+Y、傾けて回す＝Z+Y）でねじれを出す。手首も少し傾けてから回すとそれらしい。
-- 連動する部位（肩・鎖骨など）も動かす。2軸のタイミングをずらす、反動をつける、で性格が出る。到達点が同じでも過程で印象が変わる。
-- 首を回す時は目線の動きも意識する。
+## 249 Rotation on Two Axes [Animation]
+- A single-axis head turn can look mechanical. Combine two axes for a twist, such as X + Y to turn downward or Z + Y for a tilted turn.
+- Move linked parts such as the shoulders and collarbones. Offset the timing and add reactions to make the turn expressive even when the final pose stays the same.
+- Account for eye movement when turning the head.

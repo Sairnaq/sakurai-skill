@@ -1,191 +1,192 @@
 ---
 name: sakurai
-description: 桜井政博（カービィ・スマブラのディレクター）がYouTube「桜井政博のゲーム作るには」全257本で語ったゲーム制作の原則をまとめたもの。ゲームの企画・ゲーム性・難易度・ご褒美・導入/チュートリアル・操作感（ヒットストップ、ジャンプ、カメラ）・モーション・エフェクト・グラフィック・UI・サウンド・パラメーター調整・デバッグ・チーム運営・企画書・広報（PV、体験版、ストアページ）を考える、レビューする、直すときに使う。「面白くない」「手応えがない」「もっさり」「地味」「難しすぎ/簡単すぎ」「遊ばれない」と言われたとき、仕様書や企画書を書くとき、ゲームの改善点を洗い出すときにも使う。「桜井さんならどうする」「桜井流」と言われたら必ず使う。
+description: Apply game development principles summarized from all 257 main episodes of Masahiro Sakurai on Creating Games. Use for game design, reviews, or fixes involving gameplay, difficulty, rewards, tutorials, game feel (hitstop, jumping, camera), animation, effects, graphics, UI, audio, tuning, debugging, team management, design proposals, and marketing (trailers, demos, store pages). Use when feedback says a game feels dull, weak, sluggish, visually flat, too hard or easy, or struggles to attract players. Also use when writing game specifications, looking for improvements, or asked what Sakurai would do.
 ---
 
-# 桜井政博のゲーム制作の原則
+# Masahiro Sakurai’s game development principles
 
-出典は YouTube「桜井政博のゲーム作るには」（2022〜2025、全259本のうちまとめ動画を除いた本編）の自動字幕。
-要点は本ファイルに、動画ごとの詳しい要点は `references/` にカテゴリ別に置いてある。具体的な数値・手順・作品例が要るときは該当ファイルを読む（全部を読まない。必要なカテゴリだけ）。
+Based on AI summaries of the Japanese automatic captions from [Masahiro Sakurai on Creating Games](https://www.youtube.com/@sora_sakurai_en). This skill covers all 257 main episodes in the source set, excluding the compilations.
 
-| ファイル | 中身 |
+This file summarizes the principles. Open the relevant file in `references/` when you need specific values, procedures, or examples from published games.
+
+| File | Topics |
 |---|---|
-| references/gameplay.md | リスクとリターン、ジャンル別のゲーム性（アクション・STG・RPG・落ち物・SLG・作業ゲー）、難易度、報酬、ランダム、バランス |
-| references/planning.md | 導入・チュートリアル・ご褒美・おつかい・シナリオ・ムービー・CPU・カスタマイズ・独自性・続編 |
-| references/concepts.md | カービィ各作・スマブラ各作・エアライド・メテオス・パルテナ・ムシキングの企画の課題と解決 |
-| references/specs.md | ヒットストップ8仕様、ジャンプ、注視点、崖際、速度の単位、画面遷移、はじき入力、重心ずらし |
-| references/motion.md | 構え→攻撃→フォロースルー、攻撃/ダメージポーズ、誇張、補間・ブレンド、フェイシャル、二軸回転 |
-| references/effects.md | ヒットマーク7条件、爆発の段階、画面振動、フラッシュ、風切り、パーティクル負荷 |
-| references/graphics.md | 光を描く、判定のある物の強調、スケール感、タッチ統一、シルエット、レタッチ監修、最終出力 |
-| references/ui.md | 分かりやすさとスタイル、文字サイズ、色分け、HUD、キーコンフィグ、スキップ、ヘルプ文、アクセシビリティ |
-| references/sound.md | 効果音の優先順位、アタック強め残響ほどほど、BPM、環境音、アレンジの鉄則、音の指示の仕方 |
-| references/tech.md | パラメーターを外に出す、【】記法、即時反映、デバッグモード、チケット、バージョン管理 |
-| references/team.md | 即決、情報共有（日報・今日の1枚・発表会）、デバッグ体制、10人は7人分、切る仕事 |
-| references/mindset.md | 企画書の書き方、プレゼン、コンセプトを貫く、プランBを書かない、多数決しない、アイデア出し |
-| references/pr.md | ゲーム画面を先に見せる、製品像を偽らない、体験版のコスト、毎日発信、実演 |
-| references/misc.md | 雑談回（遅延、ゲームの価値、過去作との競争、チャンネルの作り方など） |
+| [gameplay.md](references/gameplay.md) | Risk and reward, gameplay across action games, shooters, RPGs, falling-block puzzles, sims, and task-based games, plus difficulty, rewards, randomness, and balance |
+| [planning.md](references/planning.md) | Onboarding, tutorials, rewards, fetch quests, story, cutscenes, CPU opponents, customization, originality, and sequels |
+| [concepts.md](references/concepts.md) | Design problems and solutions from Kirby, Super Smash Bros., Kirby Air Ride, Meteos, Kid Icarus, and Mushiking |
+| [specs.md](references/specs.md) | Eight hitstop guidelines, jumps, camera targets, ledges, units of speed, transitions, stick flicks, and offset centers of gravity |
+| [motion.md](references/motion.md) | Windup, strike, and follow-through, attack and damage poses, exaggeration, interpolation and blending, facial animation, and two-axis rotation |
+| [effects.md](references/effects.md) | Seven guidelines for hit effects, stages of an explosion, screen shake, flashes, slash trails, and particle cost |
+| [graphics.md](references/graphics.md) | Lighting, readability of collidable objects, sense of scale, cohesive art direction, silhouettes, paintovers, and final output |
+| [ui.md](references/ui.md) | Clarity and style, type size, color coding, HUDs, control remapping, skipping, help text, and accessibility |
+| [sound.md](references/sound.md) | Sound effect priorities, strong attack and moderate reverb, BPM, ambience, arranging music, and audio direction |
+| [tech.md](references/tech.md) | Externalized parameters, 【】 notation, live tuning, debug modes, tickets, and version control |
+| [team.md](references/team.md) | Prompt decisions, daily reports and screenshots, team presentations, debugging, coordination costs, and cutting scope |
+| [mindset.md](references/mindset.md) | Proposals, presentations, committing to a concept and a single plan, decision ownership, and finding ideas |
+| [pr.md](references/pr.md) | Showing gameplay first, setting accurate expectations, demo costs, regular updates, and live demonstrations |
+| [misc.md](references/misc.md) | Grab Bag episodes on latency, the value of games, competition with older releases, and making the YouTube series |
 
 ---
 
-## 0. 根っこにある考え
+## 0. Guiding principles
 
-- **最終目的はいつも「遊ぶ人を楽しませること」**。迷ったらここに戻る。作り手の都合・好み・苦労は判断基準にしない（「その仕様をプレイヤー一人ひとりに説明して回るつもりか」）。
-- **ゲームは仕事として作る遊び**。自分の好きなジャンルでなくても「なぜ面白いか」を分解できれば作れる。
-- **面白さは分解して理解する**。真似ではなく「分解 → なぜ面白いか考察 → 独自に再構築」で企画する（例：レースの面白さ＝ドリフトの危険と見返り → ブレーキでチャージ、出口で解放＝エアライド）。
-- **「〇〇みたいなゲーム」で終わらせない**。似ているなら元を遊べば済む。元にない魅力を一つでなく幾つも積む。
+- **The ultimate goal is to entertain the player.** Return to that goal when in doubt. Judge decisions from the player’s perspective. Would you explain the reasoning behind that feature to every player?
+- **Making games is the work of creating play.** You can design for any genre if you can take apart what makes it fun.
+- **Break down what makes play enjoyable.** Analyze the source of the fun and rebuild it in an original form. For example, the risk and reward of drifting in a racing game became charging with the brakes and releasing on the way out in Kirby Air Ride.
+- **Give players several reasons to choose your game over its inspiration.** Define original appeals beyond “a game like X.”
 
-## 1. ゲーム性＝リスクとリターン
+## 1. Game essence and risk–reward
 
-- ゲーム性とは駆け引き、つまり**リスクを負うとリターンを得られる構造**。攻略はリスクを抑えてリターンを取ること。
-- リスクとリターンは**近い位置に、釣り合った大きさで**置く。近づくほど危ないが倒せる（マリオの踏みつけ、ダライアスの近接連射）。大きな隙の技には大きな威力（「プレイヤーはそれだけ良いことをしたか」で報酬・罰を見直す）。
-- 各アクションの意味を言えるようにする：ジャンプ＝崖際ほど遠く跳べるが落ちやすい／ダッシュ＝速いが隙と制御難／近接＝当たる距離は被弾距離／射撃＝一方的だが弾数と位置取り／回避・パリィ＝ギリギリほど得。
-- **気持ちよさには反対の要素を混ぜる**。浮遊感は落ちるから生まれる、速さは遅くなる条件があるから効く、橋の下くぐりはぶつかれば終わりだから気持ちいい。
-- 面白さの基本形は**「ギュッとしてパッと解消」**：ストレス（敵・障害・謎）を与え、排除・成長・進展で解消させる。障害は敵でなくてもよいが、ストレスと解消は要る。
-- **ゲーム性を上げるほど一般性は下がる**。ターゲットを決めてリスクの大きさを決める（初代カービィは吸い込み・体力制・飛行でリスクを下げ初心者向けにした）。経験者に小さいリスクは初心者に大きい。
-- **平均は平凡**。調整で「強すぎを削り弱いを埋める」を繰り返すと全部同じになる。長所を伸ばしたら短所も伸ばす。直すなら威力は残して後隙・判定・発生など別の軸で。スマブラSPは87体の勝率が約47〜51%に収まっていて、個性とバランスは両立できる。
-- キャラ・敵は**一言で特性を言えるまで尖らせる**（動かないだけのゴルドーでも配置で攻略が生まれる）。全マシン同じプログラムでもパラメーターを振り切れば個性になる。
-- **ランダム**は鮮度と対応の幅を生むが、腕だけで決めたい勝負には不向き。負けて「運が悪かった」では納得がない。選択肢をランダムにして使いこなしは腕前、なら許容されやすい。
-- 対戦：カジュアルなら遅れた人への補正（マリカ型）。実力を反映させたいなら弱い補正＋地形・アイテムの揺らぎ程度。順位だけのランキングは1位以外を挫折させる → 母数の中の強さ（世界戦闘力）にする。
-- **ズルは許す**。ゲーム内でできる稼ぎ・抜け道は全部潰さない方が記憶に残る（外部改変は別）。
+- Game essence comes from **decisions where taking a risk can earn a reward**. A good strategy gets the reward while managing the risk.
+- **Keep risks and rewards close together and proportional.** Getting close is dangerous, and it lets you land Mario’s stomp or a point-blank burst in Darius. A powerful move can leave a big opening. Calibrate rewards and penalties to what the player actually accomplished.
+- Spell out each action’s tradeoff. Jump farther by taking off at the edge and risk falling. Dash for speed and give up control. Close in to strike and enter the enemy’s range. Shoot from safety and manage ammo and positioning. Dodge or parry at the last moment for a bigger payoff.
+- **Use opposing forces to make an action feel good.** Falling gives meaning to floating, a slowdown gives meaning to speed, and flying under a bridge feels good because a collision would end the run.
+- **Build tension and release it.** Enemies, obstacles, or puzzles create stress. Clearing a barrier, growing stronger, or moving forward releases it. Any obstacle that can create tension can serve this role.
+- **Greater strategic depth can narrow the audience.** Choose a target audience before setting the stakes. The original Kirby used inhaling, a health system, and flight to lower risk for beginners. An experienced player’s small risk can be a beginner’s big one.
+- **Tuning everything toward the average makes it bland.** Amplify weaknesses along with strengths. Preserve damage and tune recovery, hitboxes, or startup when appropriate. Super Smash Bros. Ultimate’s 87 fighters fell within roughly a 47–51% win-rate range, showing that distinct characters can still be balanced.
+- **Give each character or enemy a trait you can describe in one sentence.** Even a stationary Gordo creates decisions through placement. Machines built on identical code can feel distinct when their parameters go to different extremes.
+- **Randomness creates variety and rewards adaptation.** Use it carefully in contests decided by skill. A loss attributed solely to bad luck feels arbitrary. Random options tend to go over better when skill determines how well each player uses them.
+- For casual competition, consider catch-up mechanics like Mario Kart’s. For skill-driven play, use mild catch-up and some variation in terrain or items. Rank-only leaderboards can discourage everyone below first place. A measure such as Global Smash Power shows where the player stands in the broader population.
+- **Allow clever shortcuts.** In-game farming tricks and loopholes can make a game memorable. External modifications are outside this principle.
 
-## 2. 難易度・リトライ・救済
+## 2. Difficulty, retries, and assistance
 
-- 開発者は慣れているので**「思ったより下げる」くらいでちょうど良い**。片手・体力減などのハンデを自分にかけて体感する。
-- **詰んでクリア不能が最悪**。負け続けたら難易度を下げる提案、難所スキップ、ゲーム中の難易度変更を、屈辱感のない形で用意する。
-- **リトライは迅速に**。やられてから操作が戻るまでの間に急速に冷める。ペナルティの重さより再開の速さが効く。やられ演出は短く派手に。
-- 強さは**一直線の坂にしない**。ボス（攻略を考えさせる困難）と平地、稼ぎ場を交互に置く。自キャラに合わせて敵を強くすると成長の意味が消える。
-- ローグライク系は「先を見たい」動機を見せ続けないと続かない。詰まった人が同じ景色ばかり見る状況を想定する。
+- Developers know their games inside out, so **err on the easy side of your first estimate**. Try playing one-handed or with reduced health to experience the difficulty from another angle.
+- **Keep a path to completion open.** Offer a lower difficulty after repeated losses, a way to skip a bottleneck, or mid-game difficulty changes in a way that lets players save face.
+- **Make retries quick.** The longer it takes to get control back after a defeat, the faster players lose interest. Fast restarts matter more than penalty severity. Keep defeat animations short and punchy.
+- **Vary the difficulty curve.** Alternate bosses that make players rethink their strategy with easier stretches and opportunities to earn resources. Scaling every enemy to match the player can undermine the feeling of getting stronger.
+- In roguelikes, keep teasing what lies ahead. Consider what a stuck player sees after repeating the same opening area.
 
-## 3. ご褒美と動機
+## 3. Rewards and motivation
 
-- **ご褒美は骨組みができたら真っ先に決める**。進めても何も得られないゲームは味気ない。最も効くのはキャラが純粋に強くなること。
-- 数値の報酬は**使い道とセット**（何に使うか選べるとゲーム性が上がる）。目標は**目の前に吊るす**（次のレベルまであと○、少し貯めれば買える装備）。
-- 対戦ゲームは育成強化が向かない → キャラ・ステージ・音楽・収集物・モードの解放をご褒美にする。実績は報酬というより目的を与えるもの。
-- **褒める演出を入れる**（撃墜の歓声、クリアの拍手、負けた爆発に紙吹雪を混ぜて勝者を祝う）。
-- スコアは見せ方で化ける（脳年齢、被害総額、世界戦闘力など現実の尺度に置き換える）。
-- おつかいは①報酬が適切 ②小さな喜びの間隔が短い ③ルートの自由 ④済んだらすぐ撤収（帰り道は面白くない）⑤謎や期待を持たせる。
-- 作業ゲームは「稼ぐ → 作業を楽にする道具を買う」の循環が核。現実のモチーフで「きれいになる」終わりのイメージを持たせる。
-- カスタマイズは①効果を直感的に可視化 ②長所短所を極端に ③選びやすく（ソート・自動装着）④その場で試せる ⑤見た目がかっこいい。
+- **Decide on rewards as soon as you have the game’s basic structure.** Progress needs a payoff. One of the strongest is simply making the character more powerful.
+- Give **numerical rewards a use**, and let players choose how to spend them when that creates interesting decisions. **Keep the next goal in sight**, such as the XP left to level up or gear they can nearly afford.
+- Competitive games are a poor fit for permanent power upgrades. Reward players with unlockable characters, stages, music, collectibles, and modes. Achievements give players goals to pursue.
+- **Celebrate good play.** Add cheers for KOs, applause for clearing a stage, or confetti to a losing player’s explosion to celebrate the winner.
+- Reframe scores in memorable terms, such as brain age, total damage costs, or Global Smash Power.
+- For fetch quests, offer fair rewards and frequent small payoffs, allow different routes, end the task promptly after completion, and give players a mystery or something to look forward to.
+- Task-based games can revolve around earning money and buying tools that make the work easier. A recognizable premise helps players picture the end result, such as getting a dirty place clean.
+- Make customization effects intuitive and visible, push strengths and weaknesses, add sorting or auto-equip, allow immediate testing, and make the result look good.
 
-## 4. 導入・時間・テンポ
+## 4. Onboarding, time, and pacing
 
-- **最初の3分で面白さを伝える**。長いOP・生い立ち・説明から始めない。いきなり見せ場から（パルテナは開始1分以内にボス戦）。
-- **チュートリアルは本編の形で**。何もない練習場・長文説明はダメ。実戦の流れに溶かし、能動的に遊ばせながら学ばせる。複雑な操作ほど理解させる仕組みを企画に入れておく。
-- **遅さは罪**。移動だけでなく、待ち・何もしていない時間・遅いフェード・長い暗転すべて。実際に操作している時間の割合を意識し、少し詰めすぎくらいに。
-- プレイ時間はプレイヤーのコスト。「300時間遊べる」は売りにならない。楽しい所と、それを補強する所だけを出す。
-- 押して何も起きないボタンを作らない（決定は複数ボタンに、ムービー中もスキップ案内などで反応する）。
-- ロゴ・OP・イベント・ムービーは**必ずスキップでき、必ず一時停止できる**。セリフ単位で送れると良い。倍速視聴の時代なので演出の遅さを見直す。
-- ゲームのシナリオは特殊：遊びたい人には邪魔、主人公視点が基本、勝ったのに話の都合で負けは理不尽、仲間離脱は装備の扱いが難しい。シナリオはゲームの仕掛けと表裏一体で、本開発前に揃える。会話はプレイ中に流す（ラジオ式）手もある。
+- **Show what makes the game fun within the first three minutes.** Get to a highlight quickly. Kid Icarus: Uprising opens with a boss encounter within the first minute.
+- **Teach through normal play.** Weave the tutorial into real encounters and let players learn through their actions. Plan early for how they will learn a complex control scheme.
+- **Cut slow moments throughout the game.** Account for travel, waiting, idle time, fades, and black screens. Measure the share of time the player has control and err on the side of brisk pacing.
+- Play time is a cost to the player. Keep the fun parts and the moments that support them. A promise of 300 hours has little appeal by itself.
+- A button press should get a response. Let multiple buttons confirm choices, and give players a skip prompt if they press a button during a cutscene.
+- **Make logos, openings, events, and cutscenes skippable and pausable.** Let players advance dialogue one line at a time when possible. Reassess pacing in an era of accelerated playback.
+- Design the story and game mechanics together before full production. Favor the protagonist’s perspective, respect victories earned in play, and handle equipment when party members leave. Consider radio-style dialogue during play for players who want to keep moving.
 
-## 5. 操作感・仕様
+## 5. Game feel and design specifics
 
-- **ヒットストップは必ず入れる**（ジャンルを問わず）。さらに：受けた側を大きく・与えた側を小さく震わせる（判定は動かさず見た目だけ）、地上は横・空中は縦も、大→小に収束、攻撃力×技ごとの係数で長さを決める、受け側は約4Fでダメージポーズへブレンド、カメラが遠いほど振幅を大きく。ボス撃破・自機ミスにも止め＋フラッシュ。
-- **ジャンプ**は初速＋毎フレーム一定の重力が基本。目的で変える（マリオ＝長押しで高さ調整・頂点から速く落ちる／魔界村＝空中制御なしで駆け引き）。落下を上昇より速くすると力強い。最初の数フレームだけ強くする隠し味もある。
-- **3Dカメラの注視点をキャラにくっつけない**。縦は追従を弱めて高さを感じさせる。操作方向に少しずらすと狙いやすさ・スリルが出る。
-- **崖から無条件に落とさない**。アクションごとに落ちる/落ちないを決める（攻撃の踏み込みや回避は落ちない）。3Dは強く押した時だけ落とす補正。
-- 同じボタンでも移動速度・慣性・ジャンプ・フレームレートで重さが変わる。手触りは調整で作る。60fpsを守る価値は大きい。
-- 速度の単位（距離/時間）を最初に統一し、仕様書で数値として書けるようにする。ディレクターは**フレームを体感で数えられる**こと（「1と2と3と」で約30F、15Fは弱攻撃の発生くらい）。
-- アナログスティックは「倒す速さ」も入力（はじき＝ダッシュ・回避）。暴発対策に閾値を調整可能に。
-- 機械的な直進・中心軸回転は味気ない。**表示位置や回転軸を少しずらして**勢いと存在感を出す。
-- 最適化や実機移行で処理速度が変わると難易度が変わる。移行後は必ず実機で再確認する。
+- **Use hitstop in any genre where impacts need feedback.** Shake the target more and the attacker less, affecting visuals while keeping collision fixed. Shake horizontally on the ground and add a vertical component in the air. Start strong and taper off. Set duration using attack power times a move-specific coefficient. Blend the target to the damage pose over about four frames and increase amplitude when the camera is farther away. Add a freeze and flash to boss defeats and player deaths.
+- **Start jumps with an initial velocity and constant gravity per frame.** Adapt to the goal. Mario uses variable height and a faster descent, while Ghosts ’n Goblins creates decisions by committing players to a jump arc. Faster descent can feel weightier. A brief extra boost in the first few frames can also help.
+- **Keep the 3D camera’s target independent of the character.** Looser vertical tracking communicates height. A small offset in the direction of input can help aiming and add tension.
+- **Control when players can fall off ledges.** Decide by action. An attack lunge or dodge can stop at the edge. In 3D, you can require a deliberate stick push to step off.
+- Movement speed, inertia, jump physics, and frame rate can make the same button feel very different. Tune for the intended weight. A stable 60 fps is valuable.
+- Agree on units of speed as distance over time early, so specifications can state concrete values. **Learn to estimate time in frames.** Counting “one and two and three and” is about 30 frames in Sakurai’s example. Fifteen frames are roughly the startup of a light attack.
+- Treat analog stick flick speed as an input for dashes or dodges. Make thresholds adjustable to reduce accidental activations.
+- **Offset the visual position or rotation axis slightly** for momentum and presence when straight motion or center-axis rotation looks mechanical.
+- Optimization or a move to target hardware can change execution speed and difficulty. Recheck the game on the actual hardware after the move.
 
-## 6. モーション
+## 6. Animation
 
-- 攻撃は**待機 → 構え → 攻撃 → フォロースルー**。待機ポーズが原点なので最初に固める。
-- **構えは瞬時に極端に**：入力の1フレーム目で大きくポーズを変えて受け付けを見せる（補間のコマ飛びよりレスポンス優先）。ためは長め、振り抜きは1Fで一気に。自動補間に任せると「ぬるく」なる。
-- **一番目に残るのはヒット瞬間（ヒットストップ中）のポーズ**：遠目に分かる大げささ、体の正中線をまたぐ、左右対称にしない、胴を少しひねる、シルエットが綺麗に見える角度（横視点なら横から）。
-- **フォロースルーは表示時間が一番長く印象を決める**。発生は全体の最初の1/3〜1/4、残りは隙。強い技には長い硬直。余韻を粘ってから待機へ戻し、途中にキャンセルフレームを置く。
-- 発注時の指定は「待機ポーズ・攻撃ポーズ・攻撃発生フレーム・総フレーム」の4点。要所はフィギュアの写真で指定する。
-- **やり過ぎてちょうどよい**。「OK」と思ったよりさらに大げさに。小さい・遠いキャラほど大きく動かす。表情も「頑張った」からもう一段。CGは情報が減るので大げさにして釣り合う。
-- ダメージの1フレーム目は待機と全く違う極端な痛いポーズ。受けた位置×強さでリアクションを分ける。
-- スクワッシュ＆ストレッチ（体積を保って潰す/伸ばす）を試す。人っぽく回すなら二軸回転でねじる。向かい合うキャラは左右反転して顔を見せる。
-- 攻撃判定は見た目より広めに（当たらないのはストレス）。モーション担当も判定の発生と範囲を意識する。
+- Build attacks as **idle → windup → strike → follow-through**. Lock down the idle pose first, as it anchors the rest.
+- **Make the windup immediate and exaggerated.** Change the pose on the first frame of input to show that it registered. Prioritize responsiveness over interpolated frames. Give a charge room to build and swing through in one frame. Automatic interpolation can make the strike feel soft.
+- **The pose held during hitstop leaves the strongest impression.** Exaggerate it so it reads at a distance. Cross the body’s midline, break symmetry, twist the torso slightly, and check the silhouette from the gameplay camera.
+- **Follow-through has the most screen time and shapes the impression.** Place the strike within the first quarter to third of the animation and use the rest for recovery. Powerful moves deserve long recovery. Let the pose linger before returning to idle, with cancel windows along the way.
+- When commissioning an attack, specify the idle pose, attack pose, first active frame, and total frame count. Use photos of posed figures to communicate key poses.
+- **Push poses and expressions a step further than feels sufficient.** Small or distant characters need bigger movements. CG loses some visual information, so exaggeration can restore readability.
+- On the first damage frame, switch to an unmistakably pained pose. Vary reactions by hit location and severity.
+- Try volume-preserving squash and stretch. For a natural turn, twist around two axes. Mirror characters facing one another when it helps show both faces.
+- Give attack hitboxes a little extra reach where appropriate to reduce frustrating whiffs. Animators should know when and where hitboxes become active.
 
-## 7. エフェクト・画面の手応え
+## 7. Effects and impact feedback
 
-- 加算合成だけのモヤっとしたエフェクトに頼らない。はっきり描いた形を主体にし、**暗い色も混ぜて明るい背景でも見えるようにする**。
-- ヒットマーク：効果に見合う派手さ、メリハリ、判定の重なり位置から出す、衝撃波・火花など複数要素、キャラを隠しすぎない、早く消す、明暗どちらの背景でも目立つ。ヒットストップ中も動かし続ける。
-- 爆発は**閃光 → 爆炎 → 黒煙 → 収束**。短すぎると手応えがない。画面フラッシュ・振動を足す。
-- 画面振動は大中小で揺れ方のパターン自体を変える（小は縦のみ等）。最初強く徐々に収束、少しランダム。カメラ距離で補正。
-- フラッシュは白一色の加算だとコントラストが下がる。明暗を交互に。カメラが近いほど弱く。キャラの点滅で状態（無敵＝白など）を伝える。
-- 剣の風切りの有無で手応えはまるで違う。武器の性格で形・色を変える。
-- エフェクトでキャラを埋もれさせない（2Dは表示優先度、3Dは中央に穴を開ける等の形の工夫、縁取り）。エフェクトもスケール感を正しく（剣の炎がロウソク大に見える失敗）。
-- パーティクルは寿命を短く数を絞り、重ねず、1枚を大きくして絵で情報量を持たせる。
+- Give effects clear shapes and **include dark tones so they read against bright backgrounds**. Additive blending alone can look hazy.
+- Match hit effects to the strength of the impact, add contrast, spawn them where hitboxes overlap, combine elements such as sparks and shockwaves, keep characters visible, clear the effects quickly, and make them readable against light and dark backgrounds. Let hit effects continue during hitstop.
+- Build explosions in stages **flash → fireball → dark smoke → dissipation**. Give them enough time to register. Add screen flash and shake to reinforce the impact.
+- Give small, medium, and large impacts different shake patterns. A small shake might be vertical only. Start strong, taper off, add slight randomness, and compensate for camera distance.
+- Alternate light and dark flashes to retain contrast. Soften the effect with a closer camera. Character flashes can communicate states such as invincibility in white.
+- Sword slash trails make a big difference to perceived impact. Vary shape and color with the weapon’s character.
+- Keep characters from disappearing behind effects. Use draw order in 2D, and try open centers or outlines in 3D. Check the perceived scale, such as whether a flaming sword’s fire reads as a candle flame.
+- Limit particle count, lifetime, and overlap. Use larger sprites with more visual detail where practical.
 
-## 8. グラフィック
+## 8. Graphics
 
-- **素材の色でなく、そこに当たる光を描く**（色のついた光の明暗、上からの光、色相のずれ、奥ほど空気感）。
-- **判定のある物（床・足場）を強調し、判定のない背景は控える**。少し「ゲーム寄り」に倒す。
-- リソースは画面中央・カメラ正面に集中、手前・遠景・見えないこだわりは削る。
-- スケール感は形より素材で決まる（テクスチャの繰り返し、彩度控えめ、ツヤを絞る、汚し）。ミニチュアに見える原因は俯瞰・上下ぼかし・高彩度。大きく見せたいなら逆＋空気遠近。
-- 世界観の違うキャラを並べるなら**タッチを揃える**（彩度、描き込み量、等身、リファイン）。揃えないと「アニメと実写が戦う」。イメージボードを先に描いて全員の手本にする。
-- **キャラはシルエットで立てる**（黒く塗っても誰か分かる）。漫画的デフォルメはむしろ推奨。
-- 最終出力（ポストプロセス・色彩）が画質を決める。全体を俯瞰して調整する役を置く。安いモニター・テレビでも破綻しないか、白黒・色覚シミュレーションで見分けられるかも確認する。
-- 修正指示は口頭より**レタッチした画像で**。修正は期待の半分しか進まないので大きめに振ってもらって戻す。改善しなければ品質が保てている所で割り切る。
+- **Paint the light falling on a surface.** Account for colored light, light from above, hue shifts, and atmospheric depth.
+- **Emphasize collidable floors and platforms and keep non-interactive backgrounds subdued.** Make the distinction clear during play.
+- Spend detail and resources where the player looks, especially near the center and directly in front of the camera. Trim detail from the foreground, distance, and areas the player cannot see.
+- Materials are a powerful scale cue. Use texture repetition, moderate saturation, subtle gloss, and weathering. Top-down angles, blur at the top and bottom, and high saturation can make a scene look miniature. Use atmospheric perspective to convey grandeur.
+- **Unify the art direction when characters from different worlds share a scene.** Align saturation, detail, proportions, and level of refinement. Create a concept board early as a common target.
+- **Give characters recognizable silhouettes.** Stylized proportions can help. Check that characters remain identifiable when filled in black.
+- Post-processing and color shape the final image. Assign someone to review the whole output. Check inexpensive monitors and TVs, grayscale, and color-vision simulations for readability.
+- **Use paintovers to show visual changes.** Big adjustments often come back smaller than requested, so push further initially and dial back. If a revision fails to improve the result, keep the version that preserves quality.
 
 ## 9. UI
 
-- 分かりやすさとスタイルは相反しやすい。**ゲームの目的と世界観に合わせてどちらを優先するか決める**。UIとフォントだけで対象年齢や世界観が変わる。
-- 大事なものを大きく（よく使うモードのアイコンを大きく）、モードごとに色分け（ただし色を使いすぎると幼く見える、同じ画面に色を混ぜない）、キャラ絵で直感的に。
-- 文字サイズは言語で違う（日本語は大きめが要る、英仏は長い）。携帯機は実機で確認。テキスト領域に余裕を持たせる。
-- **キーコンフィグは必ず付ける**：カーソルで選んで割り当てたいボタンを押す方式、重複割り当て可、名前に紐付けて保存、決定/キャンセルの入れ替え、コントローラー図示。
-- メニューにはヘルプ文を。項目名と同じ言葉で説明しない、専門用語を避ける（「シングルモード」より「ひとりで遊ぶ」）。言語が分からなくても、トップから決定連打で本編に入れるようにする。
-- HUDは「やりやすく面白くなる」前提で量を決める。常時出すとうるさい物は状況で出し入れ。
-- 大作ならアクセシビリティ設定を厚く（字幕の大きさ・背景、色覚、カメラ揺れ、プリセット、プレビュー）。3D酔い対策（カメラ揺れのオプション、画面中央の固定物）。
-- ローディングは演出を作り込まないなら素直に「読み込み中」。演出の長さに依存しない。
+- **Set the balance between clarity and style based on the game’s goals and world.** UI and typography alone can change the perceived age group and setting.
+- Make frequently used options larger. Color-code modes with a restrained palette and avoid competing colors on one screen. Use character art when it makes options immediately recognizable.
+- Allow extra space for localization. Japanese text may need a larger font, while English and French labels may need more width. Check the layout on the actual handheld device.
+- **Include control remapping.** Let players select an action and press the desired button. Support duplicate bindings, name-based profiles, confirm/cancel swaps, and a controller diagram.
+- Include plain-language menu help that adds information beyond the label. “Play solo” is clearer than “Single Mode.” Let players reach the game by repeatedly confirming from the top menu even if they cannot read it.
+- Show HUD information when it makes play easier or more enjoyable. Reveal contextual elements when they become relevant.
+- For larger projects, support subtitle size and background, color-vision settings, camera shake controls, presets, and previews. Camera shake settings and a stable center-screen reference can help with 3D motion sickness.
+- A simple “Loading” label is enough when there is no dedicated sequence. Keep transition timing independent of an animation’s duration.
 
-## 10. サウンド
+## 10. Audio
 
-- 効果音は**プレイヤーへの影響度で優先順位**を付ける（スマブラ：撃墜 ＞ ヒット ＞ 必殺技・ボイス ＞ 爆発 ＞ 回避 ＞ 空振り ＞ ジャンプ・着地 ＞ 歩行 ＞ 環境音）。
-- ヒット音は**アタック強め、残響ほどほど**。強攻撃ならヒットストップ中に主要部が終わるのが理想。
-- 足音はばらつかせ、床材で作り分ける。環境音は最も低いが無音にはしない（リアル音がそのまま使える）。
-- 誇張とリアルの配分はジャンルと見た目で決める（格ゲーは誇張、リアル寄りの音は材質の情報を補う）。
-- BGMのテンポは操作の速さに合わせる（スマブラ対戦曲は130〜170BPM）。曲数はほどほど、メインテーマのアレンジを使い回す。
-- **アレンジは主旋律を変えない、原曲がすべて正しい**（口ずさめば原曲と分かること）。
-- 複数環境（ヘッドホン、PCスピーカー、安いテレビ）で聞き比べる。
-- 音の指示は具体表現・誰もが知る物の例え・参考動画で。判断は「頭の中の音と同じか」でなく「ゲームの目的に合うか」。参考曲は何が欲しいのか（雰囲気か音か）を添える。
-- 戦闘中のボイスは短く控えめに。
+- **Prioritize sound effects by their impact on the player.** In Smash Bros., the order is KO, hit, special move or voice, explosion, dodge, whiff, jump or landing, walking, then ambience.
+- Give hit sounds **a strong attack and moderate reverb**. For heavy attacks, aim to finish the main part of the sound within hitstop.
+- Vary footsteps and match them to surface materials. Keep ambience low in the mix and use real recordings where appropriate.
+- Match exaggeration to the genre and visuals. Fighting games can use heightened sounds. Realistic sounds help communicate the material involved.
+- Match music tempo to the speed of play. Smash Bros. battle tracks are often 130–170 BPM. Keep the track count manageable and reuse arrangements of the main theme.
+- **Preserve the original melody in an arrangement.** It should still be recognizable when hummed.
+- Compare playback on headphones, computer speakers, and an inexpensive TV.
+- Give audio direction with specific language, familiar comparisons, and reference clips. Judge the result by whether it serves the game. Explain which quality to borrow from a reference, such as mood or timbre.
+- Keep combat voice clips short and restrained.
 
-## 11. 調整の仕組み・テクニカル
+## 11. Tuning and programming
 
-- **調整したい数値はプログラムに直書きせず外に出す**（表計算で管理、相対指定もできる）。プログラムが骨格、パラメーターが筋肉。
-- 仕様書ではパラメーターを**【日本語名】で括り、値を「○」で書く**（例：【技開始時のX速度】は○で移動を開始）。その名前がそのままパラメーター名になる。
-- 数値を**ボタン1つで実行中のゲームに反映**できるようにする。試行回数が調整の深さを決める。
-- デバッグモードを用意する（体力指定、画面静止、カメラ自由、キャラ入れ替え、部位の透過・表示切替）。普段のコントローラー1つで操作できるように。便利な物は製品の機能になる（トレーニングの吹っ飛び軌跡）。
-- ファイル名は「分類＋方向/数値」で並べて整理される形に。ローマ字は避ける。
-- バグが出やすいのは：相手を強制制御する処理（掴み・投げ）、シーン遷移を伴う演出、無茶な地形、パラメーター・成長要素。総当たりは不可能なので怪しい所を狙う。
-- 乱数の種は不確定な値に（リセット直後に同じ値が出ないように）。
-- CPUは技のデータを参照してロジックを切り替え、反応に遅延を持たせて人間らしく。強いCPUは完璧な防御でなく「攻撃的」にする。
+- **Move tunable numbers out of the code.** Manage them in a spreadsheet if useful and support relative values when needed.
+- In specifications, **put readable parameter names in 【】 and use ○ for the value**. For example, “Start movement at 【Attack startup X velocity】 of ○.” Use the same name for the actual parameter.
+- **Apply changes to a running game with one action.** More tuning iterations make finer adjustments possible.
+- Provide a debug mode with controls for health, pausing, a free camera, character switching, and toggling the visibility or opacity of parts. Make it usable with the normal controller. Useful debug views can become player-facing features, such as launch trajectories in training mode.
+- Choose sortable filenames that put the group first and the direction or number second. In Japanese projects, avoid romanized Japanese where it makes names harder to read.
+- Target testing at forced control of other actors (grabs and throws), sequences crossing scene transitions, extreme terrain, and interactions involving parameters or progression. Exhaustive testing becomes impractical.
+- Seed random number generators with a variable value so a reset does not reproduce the same first result.
+- Let CPU opponents use move data to choose behavior and add reaction delays. Make tougher opponents more aggressive instead of relying on flawless defense.
 
-## 12. チーム・判断
+## 12. Teams and decisions
 
-- **決断を先送りしない**。持ち帰り検討をやめ、その場で決める。判断待ちは全員の作業を止める。間違いに気づいたら細かく何度でも補正する。
-- **多数決で決めない**。残るのは無難＝平凡。全体像を持つディレクターが責任を持って決め、スタッフは問題と解決案を隠さず出す。
-- **コンセプトは灯台**。途中で面白さが見えなくなっても曲げない。スクラップ＆ビルドは素材と士気を捨てる。ディレクターが灯台を見据えるまで進めない。
-- ディレクターは**切る仕事**。遅れ・予算超過では重い要素を切って進路を補正する。最悪なのは黙って時間を使い、ギリギリで「できません」と言うこと。
-- 思ったことはすぐ言う。ダメ出しは改善案とセットで。完成後の後出しは誰の得にもならない。
-- 情報共有：日報（今日の1枚＋3〜5トピック）、数か月ごとの発表会。来たメールはその日に返す（キーマンの遅れはチームの遅れ）。ただし自分の作業時間は確保する。
-- 10人のチームの実作業は7人分。デバッグはROMの版を揃え、再現手順付きのチケットで重要度順に回す。
-- 子どもや初見の人に遊ばせて**話を聞くより反応を観察する**（どこで詰まる・飽きる）。
+- **Make decisions promptly.** Work stalls while people wait for an answer. Make small course corrections whenever new information shows a decision needs updating.
+- **Let the director own decisions with the full project in view.** Majority decisions tend toward safe choices. Invite staff to raise problems and suggest solutions openly.
+- **Keep the concept in view when progress gets difficult.** Rebuilding from scratch costs work and morale. Resolve uncertainty about the project’s direction before moving forward.
+- **Cut scope as part of directing.** When schedules slip or costs rise, remove expensive work to get back on course. Flag a likely miss early enough for the team to act.
+- Raise concerns while there is time to do something. Pair criticism with a suggested improvement.
+- Share a daily screenshot and three to five updates. Hold team presentations every few months. Reply to important messages the same day and reserve time for focused work.
+- Budget for coordination. Sakurai’s rule of thumb puts a ten-person team’s hands-on output at roughly seven people’s. Keep testers on the same ROM build and prioritize tickets with reproduction steps.
+- **Observe children and first-time players as they play.** Notice where they get stuck or lose interest.
 
-## 13. 企画書・プレゼン・広報
+## 13. Proposals, presentations, and marketing
 
-- 企画書は**1ページ1項目、図1枚＋文2行**。枚数は多くてよい。大小カテゴリで現在地を示す。グラフやリサーチの羅列、**プランB（A案もB案も）は書かない**。確信した一案を出す。
-- **企画は熱いうちに一気に書き上げる**。書き上げるまで人に話さない（話すと内圧が抜ける）。
-- プレゼンはスピード（短さでなくテンポと密度）。人前の実演は見せ場を網羅する。
-- **開発と広報は掛け算**。知られなければ存在しないのと同じ。
-- **PVやストアは早くゲーム画面を見せる**。ロゴ・世界観・キャラ紹介で冒頭を使わない（ティザーが許されるのは著名シリーズだけ）。
-- **製品像は中身と一致させる**（バナナを買ってリンゴの味はダメ）。タイトルは略称（日本語なら4文字）まで考える。
-- 体験版は小さいソフト1本分の手間（別バージョン管理、漏洩対策、デバッグ）。
-- 毎日1つ更新するような継続発信は習慣を作り効果が高い。ゲーム内でも宣伝でも使える素材（参戦ムービー）を前提に作る。
-- 続編をそのまま出すと売上は約半分と見積もる。はっきりパワーアップしたと思わせる。
+- **Give each proposal page one topic, one diagram, and two lines of text.** Use as many pages as needed and show where each page fits in the outline. Keep research and charts focused. Present one plan you believe in.
+- **Write the proposal in one push while the idea is fresh.** Keep it to yourself until the draft is complete to retain the momentum.
+- Keep presentations brisk and dense. In a live demo, cover the highlights.
+- **Development and marketing multiply each other’s impact.** A game needs to be discovered before it can reach players.
+- **Show gameplay early in trailers and on store pages.** Save logos, setting, and character introductions for later. A well-known series has more license to lead with a teaser.
+- **Set expectations the game fulfills.** Pick a title with a workable short form. Four characters can work well in Japanese.
+- A demo can take as much work as a small release. Budget for version management, leak prevention, and testing.
+- Regular updates can become a habit for the audience. Plan assets such as character reveal videos for use in both the game and marketing.
+- Budget for roughly half the sales if a sequel offers essentially the same experience. Show what has materially improved.
 
 ---
 
-## 使い方（このスキルでやること）
+## How to use this skill
 
-1. **ゲームのレビュー・改善案を出すとき**：上の各章を点検リストとして当て、「どの原則に反しているか → 具体的にどう直すか」をセットで出す（ダメ出しは改善案とセット）。数値や手順が要る項目は該当の `references/*.md` を読んでから書く。
-2. **企画・仕様を書くとき**：まず面白さの核（リスクとリターン／ストレスと解消）を一言で書き、ご褒美・導入・ターゲット（ゲーム性と一般性のどこを狙うか）を決める。調整したい値は【】と○で書く。
-3. **手応えが弱いと言われたとき**：ヒットストップ → ヒットマーク → 効果音のアタック → 画面振動/フラッシュ → 構えの瞬発力とヒットポーズの誇張、の順に疑う（specs / effects / sound / motion）。
-4. **もっさり・遅いと言われたとき**：実操作時間の割合、画面遷移・フェード・リトライまでの時間、構えの1フレーム目、自動補間のぬるさを疑う。
-5. 引用するときは「桜井氏の動画 #番号（タイトル）では」と出典の番号を添える。原則は桜井氏の大作・アクション寄りの経験に基づくので、ジャンルや規模（個人制作、ノベル、パズルなど）に合わない所はそのまま当てはめず、狙い（プレイヤーを楽しませる）から読み替える。
+1. **Review a game or propose improvements.** Use the sections above as a checklist. Pair each principle the game is missing with a concrete fix. Read the relevant file in `references/` for exact values, procedures, or examples.
+2. **Write a proposal or specification.** State the core appeal in one sentence, using risk and reward or tension and release. Define rewards, onboarding, and the target audience’s tolerance for complexity. Write tunable values using 【】 and ○.
+3. **Diagnose weak impact.** Check hitstop, hit effects, the sound effect’s attack, screen shake and flash, and finally the speed of the windup and exaggeration of the hit pose. Consult the specs, effects, sound, and motion references.
+4. **Diagnose sluggishness.** Check the share of time under player control, transitions and fades, time to retry, the first frame of the windup, and any softness introduced by automatic interpolation.
+5. **Cite the source by episode number and title.** Sakurai draws heavily on large productions and action games. Adapt the principle to the project’s genre and scale, whether it is a solo game, visual novel, or puzzle game. Use the player’s enjoyment as the deciding factor.

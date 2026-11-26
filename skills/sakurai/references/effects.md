@@ -1,61 +1,61 @@
-# エフェクト（ヒットマーク・爆発・画面振動・フラッシュ）
+# Effects (hit effects, explosions, screen shake, flashes)
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 016 モヤっとさせるな【エフェクト】
-- 加算合成（色を足して光らせる）のエフェクトは手軽にそれらしくなるが、頼りすぎると全体がぼやけて手応えとメリハリがなくなり、暗い画面でしか目立たない。
-- 対策：はっきり描き分けたエフェクト（ポリゴンやベタ絵）を主体にし、加算を併用する。明るい画面でも見えるよう暗い色も混ぜる。
-- 一般原則：相反するもの（曲線に直線、明に暗）で引き立ててメリハリを作る。
+## 016 Make It "Pop" [Effects]
+- Additive blending makes effects glow. Heavy use can wash out detail and leave effects that read only against dark backgrounds.
+- Build most of the effect from clearly drawn shapes, such as polygons and opaque art. Add glow where needed and include dark colors so the effect shows up against bright backgrounds.
+- Use curved and straight lines or light and dark tones together to establish contrast.
 
-## 035 キャラクターを際立たせる【エフェクト】
-- 迫力のためのエフェクトでキャラが埋もれないようにする。2Dは表示優先度をエフェクトより上にすれば済む。
-- 3Dは優先表示するとパースが崩れ不自然になるので、エフェクト側の形を工夫する（中央に穴を開ける、手前側と奥側で高さを変えてキャラを遮らない等）。
-- 縁取りでキャラを目立たせる手もある。
+## 035 Let Your Characters Shine [Effects]
+- Keep characters readable through big effects. In 2D, you can draw the character on top.
+- Forcing the draw order in 3D can break perspective. Try an opening in the center of the effect or vary the height of the front and back portions to leave the character visible.
+- Outlines can also help the character stand out.
 
-## 056 閃光､爆発､残煙【エフェクト】
-- 爆発は「閃光→爆炎→黒煙→収束」の段階で作る。もやっと上がって終わりにしない。
-- 閃光は一瞬で「激しい何かが起きた」と伝える。純白だと白背景で見えないので黒を混ぜる。
-- 爆炎は中央から勢いよく出して爆発の質を決める。煙には炎から主役を交代するように移り、残り火は余韻として描く。
-- 爆発はゲーム都合では早く終わってほしいが、短すぎると手応えがない。役目を全うする長さを取る。
-- 画面フラッシュや画面振動を足すと手応えが大きく変わる。地上と空中で爆発を分ける、長く続く爆発は別表現にする、といった種類分けもする。
+## 056 Flash, Blast, and Smoke [Effects]
+- Stage an explosion as flash → fireball → black smoke → dissipation. Give each phase time to read.
+- The first flash signals a violent event. Mix in black so the flash is visible on bright backgrounds.
+- Expand the fireball forcefully from the center. Let smoke take over as the fire fades, with embers lingering at the end.
+- Clear the effect promptly while giving the player enough time to feel the impact.
+- A screen flash and shake add impact. Ground and aerial explosions can use different treatments, as can sustained explosions.
 
-## 079 エフェクトをスローで見てみよう【エフェクト】
-- エフェクトは一瞬で情報が溢れて目に止まりにくいので、スローモーション・背景なしで観察すると学べる。モーションの観察にも有効。
-- エフェクトを切ると味気なくなる。同じ動作ができても同じゲームにはならないので、ゲームを盛り上げるためエフェクトは積極的に出す。
+## 079 Visual Effects in Slow Motion [Effects]
+- Effects show a lot of information in an instant. Study them in slow motion or with the background removed. This also helps when studying animation.
+- Turning off effects shows how much they contribute to the feel of an action. Use them to bring the game to life.
 
-## 103 画面振動【エフェクト】
-- 画面振動は大きなショックの表現に有効。やりすぎは見えにくくなるので注意。
-- 方法は2通り：カメラを動かす（遠景があまり揺れない恐れがあり、注視点の動かし方を考える）／描画後の画面を動かす（UIも揺れ、端に黒い余白が出うる）。
-- 大・中・小を単なる拡大縮小にせず揺れのパターン自体を変える（小は縦揺れのみ、中は横も加える等）。継続振動や地形の揺れは縦振動が主。
-- カメラの引き具合や画角で揺れ幅を補正し、どこでも程よい揺れにする。最初に強く、徐々に収束し、適度にランダム性を持たせる。
-- 振動がないと味気ない。使用頻度が高く効果も高い。
+## 103 Screen Shake [Effects]
+- A brief screen shake communicates a strong impact. Keep play readable during the shake.
+- You can move the camera or offset the finished frame. With camera movement, distant scenery may barely move, so consider adjusting the target. Moving the finished frame can shake the UI and expose black edges.
+- Give small, medium, and large shakes distinct patterns. A small shake might be vertical only, with a sideways component added for medium. Sustained shakes and ground tremors are chiefly vertical.
+- Adjust amplitude for camera distance and field of view. Start strong, taper the shake, and vary it slightly.
+- Even a small shake can strongly improve feedback.
 
-## 130 ヒットマーク【エフェクト】
-- ヒットマークの条件：(1)効果に見合った派手さ (2)メリハリ（薄い・色が散漫なのはNG）(3)判定の重なり位置から適切に出す（画面を引くゲームは判定が大きく位置がずれやすい）(4)衝撃波・しぶき・火花など複数要素を併用 (5)キャラを隠しすぎない (6)画面に残る時間を適切に（連続ヒットは短く、それ以外もなるべく早く消す）(7)明るい背景でも暗い背景でも目立たせる（暗い色も混ぜる、黒を敷く）。
-- ヒットストップ中もマークを動かし続け、止まっている時間を有効に使う。ヒットストップ中の入力で吹っ飛び方向を示すなど、ルール固有の表示エフェクトも有効。
+## 130 Hit Marks [Effects]
+- Scale the hit effect to the impact. Use strong contrast, place it where the collision volumes overlap, and layer components such as shockwaves, splashes, and sparks. Keep the character visible and clear the effect quickly, especially on repeated hits. Include dark color or black so the effect reads on both light and dark backgrounds.
+- Keep the hit effect animating during hitstop. That pause can also communicate game-specific information, such as how input changes the launch direction.
 
-## 151 ビルボード【エフェクト】
-- ビルボードは、常にカメラの方を向く板ポリゴン。描画コストが低く、煙・炎・爆発など実体のないものの表現に向く（パーティクルは大半がこれ）。
-- カメラを動かすと板だと分かる。Y軸だけ向く設定（Y軸ビルボード）を誤ってエフェクトにかけると、細い絵になる事故が起きる。
+## 151 Billboards [Effects]
+- A billboard is a flat polygon that faces the camera. It is inexpensive to draw and works well for smoke, fire, explosions, and many other particles.
+- From some camera angles, a billboard’s flatness can become obvious. A billboard constrained to turn around only the Y axis can appear edge-on.
 
-## 177 風切り【エフェクト】
-- 剣の軌跡（風切り）の作り方は2通り。(1)剣が通った軌跡にポリゴンを生成し、半透明にして消す（扇状、大半はこれ）。(2)板ポリゴン1枚を一瞬だけ表示し、1フレームで振り抜く剣に使う（ヒットストップで目に留まる）。
-- 剣の速度が速いので、単に軌跡を追うだけだと弱い。横から見ると見えないこともあり、風切りを見せるためにモーションを直すことも多い。水平に切るだけは良くない。
-- 武器やキャラの性格で形・色・質感を変える（先端が強い剣はエッジを強調、豪剣は荒々しく、ビーム刀は消えずに発光、炎は炎の残像）。
-- 風切りがあるかないかで手応えが全然違う。
+## 177 Blade Trails [Effects]
+- Build a translucent fan-shaped polygon along the blade’s path and fade it out. Another option is to show a flat polygon for an instant during a one-frame swing, with hitstop holding it long enough to read.
+- A fast swing can produce a trail that barely registers, especially when seen edge-on. Adjust the pose or swing path to show the trail from the gameplay camera.
+- Match the trail to the weapon. Emphasize the tip of a tip-heavy attack, use a rougher trail for a heavy blade, and use glow or a fire afterimage for an energy blade or burning sword.
+- A readable blade trail makes a large difference to impact feedback.
 
-## 199 効果は正しい大きさ感で【エフェクト】
-- キャラやステージ同様、エフェクトも実世界に対して正しいスケール感にする。剣から出る炎がロウソク程度の大きさに見える、が典型的な失敗（誘導＝大きさの目安が不足）。
-- 監修では「求める炎の大きさ」を示した参考図を出して伝える。
-- エフェクトは動き続けるので細かすぎなくて良く、荒々しく素早く見せるのがポイント。ループ回数を増やす、パーティクルボードを使うなどの手もある。
+## 199 Making Effects the Right Size [Effects]
+- Effects need believable scale just like characters and stages. A flaming sword can look as though it is carrying a candle flame without a good size reference.
+- Use a reference image to show the intended size of the flame.
+- Moving effects can be rough and fast without showing fine detail. Try adding animation loops or using particle billboards.
 
-## 221 フラッシング【エフェクト】
-- 画面全体を光らせると画面振動と同様に手応えが増す。キャラを光らせると状態変化（無敵、被弾など）が伝わる。
-- 色加算で均等に足すとコントラストが下がって慣れる。白フラッシュは明るい画面では目立たない。対策は、明るい色と暗い色（影）を混ぜて明暗を交互にすること。
-- カメラが近いほど面積が大きくチカチカして不快なので、カメラ距離で強さを変える。
-- 状態の色分け例：無敵＝白、投げられ直後の無防備＝黄。縁だけ光るリムライト表現もよく使う。ほぼ一瞬の表現として使う。
+## 221 Flashing Effects [Effects]
+- A full-screen flash strengthens impact. Flashes on a character can communicate a state change such as invincibility or damage.
+- An even additive flash lowers contrast and can disappear against bright backgrounds. Alternate light and dark tones.
+- A close camera makes flashing cover more of the screen. Reduce the intensity at closer distances.
+- Use colors to distinguish states. For example, use white for invincibility and yellow for a vulnerable state after a throw. A brief rim light can emphasize the edges instead of filling the character.
 
-## 242 パーティクルの限界【エフェクト】
-- 負荷との戦い。寿命を短く、同時に出す数を抑える。出すタイミングと位置をずらして重ねない（重なった分は無駄）。
-- 小粒を大量に出せないので、1枚のビルボードを大きめにして絵で情報量を持たせる。許容範囲で最大の効果を狙う。
-- 例：星のカービィの撃破エフェクトは、星の配置をフレームごとに手置きして送る方式（座標データだけで、データ量は食うが動作は軽い）。吸い込みは白黒ドットを混ぜ、どんな背景色でも見えるようにした。
+## 242 The Limitations of Particle Effects [Effects]
+- Control rendering cost by shortening particle lifetimes and limiting simultaneous emissions. Vary timing and position to reduce wasted overlap.
+- Use larger, more detailed billboards when the budget cannot support many tiny particles.
+- For Kirby’s defeat effect, the designer placed stars by hand for each frame. Coordinate data can be bulky, but the effect is easy to work with. Inhaling uses both dark and light dots so they read against any background.

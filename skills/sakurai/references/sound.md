@@ -1,76 +1,76 @@
-# サウンド（効果音の優先度・アタック・BGM・アレンジ）
+# Audio (sound effect priorities, attack, background music, arrangements)
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 025 ゲームに合ったテンポ感【サウンド】
-- 曲のテンポ（BPM）はゲーム内容で合う・合わないがある。60BPM＝1秒に1拍、120＝2拍。
-- 目安：スマブラの対戦曲は130〜170が中心（200前後は少数）。操作の速さに合うテンポを選び、場面ごとにも変える。
-- ドラクエ1のように、地下に潜るほどテンポが下がる仕掛けは効果的。
+## 025 Make the Tempo Match the Game [Audio]
+- A track’s tempo affects how well it fits the game. At 60 BPM, there is one beat per second. At 120 BPM, there are two.
+- Most Smash Bros. battle tracks fall between 130 and 170 BPM, with a few near 200. Match tempo to the pace of movement and vary it by scene.
+- Tempo can also communicate progress. In the original Dragon Quest, music slows as the player goes deeper underground.
 
-## 032 重要度で効果音バランスを取る【サウンド】
-- 効果音の音量・派手さは「プレイヤーへの影響度・勝敗への関与度」で優先順位を付ける。音の大きさだけ見て調整しない。
-- スマブラの順（大→小）：撃墜 ＞ ヒット／ジャストシールド ＞ 必殺技・ボイス ＞ 爆発 ＞ 回避等の狙った効果 ＞ 空振り ＞ ジャンプ・着地 ＞ 歩行。
-- 足音は同じ音の連続だと機械的になるのでばらつきを持たせる。着地音など素材（服・靴・床材）で作り分けると手応えが出る。3Dなら歩行音の優先度を上げてもよい。
+## 032 Strike a Balance with Sound Effects [Audio]
+- Prioritize effects by how much they matter to the player and the outcome. Consider both volume and how much each sound stands out.
+- Smash Bros. prioritizes KOs, then hits and perfect shields, special moves and voices, explosions, effects like dodging, whiffs, jumps and landings, and footsteps.
+- Vary footsteps to avoid mechanical repetition. Tailor landing sounds to clothing, footwear, and the floor. Walking sounds can take higher priority in 3D games.
 
-## 054 いろんな環境で聞き比べ【サウンド】
-- 音のチェックはヘッドホン、PCスピーカー、安いテレビのスピーカーなど複数環境で行う。テレビの小型スピーカーは低音が抜けて迫力が落ちるが、最も普及している環境でもある。
-- スタジオの大型スピーカーだけで繊細に仕上げると、民生機では聞こえなくなる。客の環境に寄り添う。
-- 携帯モードのSwitchは音量を絞っている人も多いので、重視しすぎない程度に確認する。
-- 例: スマブラの竜のヒット音は、アーケード音源のスピーカー越しの雰囲気まで含めて試行錯誤が必要で、最も手こずった。
+## 054 Listen in Various Environments [Audio]
+- Check headphones, PC speakers, and inexpensive TV speakers. Small TV speakers lack bass and punch, yet many players use them.
+- A subtle sound designed on large studio speakers might disappear on consumer equipment. Listen in the environments players use.
+- Many people lower the volume when playing Switch in handheld mode. Convey essential information through more than sound.
+- Recreating Ryu’s hit sound in Smash Bros. took trial and error, including reproducing the way the original arcade hardware sounded through its speakers.
 
-## 069 環境音楽としてのゲーム音楽【サウンド】
-- グラフィックが進化して画面の情報量が増えると、音楽を前面に出しすぎると合わなくなる。風、足音、装備の音などの環境音も必要で、各音の存在感のバランスを考える。
-- 曲数は多すぎると覚えられない。ほどほどに抑える。
-- メインテーマを作り、そのアレンジを様々な場面で使う。メインフレーズを覚えている曲の方が効果が高い。
-- プレイヤーの感情に寄り添う作りにする。
+## 069 Game Music and Ambient Sounds [Audio]
+- As graphics carry more information, prominent music can clash with the scene. Leave space in the mix for wind, footsteps, and gear.
+- Keep the track list manageable so players have a chance to remember the music.
+- Compose a main theme and arrange it for different situations. A recognizable central phrase helps connect those versions.
+- Plan musical structure around the player’s emotions.
 
-## 089 音はフィクション、ノンフィクション【サウンド】
-- 格闘ゲームのように現実離れしたジャンルは、誇張した音が合う（ストIIの昇龍拳）。リアルな殴打音では物足りない。
-- 映像がリアルになるほど誇張音の違和感は増す。ジャンルと見た目に合わせて誇張とリアルの配分を決める。
-- リアル寄りの音は情報を補う。Minecraft では音で材質や作ったものが伝わり、粗いブロックにも重みが出る。
+## 089 Audio as Fiction and Non-Fiction [Audio]
+- Exaggerated sounds fit heightened genres such as fighting games. Think of Street Fighter II’s Shoryuken. A realistic impact sound can feel too weak.
+- The more realistic a scene looks, the more carefully an exaggerated sound needs to be matched to it.
+- Realistic sounds add information. In Minecraft, sound conveys what blocks are made of and gives even simple shapes weight.
 
-## 107 音声収録【サウンド】
-- 1ファイターの音声収録は約1時間と短いが、声はそのまま製品に残り「人の存在感」を強く出す。キャスティングは原作寄りを重視（キャスト刷新があれば合わせる）。
-- 台本は攻撃・ジャンプ・ダメージなど定型の枠を埋め、必殺技や参戦ムービーなど特徴的な場面を別に収録。原作に同じセリフがあれば参考音源を用意する。
-- 戦闘中のセリフは短く・頻度控えめ。長台詞や頻繁なしゃべりは没入感を削ぐ。声のバッティング（かぶり）も避け、キャラの声質（例：獣っぽさ）の差別化を保つ。
-- 海外ボイスは日本収録を元に各国拠点主導で進める。言語ごとにゲームへ合わせる編集の手間が大きい。
+## 107 Voice Recording [Audio]
+- Recording a fighter can take about an hour, but the resulting voice gives the character a lasting human presence. Follow casting from the source work, including any changes to the cast.
+- Cover standard actions such as attacking, jumping, and taking damage in the script, along with signature moves and scenes such as reveal trailers. Provide reference recordings for lines that already exist.
+- Use brief, infrequent lines during combat. Give characters distinct voices and avoid stacking several lines at once.
+- Regional teams use Japanese recordings as a starting point for localization. Editing each language to fit the game takes work.
 
-## 126 アレンジの手法【サウンド】
-- アレンジ依頼の手順：候補曲を多めに選ぶ→作曲家を集めて注意事項を説明→得意・思い入れのある曲を選んでもらう→監修→ブラッシュアップ。
-- 対戦向けの条件を先に伝える（開始〜盛り上がりの構成、イントロ後に曲が始まってもよい、メインの後に別曲を混ぜる、変調で抑揚をつける、時間制に合わせて終わる、ループ点の位置）。
-- 音楽用語がなくても、サウンドディレクターを経由して監修する形で回る。
-- アレンジの鉄則は「主旋律は同じ、口ずさめば原曲と分かる」。同一性を保つ（アレンジCDで別物にされてがっかりした経験から）。
+## 126 Arranging Music [Audio]
+- Shortlist tracks, brief the composers, let them choose ones that suit their abilities and interests, then review and refine what they submit.
+- Explain the requirements for battle music early. Cover the progression from opening to climax, possible starts after the intro, medley structure, key changes, timing, and loop points.
+- A sound director can help with supervision even when the game director lacks musical vocabulary.
+- Preserve the main melody. A player should recognize the original just from humming the arrangement.
 
-## 144 原曲がすべて正しい【サウンド】
-- アレンジ曲では、プレイヤーが原作で聴いて覚えた曲が正解。音楽理論上は誤りでも、主旋律の解釈などを変えない。
-- 原曲の不思議な部分（裏打ちなど）も再現する。
-- 歌ものは、原曲の構成（日本版は3番まで、英語版は1番まで）に合わせて作る。足りない部分は、楽器パートで補うなどの工夫をする。
-- アレンジするときは、プレイヤーが持つ原曲の思い出を損ねないようにする。
+## 144 The Original Piece is Always Right [Audio]
+- Treat the tune players remember from the original as the source of truth. Preserve the main melody even where it breaks music theory conventions.
+- Reproduce unusual parts of the original, including the backing.
+- Follow the original song structure, such as three verses in the Japanese version and one in the English version. Instrumental passages can fill missing parts.
+- Consider what fans remember and want to hear in an arrangement.
 
-## 165 アタック強め、残響ほどほど【サウンド】
-- 多人数でSEが洪水になるゲームでは、ヒット音は出だしを強く（最初にピーク、立ち上がり即時）して手応えを即返す。
-- 残響は引きずらない。残響が長いと次の音に埋もれ、連打感が消える。強攻撃ならヒットストップ中に主要な音が終わるのが理想。
-- 良い音かどうかより、ゲームの目的に合う音かで判断する。
+## 165 Strong Attack, Light Reverb [Audio]
+- When many sounds are playing, a strong initial peak makes a hit register immediately.
+- Keep the tail short enough that it does not obscure the next impact. For heavy attacks, aim to finish the main sound within hitstop.
+- Judge the sound by how well it serves the game’s needs.
 
-## 183 効果音の指示【サウンド】
-- 効果音の修正指示は、具体表現（アタック強め等）、誰もが知る物の例え（ジェット機のように）、似た音のある動画リンクの提示で行う。マイナーな例えは通じないので避ける。
-- 擬音語（ガキ、ボコ）だけの指示は文面から音が伝わらないが、手がかりが増えるので補助として添えるのは有益。
-- 監修側は「頭の中の音そのもの」ではなく「ゲームの目的に合うか」で判断する。意図と違っても目的に合えば採用し、想定を超える良い音が出ることもある。
-- 効果音はプレイヤーの手応えに直結するので、最初に明確なイメージを持ってから依頼する。
+## 183 Giving Feedback for Sound Effects [Audio]
+- Specify changes such as a stronger attack, use familiar comparisons such as a jet, and share clips with similar sounds.
+- Written sound effects such as “crack” and “thump” can supplement a brief. They convey more when combined with other clues.
+- Judge a submission by how well it fits the game. A sound can surpass the brief even when it differs from what you imagined.
+- Sound effects shape the player’s response, so have a clear goal before handing off the request.
 
-## 202 環境音のバランス【サウンド】
-- 環境音は優先度が最も低い。大きく鳴らして肝心の効果音を邪魔してはいけないが、無音にもしない（手を止めた時に無音だと雰囲気が出ない）。
-- 一人称・三人称視点では特に、その場にいる没入感のために環境音を設定する。
-- 効果音と違い、環境音はリアルな音がそのまま通用する。コミカルなゲームでもリアル音を重ねて問題ない。映像作品のノウハウも流用できる。
+## 202 Balancing Ambient Sounds [Audio]
+- Put ambience at the bottom of the mix so it leaves space for important effects. Let players hear the world when they stop moving.
+- Ambience helps immerse the player, especially in first- and third-person games.
+- Real recordings can work even in cartoon settings. Film and video sound design offer techniques for layering them.
 
-## 220 他の曲を例に挙げる場合【サウンド】
-- 参考曲の提示は作曲者に有用だが、発注者がその曲に頭を支配される、作曲者が似て非なる物作りで苦しむ、何を変えてよいか分からなくなる、といった危険がある。
-- 要素のうち何が欲しいか（雰囲気か具体的な音か）を伝える。依頼の例：ベンチャーズ風と頼んだが、特徴のギターは残さず雰囲気だけを出した。
-- 本当に合う既存曲があれば、権利元と交渉して使う手もある。
+## 220 Using Other Songs for Audio Reference [Audio]
+- A reference track can help composers. It can also lead to overly close imitation or leave them guessing about which qualities you want.
+- Say whether you want a mood or a particular sound. A request for the feel of the Ventures, for example, can ask for the overall mood without the band’s recognizable guitar sound.
+- If an existing track is exactly right, consider negotiating with the rights holder.
 
-## 237 ファミコンの音源【サウンド】
-- 制約のあるハードでは、少ない音源（矩形波2、三角波、ノイズ、サンプリング）で音楽と効果音を分け合う。効果音が鳴る間は音楽の一部を止める、という割り切りをした。
-- 容量が増え技術が磨かれるほど、サンプリング音源などを使いこなして表現が進化した。制限の中でやりくりする発想は今も参考になる。
+## 237 Famicom and NES Audio [Audio]
+- Early hardware shared a handful of channels across music and effects, including two pulse waves, triangle, noise, and sampled audio. A sound effect could temporarily take over a music channel.
+- Increasing capacity made sampled sounds more expressive. Working within a limited audio budget is still a useful skill.
 
-## 255 名作に音が悪いものなし【サウンド】
-- 名作は音楽も効果音も良い。ゲームを思い出す時、映像より先に音が浮かぶほど音は心を直接叩く。侮らない。音が出せない環境（スマホ等）もあるが、聞ける時の喜びは大きい。
+## 255 No Masterpiece Has Bad Audio [Audio]
+- Music and sound effects can become the first thing players remember about a game. Some play with the sound turned off, but good audio adds a great deal for those who can hear it.

@@ -1,158 +1,158 @@
-# 企画・ゲーム設計（導入・チュートリアル・ご褒美・時間・独自性）
+# Planning and game design (onboarding, tutorials, rewards, time, originality)
 
-桜井政博のゲーム作るには、の字幕から作った要点。番号は動画の通し番号（古い順）。
+Summaries based on the Japanese captions for Masahiro Sakurai on Creating Games. Episode numbers follow the repository’s oldest-first source order.
 
-## 005 フレームはコマ数【企画・ゲーム設計】
-- フレーム＝画面の書き換え単位。標準は秒間60で、ゲーム内の時間の単位としても使う（距離＝時間×速度）。
-- 60と30では見え方・操作の滑らかさが大きく違う。できれば60、重いなら30（30に落とすのは性能が半分になる前提）。
-- 古い機種は画面の割り込み回数＝時間だったので、50Hz圏（PAL）では速度が5/6に落ちた。ポリゴン時代以降は描画だけ遅くし処理速度は保てるので駆け引きの違和感が減る。
-- 可変フレームレートは「処理が重い時だけコマ数が減る」もの。
+## 005 Frame Rates [Planning & Game Design]
+- A frame is one screen update. At the common target of 60 fps, frames also serve as time units in game calculations such as distance = velocity × time.
+- The difference between 60 and 30 fps is visible and affects control feel. Aim for 60 fps when possible. At 30 fps, the game draws half as often.
+- On older hardware, screen refreshes could drive game time, so 50 Hz PAL games ran at five-sixths speed. Later 3D games could draw less often while keeping the simulation running at the same speed.
+- A variable frame rate drops frames when the workload is too heavy to sustain the target.
 
-## 017 とにかくゲームさせてみて【企画・ゲーム設計】
-- ゲームは最初の3分で面白さが伝わるようにする。長いオープニングやプロローグ、スロースタートは損。
-- 前置きより先にゲーム本編を遊ばせる。物語上あとの場面を冒頭に置く、主人公以前の誰かが戦う場面から入る等の構成で解決できる。
-- チュートリアルも練習らしくせず、本編を遊んでいる形にする。映像は他の媒体でも見せられるので、ゲームならではの部分をまず味わわせる。
+## 017 Just Let Them Play! [Planning & Game Design]
+- Show what is fun in the first three minutes. Long openings and backstory delay the moment people get to play.
+- Start with the main gameplay. You can move a later sequence to the opening or begin with an action scene involving another character.
+- Make the tutorial feel like part of the game. Images can be shown elsewhere, while the opening can deliver something only the game itself offers.
 
-## 023 目の前に吊られたごほうび【企画・ゲーム設計】
-- 目標・報酬をプレイ中に常に見せる。イースは画面下に現在の経験値と次のレベルまでの数値が出ていて「あと少し」と頑張らせる。
-- ファザナードのように、高価な装備を少しずつ金を貯めて買う、と手の届く目標をはっきりさせて、達成の喜びに直結させる。
-- 現代のように報酬が潤沢な作品では難しいが、目的意識を手の届く位置に置く考え方は参考になる。
+## 023 Keeping Rewards in Sight [Planning & Game Design]
+- Keep goals and rewards visible during play. Ys shows experience and how much more the player needs to level up.
+- Faxanadu makes a clear goal out of saving bit by bit for expensive equipment. Reaching the goal feels rewarding.
+- Players have many rewards competing for attention. Give them a purpose close enough to act on.
 
-## 034 ゲーム作りで食っていくには【企画・ゲーム設計】
-- ゲーム業界に入る最短の道は、自分でゲームを作ること（Unity等何でも可、最初は真似でもよい）。企画職志望でもプログラム的な考え方は必要。
-- 完成したら人に遊ばせ、反応を見て改善し次作に活かす。作品を応募書類と共に送る。単なる模倣でなく、どこか光るオリジナリティを足す。
-- 少人数・個人で作り続ける道もある。小規模でも自作することが不可欠。
+## 034 Making a Living Making Games [Planning & Game Design]
+- Making a small game is a direct route to learning game development. Even aspiring designers benefit from understanding how to express rules in a program.
+- Let people play, observe their reactions, and apply the lessons to the next project. Include work samples when applying for jobs and show some original thinking.
+- Developing alone or with a small group is another path. Start making something at the scale you can manage.
 
-## 042 世界の窓はとっても狭い【企画・ゲーム設計】
-- モニターは視野の30度前後しか占めず、グラフィックやシミュレーションを突き詰めても現実の感覚（広い視野）にはならない。
-- 画面のどこをどのくらい使ってプレイさせるかを意識してレイアウトする。コクピット視点は没入するが実際に遊べる領域が減り選ばれにくい。VRは進行方向と視線が独立した乗り物系と相性が良い。
-- FPSは大画面に小さい標的を撃つので迫力が欠ける。パルテナでは敵をプレイヤーの数倍の大きさにして補った。狭い画面領域を最大限活かす。
+## 042 A Small Window Into the World [Planning & Game Design]
+- A monitor can occupy only about 30 degrees of vision. Advanced visuals and simulation still take place in a limited window.
+- Decide which part of the frame serves play. A cockpit view can be immersive and leaves less room for the action. Vehicle games can suit VR when movement and gaze are independent.
+- Small targets can feel weak even in a full-screen shooter. Kid Icarus: Uprising made enemies several times larger than the player character so they would register on a small screen.
 
-## 051 ワンボタンでできること【企画・ゲーム設計】
-- ワンボタンゲームは4種類：連射（個人差・疲労で今は流行らない）、タイミング（クレーンなど）、早押し（反射神経、駆け引きでメーターも作れる）、切り替え（押す／離すを使い分ける）。長押しはゲーム性に貢献しにくい。
-- 操作感覚とプレイ感覚が合うことが重要で、単純だからこそ演出が効く。
+## 051 The Potential of One Button [Planning & Game Design]
+- Four one-button patterns are repeated tapping, timing a press, being first to press, and switching behavior between press and release. Rapid tapping can tire players and favor some abilities. A meter can add tactics to a reaction contest, while holding a button often offers few decisions by itself.
+- Make the physical input match the action. Clear feedback matters in a simple game.
 
-## 057 分解､考察､再構築【企画・ゲーム設計】
-- オリジナリティは、面白いものの模倣ではなく「面白さを分解→なぜ面白いか考察→独自に再構築」で出す。
-- 例（レース）: 面白さの要素をドリフトと仮定。理由は、壁にぶつかる危険（リスク）と、うまくクリアした時の有利（リターン）があるから。
-- ドリフト中ずっと加速させるより、カーブをクリアした終わりに加速させる方が気持ちいい。そこでブレーキ（ドリフト開始）と同時にチャージし、カーブ出口で解放する形にした。これがカービィのエアライドの発想。
-- 現実の趣味（ドライブ）からではなく、ゲームとして何が楽しいかから企画する。
+## 057 Deconstruct, Analyze, and Rebuild [Planning & Game Design]
+- Break down an enjoyable experience, find out why it works, and rebuild the underlying idea in a form of your own.
+- Drifting is fun in a racing game because the player risks hitting a wall to gain an advantage on a successful turn.
+- A boost on the exit can feel better than acceleration all the way through. Kirby Air Ride charges when braking into a drift and releases the boost on the exit.
+- Start from what makes the experience fun to play. Enjoying driving in real life is a different starting point.
 
-## 064 良いおつかい、悪いおつかい【企画・ゲーム設計】
-- 良いおつかいの条件5つ。
-- 1) 報酬が適切（物や、先のシナリオが見られること）。
-- 2) 小さな喜びを得るまでの間隔が短い（採取、戦闘、意表を突く展開）。
-- 3) 攻略の自由がある（遠回りで安全か、近道で危険か）。
-- 4) 目的を果たしたらすぐ撤収させる（帰り道は面白くない）。
-- 5) 期待を持たせる。街中のどうでもい近距離移動をさせない。謎や背景を付ける（例: 行方不明が続くなか、姿が見えない少女の家に様子を見に行く）。
+## 064 Good Errands and Bad Errands [Planning & Game Design]
+- Good fetch quests share five traits.
+- 1. The reward matches the task, such as a useful item or the next part of the story.
+- 2. Small rewards arrive frequently, through gathering, fighting, or surprises.
+- 3. Players can choose a safe detour or a risky shortcut.
+- 4. Let players leave as soon as the goal is met. Retracing the route can feel like a chore.
+- 5. Give players something to wonder about. Visiting the home of a missing girl amid a string of disappearances gives a short trip a purpose.
 
-## 076 フレームを計れるようになれ！【企画・ゲーム設計】
-- 全ての動作はフレームが基準なので、フレームの長さを体感で測れることが必須（60fps前提）。
-- 方法: 「1と2と3と」と間に拍を入れて数えると約30フレーム。その半分が15フレーム。15フレームはスマブラの弱攻撃やスマッシュの発生前後くらいの速さ。20フレームは30フレームの中央より少し長い。この基準点からのズレで見積もる。
-- ディレクターが動きをスタッフに伝える時にフレーム指定をするため、自分で測れないと指示が書けない。データやプログラムの間違いにも気付ける。
+## 076 Learn to Count Frames! [Planning & Game Design]
+- At 60 fps, learn to estimate how many frames an action takes by feel.
+- Counting “one and two and three and” gives a rough 30-frame reference. Half is 15 frames, around the startup of some Smash Bros. light and smash attacks. Twenty frames are a little past the halfway point. Estimate around these landmarks.
+- A director who can specify timing in frames can communicate it to staff and spot incorrect animation or code.
 
-## 085 自然なチュートリアル【企画・ゲーム設計】
-- 練習場ステージより、いきなり実戦に入れて戦いながら学ばせる方が、早く遊びたい気持ちにも盛り上がりにも合う。
-- 壁の文字・ボタン表示・UI で操作を示す場合、キーコンフィグ対応で全ボタンのアイコンが必要になり手間がかかる。
-- 新スキルの説明は文と小ムービーが多い。体験できる版はロードを挟み、思ったほど見られない。移動スキルは狭所に閉じ込めて使わせる手が一般的。
-- 作業感を出さず導入を遅らせないよう、ゲーム内の流れに溶かして演出する。
+## 085 Making Tutorials Feel Natural [Planning & Game Design]
+- Put players in real situations and let them learn by doing to keep the opening moving.
+- If tutorial prompts show buttons, support all controller icons and remapped inputs. Budget time for it.
+- Introduce new skills through short text and clips. Loading can discourage players from trying a separate practice demo. A confined area can give players a chance to use a traversal skill.
+- Embed the tutorial in the game’s flow so it feels like play and keeps the opening moving.
 
-## 095 ほめてやれ!【企画・ゲーム設計】
-- 良い行いをしたプレイヤーを褒める演出を入れる。単なる報酬では足りない。例：スマブラの撃墜時の歓声、エアライドのクリア手拍子、無双の味方武将の賞賛、Forza の何をしてもボーナス。
-- 当たり前の出来事の表現にとどまらず、プレイヤーの気持ちに沿うか誇張する演出にする（スマブラSPはミス時の爆発に紙吹雪を混ぜ、倒した側を祝う）。
+## 095 Praise the Player! [Planning & Game Design]
+- Celebrate success as well as rewarding it. Smash Bros. has cheers for KOs, Kirby Air Ride has applause for a clear, Musou allies praise the player, and Forza awards bonuses for many actions.
+- Match the excitement of the presentation to the player’s feelings. Smash Ultimate uses confetti in the losing fighter’s blast-out to celebrate the winner.
 
-## 104 ノーリアクションを排除せよ【企画・ゲーム設計】
-- 押しても何も起きないボタンを作らない。メニューの決定キーは複数のボタンに割り当て、機能が少ないアクションでもボタンを重複させる。
-- 操作したのに無反応は寂しい。ムービー中も、スキップの提示などの何らかの反応を返す。押したか分からない曖昧な反応も避ける。
-- ゲームはアクションに対するリアクションを返すもの、という意識を持つ。
+## 104 Don't Be Unresponsive [Planning & Game Design]
+- Give button presses a response. More than one button can confirm a menu choice, and several buttons can share a function when the controls are simple.
+- A cutscene can respond to a press by showing a skip option. Make the response clear enough that the player knows the input registered.
+- Reacting to the player’s actions is central to what a game does.
 
-## 113 ゲームのシナリオは特異【企画・ゲーム設計】
-- 他メディアと違う4点。(1)プレイしたい人にはシナリオが邪魔（長いカットシーンはイライラ、スキップ可能にする）(2)基本は主人公視点で、背景の差し込みは合わない (3)戦闘に勝ったのに話の都合で負けにされると理不尽でストレス (4)仲間の死亡・離脱はパーティー編成やアイテム引き継ぎが難しい。
-- あえてセオリーを破って嫌な体験を印象に残す手もある。
-- 今時は長い導入説明をせず、先にゲームを始めさせる。ミッション説明もプレイ中に受けさせる（パルテナはステージ開始即プレイ）。
-- シナリオを本開発前に揃え、ゲームの仕掛けと表裏一体にして書く。
+## 113 Game Writing is Unique [Planning & Game Design]
+- Game stories have four distinct challenges. Players who want to act can find long cutscenes intrusive. The protagonist’s point of view is usually the default. A scripted loss after a win can feel unfair. A departing party member can complicate party composition and item recovery.
+- Breaking a convention can make an unsettling moment memorable when the effect is deliberate.
+- Give players control early and deliver the mission briefing during play, as in Kid Icarus: Uprising.
+- Prepare the story before full development and write it alongside the mechanics it supports.
 
-## 119 応援する楽しみ【企画・ゲーム設計】
-- 観戦は、どちらか一方に肩入れできると盛り上がる。観戦要素のあるゲームでは、肩入れする動機づけ（勝者予想に少額のポイントを賭ける等）を用意する。ポイント自体に大した価値がなくても動機として機能する。
-- 賭け的な表現は国ごとのレギュレーション（ギャンブル規制）に引っかからない調整が必要。
-- ガチャ的な抽選は、2〜3個の候補から選ばせたり重み付けに理由があると、単純な完全ランダムより印象が良い。
+## 119 The Fun in Picking Sides [Planning & Game Design]
+- Spectating feels more involving when you support one side. Let viewers predict a winner, perhaps with a few points at stake, so the result matters to them.
+- The design may need adjustment for how different countries regulate gambling-like mechanics.
+- A randomized draw can feel better when players choose from two or three candidates or can see a reason for weighted odds.
 
-## 128 3Dゲームで酔う場合【企画・ゲーム設計】
-- 3D酔いは、目からの動き情報と内耳（実際の加減速がない）の食い違いで起きる。個人差が大きく、開発内に酔う人がいないとテストすらできない。
-- 開発側の対策：演出を控える（足踏みの縦揺れなどカメラ揺れのオプション化）、乗り物の枠など画面に固定された要素を見せる、画面中央に固定物を置く、酔い止め用のオプションをいくつか用意する。
-- プレイヤー側の対策：視野を広げる、画面の外は固定と意識する、長時間プレイを避ける、酔い止め薬。
+## 128 Motion Sickness in 3D Games [Planning & Game Design]
+- Visual movement and the absence of acceleration signals from the inner ear can conflict. Sensitivity varies, so include people who experience motion sickness when testing.
+- Let players reduce effects such as camera shake or step bob. A vehicle frame or fixed center-screen marker can help provide a stable reference. Offer several options.
+- The episode also describes player-side options such as keeping the surrounding room visible, taking breaks, and using motion sickness medication.
 
-## 149 見返りを想定する【企画・ゲーム設計】
-- ご褒美は企画段階で、何をあげられるか決めておく。ご褒美がないと先に進む動機がなく、味気ない。
-- 一番有効なのは、キャラを純粋に強くすること（経験値、装備、ドロップ、素材合成など）。先にどんな能力に出会えるかへの期待も動機になる。
-- 対戦ゲームでは育成によるキャラ強化は向かない（全キャラを育ててからでないと遊べなくなる）。代わりにアンロックできるファイター、フィギュア、シール、スピリッツ、音楽、モード解放などをご褒美にする。
-- 解説やモデルを作らずに実装できる物ほど量産しやすく、ご褒美に向く（フィギュアは制作コスト高）。音楽は最初から楽しめないのが欠点なので、数を控えめにする。
-- 実績システム（クリアゲッター）は、報酬というより「ゲームに目的を与えるもの」。動機と報酬は表裏一体。やりすぎない。
-- 遊んでも何も進展しないゲームは味気ない。初期設計から考える。
+## 149 Planning Your Game’s Rewards [Planning & Game Design]
+- Plan rewards early so players have reasons to progress.
+- Making the player’s character stronger is particularly effective. XP, equipment, drops, and crafting can do this. Anticipating new abilities can also motivate players.
+- Permanent power growth can make competition depend on training every character. Consider unlockable fighters, trophies, stickers, Spirits, music, and modes.
+- Rewards that require little new art or explanation are easier to make in volume. Trophies take work, and locking away too many songs can keep players from enjoying the music.
+- Achievements such as a challenge checklist give players a purpose. Use them in moderation.
+- Build in a way for play to move something forward.
 
-## 159 あるものでしかわからない【企画・ゲーム設計】
-- 人は既存のものにしか尺度を持てないが、企画者自身が「〇〇みたいなゲーム」と説明するのは避ける。
-- 理由1: 似ているならオリジナルを遊べば済むし、類似疑惑への対策も要る。理由2: 「〇〇」の指すものが世代・経験で違い、伝わり方がばらつく。
-- 共有しやすい相手に限って使うのは可。企画書も完成品も独自の良さが滲むようにする。
-- 企画段階は企画者1人しか分かっていない。プレゼンがうまいほど味方が増える。
+## 159 Avoiding Comparison [Planning & Game Design]
+- People understand new ideas through examples. Explain the project in its own terms when pitching it.
+- A familiar comparison can make players wonder why they should choose the new game. It can also mean different things to people with different generations or experience.
+- Use comparisons with collaborators who share the reference. Make the proposal and the finished game’s independent appeal clear.
+- Early on, the planner may be the only one who sees the whole concept. A good presentation helps other people see what they can contribute.
 
-## 162 続編のありかた【企画・ゲーム設計】
-- 続編をそのまま出すと売上は約半分になると見積もる。前作で痛い目にあった人は買わない。前作よりはっきり楽しくパワーアップしたと思わせる必要がある。
-- 続編が有利な理由は、ゲームシステムと開発ツールを使い回せること。映像作品と違い、ゲームは完成するまで面白さが分からず、新規タイトルは中止リスクも高い。
-- 続編は制作を有利にするが、手を抜くと売れない。ちゃんと投資する。
-- 続編は前作が「まだ遊びたい」程度に楽しい状態で出すのが望ましい。同規模・同内容では決着済みのゲームになる。
+## 162 Making Sequels [Planning & Game Design]
+- An incremental sequel may sell roughly half as well. People disappointed by the previous game may stay away. Give players a clear reason to expect an improved experience.
+- Sequels can reuse systems and tools. A new concept carries more risk because a game’s appeal can be hard to judge until it is playable.
+- Reuse can help production. Give the sequel enough investment to make the improvement visible.
+- Release while the audience still wants more of the previous game. The same scale and content can feel like ground already covered.
 
-## 173 知っていることは話が早い【企画・ゲーム設計】
-- 業界標準の操作（FPSなど）は利用して良い。説明を省略できるのは強み。ただし、ゲームを何も知らない人が常にいることも意識する。
-- キーコンフィグは操作がややこしくなっても必ず付ける。プレイヤーは自由な操作で遊びたい。ただしアナログ入力とデジタル十字キーのように、根本的に入力が違うものは置き換えられない。
+## 173 It’s Easier If They Already Know [Planning & Game Design]
+- Familiar control conventions can reduce the need for explanation. Account for players new to the genre.
+- Support control remapping even if the menu takes work. Some inputs are fundamentally different, such as an analog stick and a digital directional pad.
 
-## 180 カスタマイズは想像で遊ぶ【企画・ゲーム設計】
-- カスタマイズ系は、作業自体が楽しく、その先のメリットがはっきりしている必要がある。5点: (1)効果を可視化（数値の序列でなく直感的に）。(2)メリット・デメリットを明確に、極端に個性づける（範囲広いが射程短い、など）。(3)選びやすく（ソート、仕分け、見分けやすいアイコン、強い装備の自動装着）。(4)カスタマイズ中にすぐ試せる。(5)見た目がかっこいい（性能がなくても着せ替えだけで成立する）。
-- 作り手は第三者の反応を想像して作ると良いものになる。
+## 180 Customization Lets Your Imagination Play [Planning & Game Design]
+- Make customization enjoyable and its benefits clear. Show effects visually, give choices distinct strengths and weaknesses, make the list easy to sort and read, allow immediate testing, and offer cosmetic changes people want to use.
+- Imagine how somebody else will experience the customization flow.
 
-## 194 同じような作品【企画・ゲーム設計】
-- 好きなゲームに近いものを作るのは良いことで、形にして出すだけで価値がある。ただし「元のゲームを遊べば良いのでは」という問いに答える必要がある。
-- 元作品に無い魅力を、1つでなくいくつも積む。システム企画の最難関を借りられる分、他の部分（演出・見せ方・遊びの工夫など）で頑張る。
-- 魅力は方向性で一元的に測れない。最初は真似でも、最後は「そのゲームでしか味わえない何か」を目指す。
+## 194 Crafting “Similar” Games [Planning & Game Design]
+- A familiar design can be a starting point. Give players a reason to pick your game when they can already play its inspiration.
+- Add several things the inspiration does not offer. An established system can free up time to develop original presentation, direction, and ways to play.
+- Aim for a finished experience players can find only in this game.
 
-## 198 スコアの見せかた【企画・ゲーム設計】
-- スコアそのものは今や高く取る動機になりにくい（経験値・アイテム・ランキング等が多い）が、良い結果を得る喜びを増やす工夫の余地がある。スコアの存在を当たり前と思わず、見せ方を絞って考える。
-- 尺度に置き換える例：脳年齢（スコアにゲーム外の意味を与える）、体年齢、ゲーム偏差値、被害総額（クラッシュモード。実在の単位に噛み合うと実感が増す）、世界戦闘力（言い合えて盛り上がる）。
-- 素早くカウントアップする演出など、見せ方の気持ちよさも仕様として考える。
+## 198 Presenting Scores [Planning & Design]
+- Alongside levels, items, and rankings, a score needs a good way to make success feel rewarding. Decide what it means and how to show it.
+- A score can become brain age, physical age, a standardized skill rating, total damage in Crash mode, or Global Smash Power. A familiar unit or comparison gives the number context.
+- A quick count-up animation can make the result more satisfying to see.
 
-## 204 パラメーターでキャラ立ちを【企画・ゲーム設計】
-- キャラ（自機・敵）は性能をピーキーに振る。ニュートラルな性能を基準に、どれだけ偏らせて別の可能性を持たせられるかを考える。ただし使えないキャラにはしない。
-- 一言で特性を言えるほど尖らせる。無敵で動かないだけの敵（ゴルドー）でも、配置で他の敵と噛み合えば印象に残り攻略が生まれる。
-- キャラ立ちには、そのキャラ専用の特殊仕様（専用プログラム）が避けられない。手間はかかるが必要。
-- キャラ間の性質の差は大きくつける。大差がないのは面白くない。小さくまとめず、でこぼこにしてから問題点を補う。
+## 204 Using Parameters to Establish Characters [Planning & Game Design]
+- Use a neutral starting point and push each character, machine, or enemy toward a distinctive extreme. Keep it useful in play.
+- Aim for a trait players can describe in a word or two. A stationary, invulnerable Gordo can create a decision when placed next to other enemies.
+- Some characters will need custom behavior as well as different parameter values. Budget for the work.
+- Give characters substantial differences and address the individual problems those differences create.
 
-## 212 色が薄れた世界【企画・ゲーム設計】
-- 色分けで成り立つ要素（パズルのブロック、パワーアップ、ギミック）は、色覚多様性を考えないと遊べない人が出る。
-- 色覚シミュレーションフィルター（Photoshop標準機能）でゲーム画面を確認し、見分けにくい色には明度差を付ける。暗くしすぎると背景に溶けるので絵柄でも補う。
-- 絵や背景を白黒にして確認すると、どこが目立ちすぎ／目立たなすぎかが分かる。左右反転で崩れを見つけるのに近い手法。
+## 212 A World with Less Color [Planning & Game Design]
+- Players can miss cues that rely on color alone, including puzzle pieces, power-ups, and interactive objects.
+- Use a color-vision simulation on the actual screen. Add luminance differences or patterns when colors are hard to distinguish.
+- A grayscale view reveals elements that stand out too much or disappear. It is another way to get a fresh look, like flipping an image horizontally.
 
-## 219 コンピュータープレイヤー【企画・ゲーム設計】
-- 自由度が高いゲームほどCPUが難しい。人に反応できない動きや、運の出目で有利になるとプレイヤーは理不尽に感じ、「ずるい」と思われがち。
-- 実装は、技の射程・範囲・発生などをデータ化して参照させ、状況（体力など）でロジックを切り替える。ロジック同士が矛盾すると固まるので注意。
-- 反射神経に相当する遅延を持たせ、完璧な反応はさせない。左右逆転などにも一瞬混乱させて人間らしくする。
-- 強いCPUは「攻撃的に」する。完璧なガードや回避で無敵にもできるが、面白くない。目的は常に楽しませること。
+## 219 Computer-Controlled Players [Planning & Game Design]
+- More player freedom makes CPU opponents harder to design. Unreactable moves and seemingly favorable luck can make them feel unfair.
+- Give the CPU access to move data, such as startup, reach, and hit area. Change behavior according to the situation and check for rules that conflict and cause stalls.
+- Add reaction delay so the CPU cannot answer everything instantly. Briefly hesitating when left and right reverse can make it feel more human.
+- Make strong opponents more aggressive. Flawless blocking or dodging could make them unbeatable without being fun to fight.
 
-## 231 ゲーム内ムービー【企画・ゲーム設計】
-- 本筋と関係ない長いムービーはプレイヤーを焦らせる。長さ自体は良し悪しでなく、感情移入のための掘り下げとして使う面もある。
-- 時代的に倍速視聴が普通。ムービーは必ず一括でスキップできるようにする（スタッフロールも）。可能なら途中まで飛ばせるなどもユーザーフレンドリー。
-- ムービー中のQTE（ボタン入力）は嫌われがちなので、入れるなら慎重に。
+## 231 In-Game Cutscenes [Planning & Game Design]
+- A long cutscene can try players’ patience when it contributes little to the game. Give it time when it deepens their investment in the story.
+- Let players skip cutscenes and credits. Provide intermediate skip points when practical.
+- Quick-time events in cutscenes can frustrate players. Think about what they contribute before adding them.
 
-## 233 最初にクライマックスを【企画・ゲーム設計】
-- ゲームの導入は、いきなり見せ場やクライマックスから始める。主人公の生い立ちなど説明的な前段は後回しか省略する。
-- プレイヤーは「まず操作したい」ので、早く操作させ、できれば敵の本気を見せる（例：パルテナの鏡は1章開始から1分以内にボスが現れ、すぐ空中戦になる）。
-- 日常から事件へ進む構成にする場合も、すぐにゲームへバトンを渡す。構成が難しいなら序盤だけでも極めて短くする。
+## 233 Start with the Climax [Planning & Game Design]
+- Lead with a highlight. Save backstory for later or leave it out if play can establish what matters.
+- Give players control quickly and show the stakes. Kid Icarus: Uprising starts an aerial encounter and brings in a boss within the first minute of Chapter 1.
+- If the story goes from everyday life to an incident, hand control to the player early. Keep the introductory setup very short when that is hard to do.
 
-## 240 初心者にはやさしく、気持ちよく【企画・ゲーム設計】
-- ゲームは楽しく遊べなければ意味がない。初めて触れる人には、最初の敷居を意識して下げ、世界に引き込む。手加減が失礼になるのは、相手が本気を望むと分かる時だけ。
-- ただし手取り足取り導きすぎると冷める。ほどほどの自由度と、自分から入っていく演出も必要。
-- 難しいのは遊んでもらうまで。ささやかなきっかけで始めた人が見切りをつけないよう配慮する。
+## 240 Being Kind to Beginners [Planning & Game Design]
+- Lower the initial barrier so newcomers can get drawn into the world. Increase the challenge when you know players want it.
+- Leave room for players to discover the game and choose how to approach it. Too much guidance can dampen enthusiasm.
+- Starting the game is already a barrier. Give someone who tried it on a whim a reason to stay.
 
-## 248 いただく時間を意識する【企画・ゲーム設計】
-- プレイ時間はプレイヤーにとってコストで、他のあらゆる娯楽との奪い合い。「300時間遊べる」は売りにならず、むしろ引かれる。長時間遊ばれるのは面白さの結果として後からついてくるもの。
-- ゲームは始めるまでの障壁が大きいので、それを上回る魅力が要る。楽しい所、またはそれを補強する所だけを提供する。
-- 作り手は、プレイヤーが実際に操作している時間を意識し、操作を預けている時間が長い設計にする。
+## 248 Be Mindful of the Time Players are Giving You [Planning & Game Design]
+- Play time competes with all other entertainment. Promising 300 hours can put people off. People play for a long time when they enjoy the experience.
+- The game needs enough appeal to make starting worthwhile. Keep the parts that are fun or help make those parts work.
+- Track how much time the player has control. Design for a high share of active play.
